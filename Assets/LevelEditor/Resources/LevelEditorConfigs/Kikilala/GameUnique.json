@@ -1,4 +1,13 @@
 {
-    "boardwidth" : 9,
-    "boardheight" : 12
+  "boardwidth" : 9,
+  "boardheight": 12,
+
+  "numtoleveltype": 
+  {
+
+    "normal_level": 1000,
+    "event_level": 2000,
+    "test_level": 3000
+
+  }
 }

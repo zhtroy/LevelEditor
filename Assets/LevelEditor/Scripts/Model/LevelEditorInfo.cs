@@ -22,6 +22,7 @@ namespace CommonLevelEditor
         public const string FIELD_GAMES = "games";
         public const string FIELD_BOARD_WIDTH = "boardwidth";
         public const string FIELD_BOARD_HEIGHT = "boardheight";
+        public const string FIELD_LEVELNUM_TO_TYPE = "numtoleveltype";
 
 
         
@@ -44,6 +45,8 @@ namespace CommonLevelEditor
         public string WhichGame{get; private set;}
         public List<string> GameTypes{get; private set;}
         public string ConfigurationFolderPath{get; private set;} 
+        public string FullConfigurationFolderPath { get;  private set;}
+        public SortedDictionary<int, string> LevelNumToLevelType{get;private set;}
 
         //different between games
         public  int BoardWidth { get; private set; }
@@ -78,33 +81,28 @@ namespace CommonLevelEditor
 
             //other game unique data
             gameConfig = new GameConfig();
-            var gameConfigNode = LoadFromConfigPath(FILE_GAME_CONFIG);
+            var gameConfigNode = LevelEditorUtils.JSONNodeFromFile(ConfigurationFolderPath + FILE_GAME_CONFIG);
             gameConfig.Update(gameConfigNode);
             
             UpdateDefault();
         }
 
-        JSONNode LoadFromConfigPath(string configName)
-        {
-            JSONNode node ;
-            if (ConfigurationFolderPath.IndexOf("Resources/")>=0)
-            {
-                string configPath = (ConfigurationFolderPath + "/" +configName).Split(new [] {"Resources/"}, StringSplitOptions.RemoveEmptyEntries )[1];
-                node = LevelEditorUtils.JSONNodeFromFile(configPath);
-            }
-            else
-            {
-               node= LevelEditorUtils.JSONNodeFromFile(ConfigurationFolderPath +"/"+ configName);
-            }
-
-            return node;
-        }
         void UpdateGameUniqueData(string gameSpecificPath)
         {
             var node = LevelEditorUtils.JSONNodeFromFile(gameSpecificPath);
         
             BoardWidth = node.GetInt(FIELD_BOARD_WIDTH);
             BoardHeight = node.GetInt(FIELD_BOARD_HEIGHT);
+            
+            //关卡类型与数字段的对应关系
+            LevelNumToLevelType = new SortedDictionary<int,string>();
+            var dic = node.GetDictionary(FIELD_LEVELNUM_TO_TYPE);
+            foreach (var item in dic)
+            {
+                LevelNumToLevelType.Add(item.Value.AsInt(), item.Key);
+            }
+
+            
 
         }
         void CheckWhichGame()
@@ -128,12 +126,28 @@ namespace CommonLevelEditor
             GameTypes = GetGameTypes();
 
             //游戏配置路径
-            ConfigurationFolderPath = EditorPrefs.GetString(KEY_CONFIGURATION, "");
-            if(ConfigurationFolderPath == ""){
+            InitConfigurationPath();
+
+
+
+        }
+
+        void InitConfigurationPath()
+        {
+            string configPath = EditorPrefs.GetString(KEY_CONFIGURATION, "") + "/";
+            FullConfigurationFolderPath = configPath;
+            if (configPath == "")
+            {
                 Debug.LogError("游戏配置文件夹未设置，请在Options中设置");
             }
 
-            
+            if (configPath.IndexOf("Resources/") >= 0)
+            {
+                configPath = (configPath).Split(new[] { "Resources/" }, StringSplitOptions.RemoveEmptyEntries)[1];
+
+            }
+
+            ConfigurationFolderPath = configPath;
         }
 
         public static List<string> GetGameTypes()

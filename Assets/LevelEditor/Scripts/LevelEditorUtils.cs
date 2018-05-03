@@ -60,11 +60,14 @@ namespace CommonLevelEditor
 
         #region json
         //first load from Resources/ folder then load from absolute path
+        //path is either short form under Resources/ folder or full system path
         public static JSONNode JSONNodeFromFile(string path)
         {
             UnityEngine.Object obj = UnityEngine.Resources.Load(path, typeof(UnityEngine.Object));
             if(obj == null)
             {
+                path = path.Substring(path.IndexOf("Assets"));
+          
                 if (!path.EndsWith(".json"))
                 {
                     path += ".json";
