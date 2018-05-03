@@ -1,0 +1,52 @@
+{
+    "content": [
+        {
+            "tips": "loading_tips_1",
+            "pic": "puzzle_tips_1",
+            "id": 1,
+            "probability": 10
+        },
+        {
+            "tips": "loading_tips_2",
+            "pic": "puzzle_tips_2",
+            "id": 2,
+            "probability": 10
+        },
+        {
+            "tips": "loading_tips_3",
+            "pic": "puzzle_tips_3",
+            "id": 3,
+            "probability": 10
+        },
+        {
+            "tips": "loading_tips_4",
+            "pic": "puzzle_tips_4",
+            "id": 4,
+            "probability": 10
+        },
+        {
+            "tips": "loading_tips_5",
+            "pic": "puzzle_tips_5",
+            "id": 5,
+            "probability": 10
+        },
+        {
+            "tips": "loading_tips_6",
+            "pic": "puzzle_tips_6",
+            "id": 6,
+            "probability": 10
+        },
+        {
+            "tips": "loading_tips_7",
+            "pic": "puzzle_tips_7",
+            "id": 7,
+            "probability": 10
+        },
+        {
+            "tips": "loading_tips_8",
+            "pic": "puzzle_tips_8",
+            "id": 8,
+            "probability": 10
+        }
+    ]
+}

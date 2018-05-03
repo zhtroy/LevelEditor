@@ -1,0 +1,574 @@
+{
+    "content": [
+        {
+            "icon": "friends",
+            "mid": "invite_award",
+            "reward_id": 1,
+            "desc": "invite_award_desc"
+        },
+        {
+            "icon": "friends",
+            "mid": "invited_award",
+            "reward_id": 2,
+            "desc": "invited_award_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "checkInActivity_1",
+            "reward_id": 11,
+            "desc": "login_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "checkInActivity_2",
+            "reward_id": 12,
+            "desc": "login_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "checkInActivity_3",
+            "reward_id": 13,
+            "desc": "login_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "checkInActivity_4",
+            "reward_id": 14,
+            "desc": "login_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "checkInActivity_5",
+            "reward_id": 15,
+            "desc": "login_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "checkInActivity_6",
+            "reward_id": 16,
+            "desc": "login_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "checkInActivity_7",
+            "reward_id": 17,
+            "desc": "login_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "checkInActivity_8",
+            "reward_id": 13,
+            "desc": "login_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "checkInActivity_9",
+            "reward_id": 99,
+            "desc": "login_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "checkInActivity_10",
+            "reward_id": 14,
+            "desc": "login_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "checkInActivity_11",
+            "reward_id": 100,
+            "desc": "login_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "checkInActivity_12",
+            "reward_id": 101,
+            "desc": "login_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "checkInActivity_13",
+            "reward_id": 102,
+            "desc": "login_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "checkInActivity_14",
+            "reward_id": 103,
+            "desc": "login_desc"
+        },
+        {
+            "icon": "friends",
+            "mid": "add_friend_mail",
+            "reward_id": 3,
+            "desc": "friend_notice_mail"
+        },
+        {
+            "icon": "album",
+            "mid": "album_share",
+            "reward_id": 42,
+            "desc": "album_share_desc"
+        },
+        {
+            "icon": "album",
+            "mid": "album_done_1",
+            "reward_id": 43,
+            "desc": "album_done_desc"
+        },
+        {
+            "icon": "album",
+            "mid": "album_done_2",
+            "reward_id": 44,
+            "desc": "album_done_desc"
+        },
+        {
+            "icon": "album",
+            "mid": "album_done_3",
+            "reward_id": 45,
+            "desc": "album_done_desc"
+        },
+        {
+            "icon": "album",
+            "mid": "album_done_4",
+            "reward_id": 46,
+            "desc": "album_done_desc"
+        },
+        {
+            "icon": "album",
+            "mid": "album_done_5",
+            "reward_id": 47,
+            "desc": "album_done_desc"
+        },
+        {
+            "icon": "album",
+            "mid": "album_done_6",
+            "reward_id": 48,
+            "desc": "album_done_desc"
+        },
+        {
+            "icon": "album",
+            "mid": "album_done_7",
+            "reward_id": 49,
+            "desc": "album_done_desc"
+        },
+        {
+            "icon": "album",
+            "mid": "album_done_8",
+            "reward_id": 50,
+            "desc": "album_done_desc"
+        },
+        {
+            "icon": "album",
+            "mid": "album_done_9",
+            "reward_id": 51,
+            "desc": "album_done_desc"
+        },
+        {
+            "icon": "album",
+            "mid": "album_done_10",
+            "reward_id": 52,
+            "desc": "album_done_desc"
+        },
+        {
+            "icon": "album",
+            "mid": "album_done_11",
+            "reward_id": 64,
+            "desc": "album_done_desc"
+        },
+        {
+            "icon": "album",
+            "mid": "album_done_12",
+            "reward_id": 65,
+            "desc": "album_done_desc"
+        },
+        {
+            "icon": "album",
+            "mid": "album_done_13",
+            "reward_id": 66,
+            "desc": "album_done_desc"
+        },
+        {
+            "icon": "album",
+            "mid": "album_done_14",
+            "reward_id": 67,
+            "desc": "album_done_desc"
+        },
+        {
+            "icon": "album",
+            "mid": "album_done_15",
+            "reward_id": 68,
+            "desc": "album_done_desc"
+        },
+        {
+            "icon": "album",
+            "mid": "album_done_16",
+            "reward_id": 69,
+            "desc": "album_done_desc"
+        },
+        {
+            "icon": "album",
+            "mid": "album_done_17",
+            "reward_id": 70,
+            "desc": "album_done_desc"
+        },
+        {
+            "icon": "album",
+            "mid": "album_done_18",
+            "reward_id": 71,
+            "desc": "album_done_desc"
+        },
+        {
+            "icon": "album",
+            "mid": "album_done_19",
+            "reward_id": 72,
+            "desc": "album_done_desc"
+        },
+        {
+            "icon": "album",
+            "mid": "album_done_20",
+            "reward_id": 73,
+            "desc": "album_done_desc"
+        },
+        {
+            "icon": "album",
+            "mid": "album_done_10001",
+            "reward_id": 93,
+            "desc": "album_done_desc"
+        },
+        {
+            "icon": "album",
+            "mid": "album_done_10002",
+            "reward_id": 94,
+            "desc": "album_done_desc"
+        },
+        {
+            "icon": "album",
+            "mid": "album_done_10003",
+            "reward_id": 118,
+            "desc": "album_done_desc"
+        },
+        {
+            "icon": "album",
+            "mid": "album_done_10004",
+            "reward_id": 119,
+            "desc": "album_done_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "treasure_1",
+            "reward_id": 4,
+            "desc": "treasure_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "treasure_2",
+            "reward_id": 5,
+            "desc": "treasure_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "treasure_3",
+            "reward_id": 6,
+            "desc": "treasure_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "treasure_4",
+            "reward_id": 7,
+            "desc": "treasure_desc"
+        },
+        {
+            "icon": "ads",
+            "mid": "ad_watch_in_plaza",
+            "reward_id": 53,
+            "desc": "ad_ruby_desc"
+        },
+        {
+            "icon": "ads",
+            "mid": "ad_watch_in_shop",
+            "reward_id": 54,
+            "desc": "ad_heart_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "gm_add_ruby",
+            "reward_id": 8,
+            "desc": "gm_add_ruby"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "gm_add_coin",
+            "reward_id": 9,
+            "desc": "gm_add_coin"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "gm_add_heart",
+            "reward_id": 10,
+            "desc": "gm_add_heart"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "cbt_reward_ruby_50",
+            "reward_id": 55,
+            "desc": "cbt_reward_ruby_des"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "gm_add_random_bomb",
+            "reward_id": 56,
+            "desc": "gm_add_random_bomb_des"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "gm_add_charge_skill",
+            "reward_id": 57,
+            "desc": "gm_add_charge_skill_des"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "gm_add_step",
+            "reward_id": 58,
+            "desc": "gm_add_step_des"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "gm_add_score",
+            "reward_id": 59,
+            "desc": "gm_add_score_des"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "gm_add_tileclear",
+            "reward_id": 60,
+            "desc": "gm_add_tileclear_des"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "gm_add_rocket",
+            "reward_id": 61,
+            "desc": "gm_add_rocket_des"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "gm_add_magneto",
+            "reward_id": 62,
+            "desc": "gm_add_magneto_des"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "gm_add_change_all_color",
+            "reward_id": 63,
+            "desc": "gm_add_change_all_color_des"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "gm_add_avatar",
+            "reward_id": 74,
+            "desc": "gm_add_avatar_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "head_mail1",
+            "reward_id": 75,
+            "desc": "head_mail_desc1"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "head_mail2",
+            "reward_id": 76,
+            "desc": "head_mail_desc2"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "head_mail3",
+            "reward_id": 77,
+            "desc": "head_mail_desc3"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "head_mail4",
+            "reward_id": 78,
+            "desc": "head_mail_desc4"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "head_mail5",
+            "reward_id": 79,
+            "desc": "head_mail_desc5"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "head_mail6",
+            "reward_id": 80,
+            "desc": "head_mail_desc6"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "head_mail7",
+            "reward_id": 81,
+            "desc": "head_mail_desc7"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "head_mail8",
+            "reward_id": 82,
+            "desc": "head_mail_desc8"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "head_mail9",
+            "reward_id": 83,
+            "desc": "head_mail_desc9"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "head_mail10",
+            "reward_id": 84,
+            "desc": "head_mail_desc10"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "release_mail1",
+            "reward_id": 85,
+            "desc": "release_mail1_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "release_mail2",
+            "reward_id": 86,
+            "desc": "release_mail2_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "IMG_share_mail1",
+            "reward_id": 90,
+            "desc": "IMG_share_mail1_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "IMG_share_mail2",
+            "reward_id": 91,
+            "desc": "IMG_share_mail2_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "IMG_share_mail3",
+            "reward_id": 92,
+            "desc": "IMG_share_mail3_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "0323_mail_1",
+            "reward_id": 95,
+            "desc": "0323_mail_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "0323_mail_2",
+            "reward_id": 96,
+            "desc": "0323_mail_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "0323_mail_3",
+            "reward_id": 97,
+            "desc": "0323_mail_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "0323_mail_4",
+            "reward_id": 98,
+            "desc": "0323_mail_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "GW_checkInActivity_1",
+            "reward_id": 104,
+            "desc": "login_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "GW_checkInActivity_2",
+            "reward_id": 105,
+            "desc": "login_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "GW_checkInActivity_3",
+            "reward_id": 106,
+            "desc": "login_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "GW_checkInActivity_4",
+            "reward_id": 107,
+            "desc": "login_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "GW_checkInActivity_5",
+            "reward_id": 108,
+            "desc": "login_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "GW_checkInActivity_6",
+            "reward_id": 109,
+            "desc": "login_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "GW_checkInActivity_7",
+            "reward_id": 110,
+            "desc": "login_desc"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "gm_add_heart105star",
+            "reward_id": 116,
+            "desc": "gm_add_heart105star_des"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "gm_add_score105star",
+            "reward_id": 117,
+            "desc": "gm_add_score_des"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "continous_login_bonus_1",
+            "reward_id": 120,
+            "desc": "continuous_landing_challenge_mail"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "continous_login_bonus_3",
+            "reward_id": 122,
+            "desc": "continuous_landing_challenge_mail"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "continous_login_bonus_4",
+            "reward_id": 123,
+            "desc": "continuous_landing_challenge_mail"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "continous_login_bonus_5",
+            "reward_id": 124,
+            "desc": "continuous_landing_challenge_mail"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "continous_login_bonus_6",
+            "reward_id": 125,
+            "desc": "continuous_landing_challenge_mail"
+        },
+        {
+            "icon": "aicon_present",
+            "mid": "continous_login_bonus_7",
+            "reward_id": 126,
+            "desc": "continuous_landing_challenge_mail"
+        }
+    ]
+}

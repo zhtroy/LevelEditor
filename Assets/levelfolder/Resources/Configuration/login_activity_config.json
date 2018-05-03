@@ -1,0 +1,44 @@
+{
+    "content": [
+        {
+            "id": 1,
+            "reward_id": 59,
+            "days": 1
+        },
+        {
+            "id": 2,
+            "reward_id": 60,
+            "days": 2
+        },
+        {
+            "id": 3,
+            "reward_id": 61,
+            "days": 3
+        },
+        {
+            "id": 4,
+            "reward_id": 62,
+            "days": 4
+        },
+        {
+            "id": 5,
+            "reward_id": 63,
+            "days": 5
+        },
+        {
+            "id": 6,
+            "reward_id": 64,
+            "days": 6
+        },
+        {
+            "id": 7,
+            "reward_id": 65,
+            "days": 7
+        },
+        {
+            "id": 8,
+            "reward_id": 66,
+            "days": 8
+        }
+    ]
+}

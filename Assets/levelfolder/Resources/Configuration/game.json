@@ -1,0 +1,4583 @@
+{
+    "bosses": [
+        {
+            "attack": [],
+            "hitpoints": 100,
+            "interval": 1,
+            "name": "world0",
+            "pattern": "M"
+        },
+        {
+            "attack": [],
+            "hitpoints": 135,
+            "interval": 2,
+            "name": "world0a",
+            "pattern": "MMMMMMMMMM"
+        },
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 1,
+                            "hitpoints": 2,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 4
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 2,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 4
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 2,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 4
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 2,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 4
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 4,
+                            "hitpoints": 1,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 2,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],
+            "hitpoints": 100,
+            "interval": 1,
+            "name": "world1",
+            "pattern": "ABMCDMEFMEFMEFMEFMEFMEFMEFMEFMEFMEFMEFMEFMEFMEFMEFMEFMEFMEFMEFM"
+        },
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 2,
+                            "type": "cage"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 5,
+                            "hitpoints": 1,
+                            "type": "cage"
+                        }
+                    ],
+                    "probability": 4
+                }
+            ],
+            "hitpoints": 200,
+            "interval": 1,
+            "name": "world2",
+            "pattern": "AAMAAMBM"
+        },
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 2,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 2,
+                            "type": "dirt"
+                        }
+                    ],
+                    "probability": 1
+                },				
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 2,
+                            "type": "cage"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],
+            "hitpoints": 540,
+            "interval": 1,
+            "name": "400",
+            "pattern": "XXXXXXXXXXXXXXXXX"
+        },		
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 5,
+                            "hitpoints": 1,
+                            "type": "ican"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 4,
+                            "hitpoints": 2,
+                            "type": "ican"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 3,
+                            "type": "ican"
+                        }
+                    ],
+                    "probability": 1
+                },				
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 4,
+                            "type": "ican"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],
+            "hitpoints": 405,
+            "interval": 1,
+            "name": "ironcan",
+            "pattern": "MXMXMX"
+        },
+		{
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 5,
+                            "hitpoints": 1,
+                            "type": "ican"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 2,
+                            "type": "dirt"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 2,
+                            "type": "cage"
+                        }
+                    ],
+                    "probability": 1
+                },				
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],
+            "hitpoints": 350,
+            "interval": 1,
+            "name": "2099",
+            "pattern": "MXMXMX"
+        },
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 5,
+                            "hitpoints": 1,
+                            "type": "ican"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 4,
+                            "hitpoints": 2,
+                            "type": "ican"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 3,
+                            "type": "ican"
+                        }
+                    ],
+                    "probability": 1
+                },				
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 4,
+                            "type": "ican"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],
+            "hitpoints": 405,
+            "interval": 1,
+            "name": "288",
+            "pattern": "MXMXMX"
+        },		
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 1,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 3
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 1,
+                            "type": "cage"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 2,
+                            "type": "cage"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],
+            "hitpoints": 215,
+            "interval": 1,
+            "name": "world3",
+            "pattern": "AAADMBCMBDMBCMBDMBCMBDMBCMBDMBCMBDM"
+        },
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 1,
+                            "type": "Question"
+                        }
+                    ],
+                    "probability": 5
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 4,
+                            "hitpoints": 1,
+                            "type": "Question"
+                        }
+                    ],
+                    "probability": 4
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 5,
+                            "hitpoints": 1,
+                            "type": "Question"
+                        }
+                    ],
+                    "probability": 3
+                }
+            ],
+            "hitpoints": 260,
+            "interval": 1,
+            "name": "question",
+            "pattern": "MXXMX"
+        },
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 1,
+                            "type": "Question"
+                        }
+                    ],
+                    "probability": 5
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 4,
+                            "hitpoints": 1,
+                            "type": "Question"
+                        }
+                    ],
+                    "probability": 4
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 5,
+                            "hitpoints": 1,
+                            "type": "Question"
+                        }
+                    ],
+                    "probability": 3
+                }
+            ],
+            "hitpoints": 500,
+            "interval": 1,
+            "name": "336",
+            "pattern": "MMXMX"
+        },		
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 1,
+                            "type": "Question"
+                        }
+                    ],
+                    "probability": 5
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 4,
+                            "hitpoints": 1,
+                            "type": "Question"
+                        }
+                    ],
+                    "probability": 4
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 5,
+                            "hitpoints": 1,
+                            "type": "Question"
+                        }
+                    ],
+                    "probability": 3
+                }
+            ],
+            "hitpoints": 250,
+            "interval": 1,
+            "name": "Hallo",
+            "pattern": "ABCX"
+        },		
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 1,
+                            "hitpoints": 2,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 3
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 1,
+                            "hitpoints": 4,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 3
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 1,
+                            "hitpoints": 5,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 3
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 5,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],
+            "hitpoints": 154,
+            "interval": 1,
+            "name": "world4",
+            "pattern": "ABCMDMCCCMDMCCCMDMCCCMDMCCCMDMCCCMDMCCCMDMCCCMDMCCCMDMCCCMDMCCCMDMCCCMDMCCCM"
+        },
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 1,
+                            "type": "Question"
+                        }
+                    ],
+                    "probability": 3
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 3
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 1,
+                            "hitpoints": 2,
+                            "type": "dirt"
+                        }
+                    ],
+                    "probability": 3
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 1,
+                            "hitpoints": 2,
+                            "type": "cage"
+                        }
+                    ],
+                    "probability": 3
+                },				
+                {
+                    "ammo": [
+                        {
+                            "amount": 1,
+                            "hitpoints": 2,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 3
+                }
+            ],
+            "hitpoints": 255,
+            "interval": 1,
+            "name": "questone",
+            "pattern": "MXX"
+        },
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 2,
+                            "type": "cage"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 10
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 1,
+                            "type": "cage"
+                        }
+                    ],
+                    "probability": 5
+                }
+            ],
+            "hitpoints": 200,
+            "interval": 1,
+            "name": "world5",
+            "pattern": "MAMCBMCBMCB"
+        },
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 10
+                }
+            ],
+            "hitpoints": 250,
+            "interval": 1,
+            "name": "432",
+            "pattern": "ABABAB"
+        },		
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 2,
+                            "type": "dirt"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 5,
+                            "type": "dirt"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 7,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],
+            "hitpoints": 195,
+            "interval": 1,
+            "name": "world6",
+            "pattern": "ABMABMCMDMCMDMCMDMCMDMCMDMCMDMCMDM"
+        },
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 2,
+                            "type": "dirt"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 3,
+                            "type": "dirt"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 4,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],
+            "hitpoints": 415,
+            "interval": 1,
+            "name": "408",
+            "pattern": "ABMABMCMDMCMDMCMDMCMDMCMDMCMDMCMDM"
+        },		
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 1,
+                            "type": "dirt"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 2,
+                            "type": "dirt"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 7,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],
+            "hitpoints": 305,
+            "interval": 1,
+            "name": "world6a",
+            "pattern": "MAMBMCMB"
+        },
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 3,
+                            "type": "dirt"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],
+            "hitpoints": 275,
+            "interval": 1,
+            "name": "world7",
+            "pattern": "AMBM"
+        },
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 2,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 1
+                },				
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 3,
+                            "type": "dirt"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],
+            "hitpoints": 410,
+            "interval": 1,
+            "name": "384",
+            "pattern": "MMXMMX"
+        },		
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 4,
+                            "type": "cage"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],
+            "hitpoints": 400,
+            "interval": 1,
+            "name": "world8",
+            "pattern": "AMBM"
+        },
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 2,
+                            "type": "cage"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 3,
+                            "type": "cage"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],
+            "hitpoints": 250,
+            "interval": 1,
+            "name": "stone",
+            "pattern": "MAMCMBMC"
+        },
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 5,
+                            "type": "cage"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 2,
+                            "type": "cage"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],
+            "hitpoints": 300,
+            "interval": 1,
+            "name": "world9",
+            "pattern": "AMBMCCM"
+        },
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 2,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 3,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],
+            "hitpoints": 300,
+            "interval": 1,
+            "name": "240-BOSS",
+            "pattern": "M"
+        },
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 2,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 3,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],
+            "hitpoints": 500,
+            "interval": 1,
+            "name": "456-BOSS",
+            "pattern": "M"
+        },		
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 1,
+                            "hitpoints": 4,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 4,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 5,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],
+            "hitpoints": 380,
+            "interval": 1,
+            "name": "world10",
+            "pattern": "AMDM"
+        },
+		{
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 1,
+                            "type": "dirt"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 2,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 2,
+                            "type": "dirt"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 1,
+                            "hitpoints": 3,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],
+            "hitpoints": 380,
+            "interval": 2,
+            "name": "2093",
+            "pattern": "AMDM"
+        },
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 1,
+                            "type": "question"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 1,
+                            "type": "Dirt"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],
+            "hitpoints": 380,
+            "interval": 1,
+            "name": "winter",
+            "pattern": "XM"
+        },		
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 2,
+                            "type": "cage"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 3,
+                            "type": "cage"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 5,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],
+            "hitpoints": 330,
+            "interval": 1,
+            "name": "world10a",
+            "pattern": "MBMAMCMA"
+        },
+        {
+		    "stunedattack": {
+		              "amount": 2,
+                      "spawingSets": "chris",
+                      "interval": "3"		   
+                         },	
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 2,
+                            "type": "cage"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 3,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],
+            "hitpoints": 280,
+            "interval": 1,
+            "name": "chris24",
+            "pattern": "XXXM"
+        },
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 5,
+                            "type": "dirt"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 4,
+                            "type": "dirt"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 3,
+                            "type": "dirt"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],
+           "stunedattack": {
+		              "amount": 2,
+                      "spawingSets": "chris",
+                      "interval": "2"		   
+            },			
+            "hitpoints": 305,
+            "interval": 1,
+            "name": "chris12",
+            "pattern": "MMMX"
+        },
+		 {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 2,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 2,
+                            "type": "dirt"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 3,
+                            "type": "ican"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 1
+                },				
+				
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 2,
+                            "type": "ican"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],	
+            "hitpoints":550,
+            "interval": 1,
+            "name": "zhounian3",
+            "pattern": "XXXXXXXXXXXXXXXXX"
+        },
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 4,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 3,
+                            "type": "dirt"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 3,
+                            "type": "ican"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 1
+                },				
+				
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 4,
+                            "type": "ican"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],	
+            "hitpoints": 350,
+            "interval": 1,
+            "name": "264",
+            "pattern": "MXMXMXMXMX"
+        },
+		{
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 4,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 3,
+                            "type": "dirt"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 3,
+                            "type": "ican"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 4,
+                            "type": "ican"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],	
+            "hitpoints":300,
+            "interval": 1,
+            "name": "zhounian1",
+            "pattern": "MXMMMXMXMX"
+        },
+        {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 5,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 5,
+                            "hitpoints": 2,
+                            "type": "dirt"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 4,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 1
+                },				
+				
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 4,
+                            "type": "ican"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],	
+            "hitpoints": 385,
+            "interval": 1,
+            "name": "312",
+            "pattern": "MMXXMMM"
+        },					
+		 {
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "amount": 2,
+                            "hitpoints": 5,
+                            "type": "fishcan"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 5,
+                            "hitpoints": 2,
+                            "type": "dirt"
+                        }
+                    ],
+                    "probability": 1
+                },
+                {
+                    "ammo": [
+                        {
+                            "amount": 4,
+                            "hitpoints": 1,
+                            "type": "cheese"
+                        }
+                    ],
+                    "probability": 1
+                },				
+				
+                {
+                    "ammo": [
+                        {
+                            "amount": 3,
+                            "hitpoints": 4,
+                            "type": "ican"
+                        }
+                    ],
+                    "probability": 1
+                }
+            ],	
+            "hitpoints": 490,
+            "interval": 1,
+            "name": "zhounian2",
+            "pattern": "MMXXMMM"
+        },					
+        {
+            "name": "world11",
+            "interval": 1,
+            "hitpoints": 395,
+            "pattern": "AMBMXMXMXMXMXMXMXMXMXMXMXMXMXMXMXMXMXMXMXM",
+            "attack": [
+                {
+                    "ammo": [
+                        {
+                            "type": "cheese",
+                            "hitpoints": 1,
+                            "amount": 3
+                        }
+                    ],
+                    "probability": 2
+                },
+                {
+                    "ammo": [
+                        {
+                            "type": "dirt",
+                            "hitpoints": 5,
+                            "amount": 1
+                        },
+                        {
+                            "type": "dirt",
+                            "hitpoints": 5,
+                            "amount": 1
+                        },
+                        {
+                            "type": "dirt",
+                            "hitpoints": 5,
+                            "amount": 1
+                        },
+                        {
+                            "type": "dirt",
+                            "hitpoints": 5,
+                            "amount": 1
+                        },
+                        {
+                            "type": "dirt",
+                            "hitpoints": 3,
+                            "amount": 1
+                        }
+                    ],
+                    "probability": 2
+                }
+            ]
+        }
+    ],
+    "spawingSets": [
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 347,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 231,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 174,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 69,
+                    "type": "Star Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 58,
+                    "type": "Tri Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 50,
+                    "type": "Double Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 23,
+                    "type": "Line Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 29,
+                    "type": "Ring Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 19,
+                    "type": "Double Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 429,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 214,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 143,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 214,
+                    "type": "Cage"
+                }
+            ],
+            "name": "All and Fair (World 2)"
+        },
+		        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 200,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 150,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 100,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 30,
+                    "type": "Star Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 30,
+                    "type": "Tri Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 20,
+                    "type": "Double Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 10,
+                    "type": "Line Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 10,
+                    "type": "Ring Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 5,
+                    "type": "Double Rainbow Droid"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 240,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 190,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 190,
+                    "type": "Dirt"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 190,
+                    "type": "Viral"
+                },					
+                {
+                    "hitpoints": 1,
+                    "probability": 300,
+                    "type": "Cage"
+                }
+            ],
+            "name": "q0"
+        },		
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 347,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 231,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 174,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 69,
+                    "type": "Star Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 58,
+                    "type": "Tri Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 50,
+                    "type": "Double Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 23,
+                    "type": "Line Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 29,
+                    "type": "Ring Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 19,
+                    "type": "Double Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 214,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 429,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 143,
+                    "type": "Fish Can"
+                }
+            ],
+            "name": "Q1"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 347,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 231,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 174,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 69,
+                    "type": "Star Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 58,
+                    "type": "Tri Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 50,
+                    "type": "Double Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 23,
+                    "type": "Line Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 29,
+                    "type": "Ring Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 19,
+                    "type": "Double Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 429,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 214,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 143,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 214,
+                    "type": "Cage"
+                }
+            ],
+            "name": "Q2"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 347,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 231,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 329,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 214,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 143,
+                    "type": "Fish Can"
+                }
+            ],
+            "name": "Q3"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 347,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 231,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 174,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 69,
+                    "type": "Star Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 58,
+                    "type": "Tri Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 50,
+                    "type": "Double Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 23,
+                    "type": "Line Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 29,
+                    "type": "Ring Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 19,
+                    "type": "Double Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 326,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 163,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 109,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 4,
+                    "probability": 81,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 163,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 93,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 65,
+                    "type": "Cage"
+                }
+            ],
+            "name": "Q4"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 86,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 57,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 43,
+                    "type": "Rainbow Droid"
+                }
+            ],
+            "name": "Q5"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 250,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 120,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 96,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 69,
+                    "type": "Star Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 58,
+                    "type": "Tri Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 50,
+                    "type": "Double Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 23,
+                    "type": "Line Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 29,
+                    "type": "Ring Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 19,
+                    "type": "Double Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 139,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 102,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 87,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 4,
+                    "probability": 79,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 5,
+                    "probability": 74,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 168,
+                    "type": "Dirt"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 110,
+                    "type": "Dirt"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 91,
+                    "type": "Dirt"
+                },
+                {
+                    "hitpoints": 4,
+                    "probability": 81,
+                    "type": "Dirt"
+                },
+                {
+                    "hitpoints": 5,
+                    "probability": 75,
+                    "type": "Dirt"
+                }
+            ],
+            "name": "Q6"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 347,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 231,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 174,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 69,
+                    "type": "Star Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 58,
+                    "type": "Tri Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 50,
+                    "type": "Double Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 23,
+                    "type": "Line Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 29,
+                    "type": "Ring Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 19,
+                    "type": "Double Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 50,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 40,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 30,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 4,
+                    "probability": 20,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 5,
+                    "probability": 20,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 125,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 88,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 73,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 4,
+                    "probability": 65,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 5,
+                    "probability": 60,
+                    "type": "Cage"
+                }
+            ],
+            "name": "Q7"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 347,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 231,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 174,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 69,
+                    "type": "Star Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 58,
+                    "type": "Tri Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 50,
+                    "type": "Double Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 23,
+                    "type": "Line Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 29,
+                    "type": "Ring Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 19,
+                    "type": "Double Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 100,
+                    "type": "Canon"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 143,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 133,
+                    "type": "cage"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 127,
+                    "type": "Iron Can"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 220,
+                    "type": "Viral"
+                }
+            ],
+            "name": "Q8"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 86,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 57,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 44,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 143,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 106,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 91,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 4,
+                    "probability": 83,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 5,
+                    "probability": 78,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 172,
+                    "type": "Viral"
+                }
+            ],
+            "name": "Q9"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 347,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 231,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 174,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 69,
+                    "type": "Star Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 58,
+                    "type": "Tri Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 50,
+                    "type": "Double Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 23,
+                    "type": "Line Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 29,
+                    "type": "Ring Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 19,
+                    "type": "Double Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 202,
+                    "type": "Dirt"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 144,
+                    "type": "Dirt"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 125,
+                    "type": "Dirt"
+                },
+                {
+                    "hitpoints": 4,
+                    "probability": 115,
+                    "type": "Dirt"
+                },
+                {
+                    "hitpoints": 5,
+                    "probability": 109,
+                    "type": "Dirt"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 73,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 36,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 21,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 4,
+                    "probability": 13,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 5,
+                    "probability": 8,
+                    "type": "Cage"
+                }
+            ],
+            "name": "Q10"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 12,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 0,
+                    "probability": 5,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 0,
+                    "probability": 1,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 20,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 15,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 4,
+                    "probability": 10,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 5,
+                    "probability": 5,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 12,
+                    "type": "Viral"
+                }
+            ],
+            "name": "Q11"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 347,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 231,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 174,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 69,
+                    "type": "Star Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 58,
+                    "type": "Tri Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 50,
+                    "type": "Double Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 23,
+                    "type": "Line Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 29,
+                    "type": "Ring Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 19,
+                    "type": "Double Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 201,
+                    "type": "Dirt"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 143,
+                    "type": "Dirt"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 124,
+                    "type": "Dirt"
+                },
+                {
+                    "hitpoints": 4,
+                    "probability": 114,
+                    "type": "Dirt"
+                },
+                {
+                    "hitpoints": 5,
+                    "probability": 108,
+                    "type": "Dirt"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 172,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 135,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 120,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 4,
+                    "probability": 112,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 5,
+                    "probability": 107,
+                    "type": "Cage"
+                }
+            ],
+            "name": "Q12"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 347,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 231,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 174,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 69,
+                    "type": "Star Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 58,
+                    "type": "Tri Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 50,
+                    "type": "Double Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 23,
+                    "type": "Line Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 29,
+                    "type": "Ring Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 19,
+                    "type": "Double Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 238,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 151,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 122,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 4,
+                    "probability": 108,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 5,
+                    "probability": 99,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 151,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 114,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 99,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 4,
+                    "probability": 91,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 5,
+                    "probability": 86,
+                    "type": "Cage"
+                }
+            ],
+            "name": "Q13"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 173,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 165,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 87,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 101,
+                    "type": "Viral"
+                }
+            ],
+            "name": "Q14"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 347,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 231,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 174,
+                    "type": "Rainbow Droid"
+                }
+            ],
+            "name": "Q15"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 347,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 231,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 174,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 259,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 187,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 162,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 4,
+                    "probability": 150,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 5,
+                    "probability": 143,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 211,
+                    "type": "Viral"
+                }
+            ],
+            "name": "Q16"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 347,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 231,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 174,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 69,
+                    "type": "Star Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 58,
+                    "type": "Tri Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 50,
+                    "type": "Double Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 23,
+                    "type": "Line Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 29,
+                    "type": "Ring Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 19,
+                    "type": "Double Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 240,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 168,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 143,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 4,
+                    "probability": 131,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 5,
+                    "probability": 124,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 192,
+                    "type": "Viral"
+                }
+            ],
+            "name": "Q17"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 173,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 115,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 87,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 195,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 158,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 146,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 4,
+                    "probability": 140,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 5,
+                    "probability": 137,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 219,
+                    "type": "Viral"
+                }
+            ],
+            "name": "Q18"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 15,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 10,
+                    "type": "Star Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 5,
+                    "type": "Tri Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 150,
+                    "type": "Viral"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 100,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 100,
+                    "type": "Fish Can"
+                }
+            ],
+            "name": "Q19"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 100,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 100,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 50,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 5,
+                    "type": "Star Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 5,
+                    "type": "Tri Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 5,
+                    "type": "Double Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 5,
+                    "type": "Line Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 5,
+                    "type": "Ring Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 5,
+                    "type": "Double Rainbow Droid"
+                }
+            ],
+            "name": "Q20"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 200,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 125,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 75,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 4,
+                    "probability": 50,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 0,
+                    "type": "Viral"
+                }
+            ],
+            "name": "Q21"
+        }
+,
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 25,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 25,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 25,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 60,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 40,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 60,
+                    "type": "Dirt"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 40,
+                    "type": "Dirt"
+                },				
+                {
+                    "hitpoints": 1,
+                    "probability": 70,
+                    "type": "Viral"
+                }
+            ],
+            "name": "QBoss"
+        }  ,     
+		{
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 25,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 25,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 25,
+                    "type": "Rainbow Droid"
+                }
+            ],
+            "name": "Qstone"
+        }  ,     
+		{
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 8,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 8,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 4,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 20,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 30,
+                    "type": "Dirt"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 20,
+                    "type": "Cage"
+                },				
+                {
+                    "hitpoints": 2,
+                    "probability": 25,
+                    "type": "Dirt"
+                },			
+                {
+                    "hitpoints": 3,
+                    "probability": 20,
+                    "type": "Dirt"
+                }				
+            ],
+            "name": "Qwansheng1"
+        }
+ ,     
+		{
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 12,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 12,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 30,
+                    "type": "Dirt"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 24,
+                    "type": "Dirt"
+                }				
+            ],
+            "name": "Qwansheng2"
+        }	,     
+		{
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 8,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 8,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 24,
+                    "type": "Dirt"
+                },
+				                {
+                    "hitpoints": 2,
+                    "probability": 20,
+                    "type": "Dirt"
+                }			
+            ],
+            "name": "Qwansheng3"
+        }
+,
+		{
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 6,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 6,
+                    "type": "Star Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 6,
+                    "type": "Tri Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 2,
+                    "type": "Double Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 2,
+                    "type": "Line Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 2,
+                    "type": "Ring Rainbow Droid"
+                },			
+                {
+                    "hitpoints": 1,
+                    "probability": 25,
+                    "type": "Dirt"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 25,
+                    "type": "Fish Can"
+                }
+,                {
+                    "hitpoints": 2,
+                    "probability": 15,
+                    "type": "Fish Can"
+                }
+,
+                {
+                    "hitpoints": 1,
+                    "probability": 25,
+                    "type": "Cage"
+                }
+,                {
+                    "hitpoints": 2,
+                    "probability": 15,
+                    "type": "Cage"
+                }				
+            ],
+            "name": "Qwansheng4"
+        }
+,
+        {
+            "items": [
+                {
+                    "hitpoints": 2,
+                    "probability": 60,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 40,
+                    "type": "Cage"
+                },				
+                {
+                    "hitpoints": 1,
+                    "probability": 70,
+                    "type": "Viral"
+                }
+            ],
+            "name": "Hallo"
+        }
+,
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 30,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 30,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 30,
+                    "type": "Rainbow Droid"
+                }
+            ],
+            "name": "Chris1"
+        } 
+,
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 3,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 2,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 1,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 4,
+                    "probability": 2,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 3,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 4,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 6,
+                    "type": "Canon"
+                }
+            ],
+            "name": "Chris2"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 324,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 216,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 160,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 400,
+                    "type": "Cage"
+                }
+            ],
+            "name": "Chris3"
+        } 
+,
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 3,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 2,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 1,
+                    "type": "Cage"
+                }
+            ],
+            "name": "Chris4"
+        } ,
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 347,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 231,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 174,
+                    "type": "Rainbow Droid"
+                },			
+                {
+                    "hitpoints": 1,
+                    "probability": 347,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 231,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 174,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 4,
+                    "probability": 120,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 5,
+                    "probability": 80,
+                    "type": "Fish Can"
+                }				
+            ],
+            "name": "Chris5"
+        }
+ ,
+        {
+            "items": [
+			
+                {
+                    "hitpoints": 2,
+                    "probability": 150,
+                    "type": "Iron Can"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 100,
+                    "type": "Iron Can"
+                },
+                {
+                    "hitpoints": 4,
+                    "probability": 50,
+                    "type": "Iron Can"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 150,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 100,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 50,
+                    "type": "Rainbow Droid"
+                }				
+            ],
+            "name": "237"
+        }
+ ,
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 150,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 100,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 50,
+                    "type": "Rainbow Droid"
+                }				
+            ],
+            "name": "250"
+        } 
+ ,
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 150,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 100,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 100,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 300,
+                    "type": "Dirt"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 300,
+                    "type": "Viral"
+                }		
+            ],
+            "name": "219"
+        }  ,
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 150,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 100,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 50,
+                    "type": "Line Droid"
+                }	
+            ],
+            "name": "new-4"
+        } 
+  ,
+        {
+            "items": [
+                {
+                    "hitpoints": 3,
+                    "probability": 150,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 100,
+                    "type": "Canon"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 150,
+                    "type": "Fish Can"
+                }	
+            ],
+            "name": "254"
+        } 
+  ,
+        {
+            "items": [
+                {
+                    "hitpoints": 3,
+                    "probability": 165,
+                    "type": "Iron Can"
+                },
+                {
+                    "hitpoints": 4,
+                    "probability": 165,
+                    "type": "Iron Can"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 135,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 160,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 160,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 120,
+                    "type": "Rainbow Droid"
+                }					
+            ],
+            "name": "265"
+        } 
+  ,
+        {
+            "items": [
+                {
+                    "hitpoints": 3,
+                    "probability": 165,
+                    "type": "Iron Can"
+                },
+                {
+                    "hitpoints": 4,
+                    "probability": 165,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 160,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 160,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 120,
+                    "type": "Rainbow Droid"
+                }					
+            ],
+            "name": "270"
+        }
+  ,
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 160,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 160,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 120,
+                    "type": "Rainbow Droid"
+                }					
+            ],
+            "name": "chris"
+        } 
+  ,
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 160,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 160,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 120,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 160,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 160,
+                    "type": "Cage"
+                }						
+            ],
+            "name": "279"
+        }   ,
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 50,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 50,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 20,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 240,
+                    "type": "Iron Can"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 220,
+                    "type": "Iron Can"
+                }
+,
+                {
+                    "hitpoints": 1,
+                    "probability": 200,
+                    "type": "Iron Can"
+                }				
+            ],
+            "name": "286"
+        },
+      {
+            "items": [		
+                {
+                    "hitpoints": 1,
+                    "probability": 160,
+                    "type": "Ring Droid"
+                }				
+            ],
+            "name": "skill52"
+        },      {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 160,
+                    "type": "Line Droid"
+                }				
+            ],
+            "name": "skill53"
+        },      {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 160,
+                    "type": "Star Droid"
+                }				
+            ],
+            "name": "skill54"
+        },      {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 160,
+                    "type": "Tri Droid"
+                }				
+            ],
+            "name": "skill55"
+        },      {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 160,
+                    "type": "Rainbow Droid"
+                }				
+            ],
+            "name": "skill56"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 120,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 100,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 60,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 4,
+                    "probability": 120,
+                    "type": "Iron Can"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 140,
+                    "type": "Iron Can"
+                }			
+            ],
+            "name": "313"
+        }
+,
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 120,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 120,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 80,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 160,
+                    "type": "Climber"
+                }
+,
+                {
+                    "hitpoints": 5,
+                    "probability": 170,
+                    "type": "Iron Can"
+                }				
+            ],
+            "name": "299"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 120,
+                    "type": "Dirt"
+                }			
+            ],
+            "name": "328"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 120,
+                    "type": "Line Droid"
+                }			
+            ],
+            "name": "332"
+        }
+,
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 140,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 140,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 100,
+                    "type": "Rainbow Droid"
+                },                
+				{
+                    "hitpoints": 1,
+                    "probability": 160,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 120,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 5,
+                    "probability": 80,
+                    "type": "Cage"
+                }		
+            ],
+            "name": "338"
+        }
+,
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 140,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 140,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 100,
+                    "type": "Rainbow Droid"
+                }		
+            ],
+            "name": "340"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 140,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 140,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 100,
+                    "type": "Rainbow Droid"
+                }		
+            ],
+            "name": "350"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 140,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 160,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 100,
+                    "type": "Rainbow Droid"
+                }		
+            ],
+            "name": "356"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 140,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 160,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 180,
+                    "type": "Canon"
+                }		
+            ],
+            "name": "winter"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 140,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 160,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 180,
+                    "type": "Rainbow Droid"
+                }		
+            ],
+            "name": "336"
+        },			
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 140,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 160,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 80,
+                    "type": "Rainbow Droid"
+                }
+,
+                {
+                    "hitpoints": 1,
+                    "probability": 200,
+                    "type": "Iron Can"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 200,
+                    "type": "Iron Can"
+                }				
+            ],
+            "name": "363"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 140,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 160,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 60,
+                    "type": "Rainbow Droid"
+                }
+,
+                {
+                    "hitpoints": 1,
+                    "probability": 100,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 100,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 100,
+                    "type": "Fish Can"
+                }				
+            ],
+            "name": "372"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 180,
+                    "type": "Rainbow Droid"
+                }		
+            ],
+            "name": "383"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 150,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 140,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 140,
+                    "type": "Rainbow Droid"
+                }		
+            ],
+            "name": "396"
+        }
+,
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 170,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 150,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 100,
+                    "type": "Rainbow Droid"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 50,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 4,
+                    "probability": 50,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 4,
+                    "probability": 50,
+                    "type": "Iron Can"
+                }				
+            ],
+            "name": "381"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 250,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 100,
+                    "type": "Iron Can"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 150,
+                    "type": "Iron Can"
+                },
+                {
+                    "hitpoints": 5,
+                    "probability": 150,
+                    "type": "Iron Can"
+                }				
+            ],
+            "name": "405"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 3,
+                    "probability": 150,
+                    "type": "Fish Can"
+                }			
+            ],
+            "name": "410"
+        }
+,
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 300,
+                    "type": "Line Droid"
+                }
+,
+                {
+                    "hitpoints": 2,
+                    "probability": 100,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 100,
+                    "type": "Iron Can"
+                }					
+            ],
+            "name": "400"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 300,
+                    "type": "Fish Can"
+                }				
+            ],
+            "name": "423"
+        }
+,
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 140,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 140,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 140,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 140,
+                    "type": "Cage"
+                }				
+            ],
+            "name": "433"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 150,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 150,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 150,
+                    "type": "Rainbow Droid"
+                },				
+                {
+                    "hitpoints": 1,
+                    "probability": 140,
+                    "type": "Iron Can"
+                },
+                {
+                    "hitpoints": 2,
+                    "probability": 140,
+                    "type": "Iron Can"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 140,
+                    "type": "Iron Can"
+                }					
+            ],
+            "name": "447"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 150,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 150,
+                    "type": "Cage"
+                }
+,
+                {
+                    "hitpoints": 3,
+                    "probability": 50,
+                    "type": "Cage"
+                }	
+,
+                {
+                    "hitpoints": 4,
+                    "probability": 50,
+                    "type": "Cage"
+                }					
+            ],
+            "name": "449"
+        },			
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 190,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 190,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 110,
+                    "type": "Rainbow Droid"
+                },				
+                {
+                    "hitpoints": 2,
+                    "probability": 140,
+                    "type": "Iron Can"
+                }
+               
+            ],
+            "name": "2094"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 150,
+                    "type": "Iron Can"
+                }
+,
+                {
+                    "hitpoints": 3,
+                    "probability": 50,
+                    "type": "Iron Can"
+                }	
+,
+                {
+                    "hitpoints": 1,
+                    "probability": 250,
+                    "type": "Canon"
+                }					
+            ],
+            "name": "459"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 190,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 190,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 250,
+                    "type": "Iron Can"
+                }					
+            ],
+            "name": "463"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 190,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 190,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 150,
+                    "type": "Fish Can"
+                }					
+            ],
+            "name": "468"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 190,
+                    "type": "Canon"
+                }					
+            ],
+            "name": "475"
+        },
+        {
+            "items": [
+                {
+                    "hitpoints": 1,
+                    "probability": 300,
+                    "type": "Viral"
+                } ,               
+				{
+                    "hitpoints": 1,
+                    "probability": 100,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 100,
+                    "type": "Ring Droid"
+                }				
+            ],
+            "name": "491"
+        },
+        {
+            "items": [             
+				{
+                    "hitpoints": 1,
+                    "probability": 100,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 100,
+                    "type": "Ring Droid"
+                }				
+            ],
+            "name": "419"
+        }
+,
+        {
+            "items": [             
+				{
+                    "hitpoints": 1,
+                    "probability": 100,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 100,
+                    "type": "Ring Droid"
+                }				
+            ],
+            "name": "422"
+        },
+        {
+            "items": [             
+				{
+                    "hitpoints": 1,
+                    "probability": 30,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 100,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 20,
+                    "type": "Viral"
+                }					
+            ],
+            "name": "426"
+        },
+		  {
+            "items": [             
+                {
+                    "hitpoints": 3,
+                    "probability": 130,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 4,
+                    "probability": 100,
+                    "type": "Cage"
+                }					
+            ],
+            "name": "2144"
+        },
+        {
+            "items": [             
+				{
+                    "hitpoints": 1,
+                    "probability": 50,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 130,
+                    "type": "Cage"
+                },
+                {
+                    "hitpoints": 4,
+                    "probability": 100,
+                    "type": "Cage"
+                }					
+            ],
+            "name": "431"
+        },
+        {
+            "items": [             
+                {
+                    "hitpoints": 3,
+                    "probability": 100,
+                    "type": "Cage"
+                }					
+            ],
+            "name": "521"
+        }
+,
+        {
+            "items": [             
+                {
+                    "hitpoints": 1,
+                    "probability": 100,
+                    "type": "Iron Can"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 20,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 20,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 10,
+                    "type": "Rainbow Droid"
+                }							
+            ],
+            "name": "525"
+        },
+        {
+            "items": [             
+                {
+                    "hitpoints": 3,
+                    "probability": 32,
+                    "type": "Dirt"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 20,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 20,
+                    "type": "Line Droid"
+                }							
+            ],
+            "name": "529"
+        },
+        {
+            "items": [             
+                {
+                    "hitpoints": 3,
+                    "probability": 32,
+                    "type": "Tape"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 30,
+                    "type": "Canon"
+                }							
+            ],
+            "name": "540"
+        },
+        {
+            "items": [             
+                {
+                    "hitpoints": 3,
+                    "probability": 50,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 20,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 20,
+                    "type": "Line Droid"
+                }								
+            ],
+            "name": "549"
+        },
+        {
+            "items": [             
+                {
+                    "hitpoints": 1,
+                    "probability": 20,
+                    "type": "Ring Droid"
+                },
+                {
+                    "hitpoints": 1,
+                    "probability": 20,
+                    "type": "Line Droid"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 20,
+                    "type": "Fish Can"
+                },
+                {
+                    "hitpoints": 3,
+                    "probability": 20,
+                    "type": "Dirt"
+                }				
+            ],
+            "name": "456"
+        }			
+    ]
+}

@@ -1,0 +1,699 @@
+{
+    "content": [
+        {
+            "view_name": "GameHudView_UGUI",
+            "steps": [
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "true",
+                    "funnel_track": "7",
+                    "tutorial_id": 10101,
+                    "words": "tutorial_story_inlv_1_step_1",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "8",
+                    "tutorial_id": 10102,
+                    "words": "tutorial_story_inlv_1_step_2",
+                    "voice": 0,
+                    "character_name": "lala_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "true",
+                    "funnel_track": "9",
+                    "tutorial_id": 10103,
+                    "words": "tutorial_story_inlv_1_step_3",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "true",
+                    "funnel_track": "11",
+                    "tutorial_id": 10104,
+                    "words": "tutorial_story_inlv_1_step_4",
+                    "voice": 0,
+                    "character_name": "lala_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "true",
+                    "funnel_track": "0",
+                    "tutorial_id": 10105,
+                    "words": "tutorial_story_inlv_1_step_5",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 10106,
+                    "words": "tutorial_basic_step_1",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "10",
+                    "tutorial_id": 10107,
+                    "words": "tutorial_basic_step_2",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "22",
+                    "tutorial_id": 10201,
+                    "words": "tutorial_crush5_step_1",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "23",
+                    "tutorial_id": 10202,
+                    "words": "tutorial_crush5_step_2",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "24",
+                    "tutorial_id": 10203,
+                    "words": "tutorial_crush5_step_3",
+                    "voice": 0,
+                    "character_name": "lala_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "28",
+                    "tutorial_id": 10301,
+                    "words": "tutorial_crush6_step_1",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "29",
+                    "tutorial_id": 10302,
+                    "words": "tutorial_crush6_step_2",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "30",
+                    "tutorial_id": 10303,
+                    "words": "tutorial_crush6_step_3",
+                    "voice": 0,
+                    "character_name": "lala_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "33",
+                    "tutorial_id": 10401,
+                    "words": "tutorial_crush&crush_step_1",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "34",
+                    "tutorial_id": 10402,
+                    "words": "tutorial_crush&crush_step_2",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "35",
+                    "tutorial_id": 10403,
+                    "words": "tutorial_crush&crush_step_3",
+                    "voice": 0,
+                    "character_name": "lala_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "36",
+                    "tutorial_id": 10404,
+                    "words": "tutorial_crush&crush_step_4",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "middle",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "true",
+                    "funnel_track": "41",
+                    "tutorial_id": 10601,
+                    "words": "tutorial_skill_step_1",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "42",
+                    "tutorial_id": 10602,
+                    "words": "tutorial_skill_step_2",
+                    "voice": 0,
+                    "character_name": "lala_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "43",
+                    "tutorial_id": 10603,
+                    "words": "tutorial_skill_step_3",
+                    "voice": 0,
+                    "character_name": "lala_common_name"
+                },
+                {
+                    "words_pos": "middle",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "true",
+                    "funnel_track": "44",
+                    "tutorial_id": 10604,
+                    "words": "tutorial_skill_step_4",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "45",
+                    "tutorial_id": 10605,
+                    "words": "",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "48",
+                    "tutorial_id": 10801,
+                    "words": "tutorial_grass_Step_1",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "49",
+                    "tutorial_id": 10802,
+                    "words": "tutorial_grass_Step_2",
+                    "voice": 0,
+                    "character_name": "lala_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "49_1",
+                    "tutorial_id": 10803,
+                    "words": "tutorial_grass_Step_3",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "49_2",
+                    "tutorial_id": 10804,
+                    "words": "tutorial_grass_Step_4",
+                    "voice": 0,
+                    "character_name": "lala_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "67",
+                    "tutorial_id": 11101,
+                    "words": "tutorial_fruits_step_1",
+                    "voice": 3,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "middle",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "68",
+                    "tutorial_id": 11102,
+                    "words": "tutorial_fruits_step_2",
+                    "voice": 0,
+                    "character_name": "lala_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 11501,
+                    "words": "tutorial_can_step_1",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 12301,
+                    "words": "tutorial_wood_step_1_lv23",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "54",
+                    "tutorial_id": 10701,
+                    "words": "tutorial_guantou_step_1_lv7",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "55",
+                    "tutorial_id": 10702,
+                    "words": "tutorial_guantou_step_2_lv7",
+                    "voice": 0,
+                    "character_name": "lala_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "55_1",
+                    "tutorial_id": 10703,
+                    "words": "tutorial_guantou_step_3_lv7",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "91",
+                    "tutorial_id": 11801,
+                    "words": "tutorial_wood_step_1_lv18",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "91_1",
+                    "tutorial_id": 11802,
+                    "words": "tutorial_wood_step_2_lv18",
+                    "voice": 0,
+                    "character_name": "lala_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "91_2",
+                    "tutorial_id": 11803,
+                    "words": "tutorial_wood_step_3_lv18",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 11804,
+                    "words": "tutorial_wood_step_4_lv18",
+                    "voice": 22,
+                    "character_name": "lala_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 12601,
+                    "words": "tutorial_cake_step_1",
+                    "voice": 0,
+                    "character_name": "lala_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 12602,
+                    "words": "tutorial_cake_step_2",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 12603,
+                    "words": "tutorial_cake_step_3",
+                    "voice": 0,
+                    "character_name": "lala_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 13101,
+                    "words": "tutorial_delivery_step_1",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 13102,
+                    "words": "tutorial_delivery_step_2",
+                    "voice": 0,
+                    "character_name": "lala_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 14001,
+                    "words": "tutorial_cream_step_1_lv40",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 14002,
+                    "words": "tutorial_cream_step_2_lv40",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 14003,
+                    "words": "tutorial_cream_step_3_lv40",
+                    "voice": 0,
+                    "character_name": "lala_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 14004,
+                    "words": "tutorial_cream_step_4_lv40",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 14005,
+                    "words": "tutorial_cream_step_5_lv40",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 14006,
+                    "words": "tutorial_cream_step_6_lv40",
+                    "voice": 34,
+                    "character_name": "lala_common_name"
+                },
+                {
+                    "words_pos": "",
+                    "character_icon": "",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 14007,
+                    "words": "",
+                    "voice": 38,
+                    "character_name": ""
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 15001,
+                    "words": "can_gate_step_1",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "",
+                    "character_icon": "",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 15002,
+                    "words": "",
+                    "voice": 0,
+                    "character_name": ""
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 15003,
+                    "words": "can_gate_step_2",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 15004,
+                    "words": "can_gate_step_3",
+                    "voice": 33,
+                    "character_name": "lala_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 80001,
+                    "words": "bushes_gate_step_1",
+                    "voice": 13,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 80002,
+                    "words": "bushes_gate_step_2",
+                    "voice": 0,
+                    "character_name": "lala_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 80003,
+                    "words": "bushes_gate_step_3",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 80004,
+                    "words": "bushes_gate_step_4",
+                    "voice": 0,
+                    "character_name": "lala_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 61001,
+                    "words": "tutorial_dustCr_step_1",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 61002,
+                    "words": "tutorial_dustCr_step_2",
+                    "voice": 35,
+                    "character_name": "lala_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 61003,
+                    "words": "tutorial_dustCr_step_3",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 61004,
+                    "words": "tutorial_dustCr_step_4",
+                    "voice": 0,
+                    "character_name": "lala_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 61005,
+                    "words": "tutorial_dustCr_step_5",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "",
+                    "character_icon": "",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 61006,
+                    "words": "",
+                    "voice": 0,
+                    "character_name": ""
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 104001,
+                    "words": "tutorial_door_step_1",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 104002,
+                    "words": "tutorial_door_step_2",
+                    "voice": 0,
+                    "character_name": "lala_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 104003,
+                    "words": "tutorial_door_step_3",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 104004,
+                    "words": "tutorial_door_step_4",
+                    "voice": 0,
+                    "character_name": "lala_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 105001,
+                    "words": "tutorial_wheel_step_1",
+                    "voice": 0,
+                    "character_name": "kiki_common_name"
+                },
+                {
+                    "words_pos": "bottom",
+                    "character_icon": "kikilala_1",
+                    "show_mask": "false",
+                    "funnel_track": "0",
+                    "tutorial_id": 105002,
+                    "words": "tutorial_wheel_step_2",
+                    "voice": 0,
+                    "character_name": "lala_common_name"
+                }
+            ]
+        }
+    ]
+}

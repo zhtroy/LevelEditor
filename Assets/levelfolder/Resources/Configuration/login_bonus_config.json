@@ -1,0 +1,179 @@
+{
+    "content": [
+        {
+            "id": 1,
+            "local_mail_id": "checkInActivity_1",
+            "type_id": 1
+        },
+        {
+            "id": 2,
+            "local_mail_id": "checkInActivity_2",
+            "type_id": 1
+        },
+        {
+            "id": 3,
+            "local_mail_id": "checkInActivity_3",
+            "type_id": 1
+        },
+        {
+            "id": 4,
+            "local_mail_id": "checkInActivity_4",
+            "type_id": 1
+        },
+        {
+            "id": 5,
+            "local_mail_id": "checkInActivity_5",
+            "type_id": 1
+        },
+        {
+            "id": 6,
+            "local_mail_id": "checkInActivity_6",
+            "type_id": 1
+        },
+        {
+            "id": 7,
+            "local_mail_id": "checkInActivity_7",
+            "type_id": 1
+        },
+        {
+            "id": 1,
+            "local_mail_id": "checkInActivity_8",
+            "type_id": 2
+        },
+        {
+            "id": 2,
+            "local_mail_id": "checkInActivity_9",
+            "type_id": 2
+        },
+        {
+            "id": 3,
+            "local_mail_id": "checkInActivity_10",
+            "type_id": 2
+        },
+        {
+            "id": 4,
+            "local_mail_id": "checkInActivity_11",
+            "type_id": 2
+        },
+        {
+            "id": 5,
+            "local_mail_id": "checkInActivity_12",
+            "type_id": 2
+        },
+        {
+            "id": 6,
+            "local_mail_id": "checkInActivity_13",
+            "type_id": 2
+        },
+        {
+            "id": 7,
+            "local_mail_id": "checkInActivity_14",
+            "type_id": 2
+        },
+        {
+            "id": 1,
+            "local_mail_id": "checkInActivity_8",
+            "type_id": 3
+        },
+        {
+            "id": 2,
+            "local_mail_id": "checkInActivity_9",
+            "type_id": 3
+        },
+        {
+            "id": 3,
+            "local_mail_id": "checkInActivity_10",
+            "type_id": 3
+        },
+        {
+            "id": 4,
+            "local_mail_id": "checkInActivity_11",
+            "type_id": 3
+        },
+        {
+            "id": 5,
+            "local_mail_id": "checkInActivity_12",
+            "type_id": 3
+        },
+        {
+            "id": 6,
+            "local_mail_id": "checkInActivity_13",
+            "type_id": 3
+        },
+        {
+            "id": 7,
+            "local_mail_id": "checkInActivity_14",
+            "type_id": 3
+        },
+        {
+            "id": 1,
+            "local_mail_id": "checkInActivity_1",
+            "type_id": 4
+        },
+        {
+            "id": 2,
+            "local_mail_id": "checkInActivity_2",
+            "type_id": 4
+        },
+        {
+            "id": 3,
+            "local_mail_id": "checkInActivity_3",
+            "type_id": 4
+        },
+        {
+            "id": 4,
+            "local_mail_id": "checkInActivity_4",
+            "type_id": 4
+        },
+        {
+            "id": 5,
+            "local_mail_id": "checkInActivity_5",
+            "type_id": 4
+        },
+        {
+            "id": 6,
+            "local_mail_id": "checkInActivity_6",
+            "type_id": 4
+        },
+        {
+            "id": 7,
+            "local_mail_id": "checkInActivity_7",
+            "type_id": 4
+        },
+        {
+            "id": 1,
+            "local_mail_id": "GW_checkInActivity_1",
+            "type_id": 5
+        },
+        {
+            "id": 2,
+            "local_mail_id": "GW_checkInActivity_2",
+            "type_id": 5
+        },
+        {
+            "id": 3,
+            "local_mail_id": "GW_checkInActivity_3",
+            "type_id": 5
+        },
+        {
+            "id": 4,
+            "local_mail_id": "GW_checkInActivity_4",
+            "type_id": 5
+        },
+        {
+            "id": 5,
+            "local_mail_id": "GW_checkInActivity_5",
+            "type_id": 5
+        },
+        {
+            "id": 6,
+            "local_mail_id": "GW_checkInActivity_6",
+            "type_id": 5
+        },
+        {
+            "id": 7,
+            "local_mail_id": "GW_checkInActivity_7",
+            "type_id": 5
+        }
+    ]
+}

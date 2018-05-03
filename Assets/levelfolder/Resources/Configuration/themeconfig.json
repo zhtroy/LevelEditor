@@ -1,0 +1,31 @@
+{
+    "content": [
+        {
+            "name": "theme_name_1",
+            "theme_bg": "bg_1",
+            "start_level": 1,
+            "maps": "1,2,3,4,5,6,7,8,9,10",
+            "require_stars": 300,
+            "theme_id": 1,
+            "end_level": 100
+        },
+        {
+            "name": "theme_name_2",
+            "theme_bg": "bg_2",
+            "start_level": 101,
+            "maps": "11,12,13,14,15,16,17,18,19,20",
+            "require_stars": 300,
+            "theme_id": 2,
+            "end_level": 200
+        },
+        {
+            "name": "theme_name_3",
+            "theme_bg": "bg_2",
+            "start_level": 201,
+            "maps": "21,22,23,24,25,26,27,28,29,30",
+            "require_stars": 300,
+            "theme_id": 3,
+            "end_level": 300
+        }
+    ]
+}
