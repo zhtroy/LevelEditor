@@ -9,11 +9,40 @@ namespace CommonLevelEditor
     {
         private List<ICommand> _list ;
         private int _idx;
+        private int _saveIdx;
 
+        public event Action OnDirty;
+        public event Action OnClean;
+
+        public void Save()
+        {
+            _saveIdx = _idx;
+            CheckDirtyClean();
+
+        }
+
+        private void CheckDirtyClean()
+        {
+            if (_idx == _saveIdx)
+            {
+                if (OnClean != null)
+                {
+                    OnClean();
+                }
+            }
+            else
+            {
+                if (OnDirty!= null)
+                {
+                    OnDirty();
+                }
+            }
+        }
         public UndoRedoList ()
         {
             _list = new List<ICommand>();
             _idx = 0;
+            _saveIdx = 0;
         }
 
         public void Undo()
@@ -22,7 +51,7 @@ namespace CommonLevelEditor
             {
                 _idx--;
                 _list[_idx].Undo();
-                
+                CheckDirtyClean();
             }
         }
 
@@ -33,6 +62,7 @@ namespace CommonLevelEditor
                 
                 _list[_idx].Execute();
                 _idx++;
+                CheckDirtyClean();
             }
         }
 
@@ -44,6 +74,7 @@ namespace CommonLevelEditor
             }
             _list.Add(command);
             _idx++;
+            CheckDirtyClean();
         }
 
         public bool IsEmpty()

@@ -12,19 +12,24 @@ namespace CommonLevelEditor
     {
  
         private LevelDataList _levelList;
-        private UndoRedoList _comList = new UndoRedoList();
+        private UndoRedoList _comList;
      
 
         public Button saveBtn;
         public EnhancedScroller myScroller;
         public LevelCellView levelCellViewPrefab;
         public InputField levelIDText;
+        public Text statusText;
         public float cellHeight= 100f;
+        
         void Start()
         {
             LoadLevelList();
-            
-            
+
+            _comList = new UndoRedoList();
+            _comList.OnClean += OnListClean;
+            _comList.OnDirty += OnListDirty;
+
 
 
             myScroller.Delegate = this;
@@ -121,7 +126,14 @@ namespace CommonLevelEditor
                 _levelList.SelectSingleLevel(selectedData);
             }
         }
-
+        void OnListDirty()
+        {
+            statusText.text = "*";
+        }
+        void OnListClean()
+        {
+            statusText.text = "";
+        }
 
         #region called by button
         public void OnDelete()
@@ -180,6 +192,11 @@ namespace CommonLevelEditor
                 JumpToLevelID(jumpLevelId);
 
             }
+        }
+
+        public void OnSave()
+        {
+            _comList.Save();
         }
         #endregion
     }
