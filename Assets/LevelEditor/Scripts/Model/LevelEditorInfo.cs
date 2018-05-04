@@ -22,7 +22,8 @@ namespace CommonLevelEditor
         public const string FIELD_GAMES = "games";
         public const string FIELD_BOARD_WIDTH = "boardwidth";
         public const string FIELD_BOARD_HEIGHT = "boardheight";
-        public const string FIELD_LEVELNUM_TO_TYPE = "numtoleveltype";
+        public const string FIELD_LEVELNUM_TO_TYPE = "num_to_leveltype";
+        public const string FIELD_SORTLEVELNUM_BEFORE = "sort_levels_before_this_num";
 
 
         
@@ -47,6 +48,7 @@ namespace CommonLevelEditor
         public string ConfigurationFolderPath{get; private set;} 
         public string FullConfigurationFolderPath { get;  private set;}
         public SortedDictionary<int, string> LevelNumToLevelType{get;private set;}
+        public int SortLevelBeforeThisNum { get; private set; }
 
         //different between games
         public  int BoardWidth { get; private set; }
@@ -102,7 +104,11 @@ namespace CommonLevelEditor
                 LevelNumToLevelType.Add(item.Value.AsInt(), item.Key);
             }
 
-            
+            SortLevelBeforeThisNum = node.GetInt(FIELD_SORTLEVELNUM_BEFORE);
+
+
+
+
 
         }
         void CheckWhichGame()

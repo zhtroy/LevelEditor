@@ -19,7 +19,7 @@ namespace CommonLevelEditor
             }
         }
 
-        public LevelData SelectedLevel { get; private set; }
+        public LevelData CurrentSelectedLevel { get; private set; }
         public LevelData this[int i]
         {
             get { return _list[i]; }
@@ -28,6 +28,22 @@ namespace CommonLevelEditor
 
         #endregion
 
+
+        void SortLevelList()
+        {
+            _list.Sort((a, b) => a.levelNum.CompareTo(b.levelNum));
+            for(int i=0; i<_list.Count;i++)
+            {
+                if (_list[i].levelNum<= LevelEditorInfo.Instance.SortLevelBeforeThisNum)
+                {
+                    _list[i].levelNum = i;
+                }
+                else
+                {
+                    break;
+                }
+            }
+        }
         #region public methods
 
         public void Update(JSONNode data)
@@ -41,15 +57,16 @@ namespace CommonLevelEditor
                 levelData.Update(levelNode);
                 _list.Add(levelData);
             }
-            _list.Sort((a,b) => a.levelNum.CompareTo(b.levelNum));
+            SortLevelList();
         }
 
         public void DeleteLevel(LevelData level)
         {
             _list.Remove(level);
+            SortLevelList();
             if (level.Selected)
             {
-                SelectedLevel = null;
+                CurrentSelectedLevel = null;
             }
             if (OnDataChange != null)
             {
@@ -60,7 +77,7 @@ namespace CommonLevelEditor
         public void AddLevel(LevelData level)
         {
             _list.Add(level);
-            _list.Sort((a, b) => a.levelNum.CompareTo(b.levelNum));
+            SortLevelList();
             if (OnDataChange != null)
             {
                 OnDataChange();
@@ -91,7 +108,7 @@ namespace CommonLevelEditor
                 if (level == item)
                 {
                     item.Selected = true;
-                    SelectedLevel = item;
+                    CurrentSelectedLevel = item;
                 }
                 else
                 {

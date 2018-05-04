@@ -126,18 +126,23 @@ namespace CommonLevelEditor
         #region called by button
         public void OnDelete()
         {
-            if (_levelList.SelectedLevel== null)
+            if (_levelList.CurrentSelectedLevel== null)
             {
                 return;
             }
-            var delCom = new ComDeleteLevel(_levelList, _levelList.SelectedLevel );
+            var delCom = new ComDeleteLevel(_levelList, _levelList.CurrentSelectedLevel );
             delCom.Execute();
             _comList.Add(delCom);
 
         }
         public void OnClone()
         {
-
+            //if (_levelList.CurrentSelectedLevel == null)
+            //{
+            //    return;
+            //}
+            //LevelData cloneLevel = _levelList.CurrentSelectedLevel.Clone();
+            //var cloneCom = new ComAddLevel(_levelList, cloneLevel);
         }
 
         public void OnNew()
