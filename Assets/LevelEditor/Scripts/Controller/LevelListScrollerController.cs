@@ -137,12 +137,22 @@ namespace CommonLevelEditor
         }
         public void OnClone()
         {
-            //if (_levelList.CurrentSelectedLevel == null)
-            //{
-            //    return;
-            //}
-            //LevelData cloneLevel = _levelList.CurrentSelectedLevel.Clone();
-            //var cloneCom = new ComAddLevel(_levelList, cloneLevel);
+            if (_levelList.CurrentSelectedLevel == null)
+            {
+                return;
+            }
+            
+            int levelId;
+            if (int.TryParse(levelIDText.text, out levelId))
+            {
+                LevelData cloneLevel = _levelList.CurrentSelectedLevel.Clone();
+                cloneLevel.levelNum = levelId;
+                cloneLevel.name += " (Clone)";
+                var cloneCom = new ComAddLevel(_levelList, cloneLevel);
+                cloneCom.Execute();
+                _comList.Add(cloneCom);
+                JumpToLevelID(levelId);
+            }
         }
 
         public void OnNew()
