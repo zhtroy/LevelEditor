@@ -57,7 +57,7 @@ namespace CommonLevelEditor
             }
         }
 
-        public void InsertLevel(LevelData level)
+        public void AddLevel(LevelData level)
         {
             _list.Add(level);
             _list.Sort((a, b) => a.levelNum.CompareTo(b.levelNum));

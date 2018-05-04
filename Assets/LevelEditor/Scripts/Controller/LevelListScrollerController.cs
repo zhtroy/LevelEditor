@@ -85,6 +85,27 @@ namespace CommonLevelEditor
             return cellView;
         }
 
+        private void JumpToLevelID(int levelId)
+        {
+            int idx = _levelList.IndexFromLevelId(levelId);
+            if (idx == -1)
+            {
+                Debug.Log("levelId dont exist");
+                return;
+            }
+            // jump to the index
+            myScroller.JumpToDataIndex(idx,
+                   0.5f,
+                   0.5f,
+                   true,
+                   EnhancedScroller.TweenType.linear,
+                   0.3f,
+                   () =>
+                   {
+                       _levelList.SelectSingleLevel(_levelList[idx]);
+                   }
+               );
+        }
 
         private void CellViewSelected(EnhancedScrollerCellView cellView)
         {
@@ -121,6 +142,18 @@ namespace CommonLevelEditor
 
         public void OnNew()
         {
+            int levelId;
+            if (int.TryParse(levelIDText.text, out levelId))
+            {
+                LevelData newlevel = new LevelData();
+                newlevel.levelNum = levelId;
+
+                var newCom = new ComAddLevel(_levelList, newlevel);
+                newCom.Execute();
+                _comList.Add(newCom);
+
+                JumpToLevelID(levelId);
+            }
 
         }
 
@@ -129,24 +162,8 @@ namespace CommonLevelEditor
             int jumpLevelId;
             if (int.TryParse(levelIDText.text, out jumpLevelId))
             {
-                int idx =_levelList.IndexFromLevelId(jumpLevelId);
-                if (idx == -1)
-                {
-                    Debug.Log("levelId dont exist");
-                    return;
-                }
-                // jump to the index
-                myScroller.JumpToDataIndex(idx,
-                    0.5f,
-                    0.5f,
-                    true,
-                    EnhancedScroller.TweenType.linear,
-                    0.3f,
-                    () =>
-                    {
-                        _levelList.SelectSingleLevel(_levelList[idx]);
-                    }
-                );
+                JumpToLevelID(jumpLevelId);
+
             }
         }
         #endregion

@@ -25,7 +25,7 @@ namespace CommonLevelEditor
         public void Undo()
         {
             
-            _list.InsertLevel( _deletedLevel);
+            _list.AddLevel( _deletedLevel);
             _list.SelectSingleLevel(_deletedLevel);
         }
     }
