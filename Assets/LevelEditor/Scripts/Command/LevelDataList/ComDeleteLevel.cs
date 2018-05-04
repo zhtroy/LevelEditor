@@ -9,31 +9,24 @@ namespace CommonLevelEditor
     {
         LevelData _deletedLevel;
         LevelDataList _list;
-        int _deletedIdx;
-        public ComDeleteLevel(LevelDataList list)
+        public ComDeleteLevel(LevelDataList list, LevelData level)
         {
             _list = list;
+            _deletedLevel = level;
         }
         public void Execute()
         {
-            for (int i = 0; i < _list.Count; i++)
-            {
-                if (_list[i].Selected)
-                {
-                    _deletedLevel = _list[i];
-                    _deletedIdx = i;
-                    _list.DeleteLevel(i);
-                    break;   //delete the first selected level
-                }
-            }
+       
+            _list.DeleteLevel(_deletedLevel);
+        
 
         }
 
         public void Undo()
         {
             
-            _list.InsertLevel(_deletedIdx, _deletedLevel);
-            _deletedLevel.Selected = false;
+            _list.InsertLevel( _deletedLevel);
+            _list.SelectSingleLevel(_deletedLevel);
         }
     }
 }

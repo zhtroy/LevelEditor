@@ -19,6 +19,7 @@ namespace CommonLevelEditor
             }
         }
 
+        public LevelData SelectedLevel { get; private set; }
         public LevelData this[int i]
         {
             get { return _list[i]; }
@@ -43,18 +44,23 @@ namespace CommonLevelEditor
             _list.Sort((a,b) => a.levelNum.CompareTo(b.levelNum));
         }
 
-        public void DeleteLevel(int index)
+        public void DeleteLevel(LevelData level)
         {
-            _list.RemoveAt(index);
+            _list.Remove(level);
+            if (level.Selected)
+            {
+                SelectedLevel = null;
+            }
             if (OnDataChange != null)
             {
                 OnDataChange();
             }
         }
 
-        public void InsertLevel(int index, LevelData level)
+        public void InsertLevel(LevelData level)
         {
-            _list.Insert(index, level);
+            _list.Add(level);
+            _list.Sort((a, b) => a.levelNum.CompareTo(b.levelNum));
             if (OnDataChange != null)
             {
                 OnDataChange();
@@ -67,7 +73,32 @@ namespace CommonLevelEditor
             return idx;
 
         }
+        public LevelData DataFromLevelId(int levelId)
+        {
+            int idx = IndexFromLevelId(levelId);
+            if (idx == -1)
+            {
+                return null;
+            }
+            return this[idx];
+        }
 
+
+        public void SelectSingleLevel(LevelData level)
+        {
+            foreach (var item in _list)
+            {
+                if (level == item)
+                {
+                    item.Selected = true;
+                    SelectedLevel = item;
+                }
+                else
+                {
+                    item.Selected = false;
+                }
+            }
+        }
         #endregion public 
 
         

@@ -80,7 +80,7 @@ namespace CommonLevelEditor
             LevelCellView cellView = scroller.GetCellView(levelCellViewPrefab) as LevelCellView;
             cellView.name = _levelList[dataIndex].name;
             cellView.onSelected += CellViewSelected;
-            cellView.SetData(dataIndex, _levelList[dataIndex]);
+            cellView.SetData( _levelList[dataIndex]);
 
             return cellView;
         }
@@ -95,32 +95,31 @@ namespace CommonLevelEditor
             else
             {
                 // get the selected data index of the cell view
-                var selectedDataIndex = (cellView as LevelCellView).DataIndex;
+                var selectedData = (cellView as LevelCellView).Data;
 
-                SelectSingleCell(selectedDataIndex);
+                _levelList.SelectSingleLevel(selectedData);
             }
         }
 
-        private void SelectSingleCell(int idx)
-        {
-            // loop through each item in the data list and turn
-            // on or off the selection state. This is done so that
-            // any previous selection states are removed and new
-            // ones are added.
-            for (var i = 0; i < _levelList.Count; i++)
-            {
-                _levelList[i].Selected = (idx == i);
-            }
-        }
+
         #region called by button
         public void OnDelete()
         {
-            var delCom = new ComDeleteLevel(_levelList);
+            if (_levelList.SelectedLevel== null)
+            {
+                return;
+            }
+            var delCom = new ComDeleteLevel(_levelList, _levelList.SelectedLevel );
             delCom.Execute();
             _comList.Add(delCom);
 
         }
         public void OnClone()
+        {
+
+        }
+
+        public void OnNew()
         {
 
         }
@@ -145,7 +144,7 @@ namespace CommonLevelEditor
                     0.3f,
                     () =>
                     {
-                        SelectSingleCell(idx);
+                        _levelList.SelectSingleLevel(_levelList[idx]);
                     }
                 );
             }

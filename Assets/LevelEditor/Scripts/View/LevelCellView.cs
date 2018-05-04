@@ -24,7 +24,13 @@ namespace CommonLevelEditor
         public event Action<EnhancedScrollerCellView> onSelected;
 
         #region property
-        public int DataIndex {get; private set;}
+        public LevelData Data
+        {
+            get
+            {
+                return _data;
+            }
+        }
 
         #endregion
         
@@ -36,7 +42,7 @@ namespace CommonLevelEditor
                 
             }
         }
-        public void SetData(int dataIndex,LevelData data)
+        public void SetData(LevelData data)
         {
             if (_data != null)
             {
@@ -44,7 +50,6 @@ namespace CommonLevelEditor
             }
             
             // link data to view
-            DataIndex = dataIndex;
             _data = data;
 
             //update view UI
