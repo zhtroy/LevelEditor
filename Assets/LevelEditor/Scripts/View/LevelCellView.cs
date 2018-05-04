@@ -48,7 +48,7 @@ namespace CommonLevelEditor
             _data = data;
 
             //update view UI
-            levelNameText.text = data.name; 
+            levelNameText.text = data.levelNum +"    " + data.name; 
 
             //add handler for selection change
             _data.selectedChanged -= SelectedChanged;

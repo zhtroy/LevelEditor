@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Wooga.Foundation.Json;
+using System;
 
 namespace CommonLevelEditor
 {
@@ -9,6 +10,7 @@ namespace CommonLevelEditor
 
         private List<LevelData> _list = new List<LevelData>();
 
+        public event Action OnDataChange;
         #region property
         public int Count 
         {
@@ -41,9 +43,35 @@ namespace CommonLevelEditor
             _list.Sort((a,b) => a.levelNum.CompareTo(b.levelNum));
         }
 
+        public void DeleteLevel(int index)
+        {
+            _list.RemoveAt(index);
+            if (OnDataChange != null)
+            {
+                OnDataChange();
+            }
+        }
+
+        public void InsertLevel(int index, LevelData level)
+        {
+            _list.Insert(index, level);
+            if (OnDataChange != null)
+            {
+                OnDataChange();
+            }
+        }
+
+        public int IndexFromLevelId(int levelId)
+        {
+            int idx =  _list.FindIndex(item => item.levelNum == levelId);
+            return idx;
+
+        }
+
+        #endregion public 
+
+        
 
 
-        #endregion
-    
     }    
 }

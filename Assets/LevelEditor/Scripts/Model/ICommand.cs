@@ -2,9 +2,9 @@
 
 namespace CommonLevelEditor
 {
-    interface ICommand
+    public interface ICommand
     {
-        void Excute();
+        void Execute();
         void Undo();
     }
     
