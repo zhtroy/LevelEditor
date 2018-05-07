@@ -29,4 +29,14 @@ namespace CommonLevelEditor
         public const string PIPE = "P";
         public const string TREASURE_ENTER = "Q";
     }
+
+    public enum LayerId
+    {
+        Fields = 0,
+        Items,
+        Covers,
+        Tutorial,
+        ItemsSwap,
+        ItemIcon
+    }
 }

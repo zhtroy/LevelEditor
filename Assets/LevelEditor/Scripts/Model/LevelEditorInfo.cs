@@ -26,6 +26,7 @@ namespace CommonLevelEditor
         public const string FIELD_SORTLEVELNUM_BEFORE = "sort_levels_before_this_num";
         public const string FIELD_LEVELS_PER_FILE = "levels_per_file";
         public const string FIELD_LEVELS_NUM_ORIGIN = "level_num_origin";
+        public const string FIELD_LAYERS = "layers";
 
 
 
@@ -58,6 +59,8 @@ namespace CommonLevelEditor
         public int SortLevelBeforeThisNum { get; private set; }
         public int LevelsPerFile { get; private set; }
         public int LevelNumOrigin { get; private set; }
+
+        public List<string> Layers { get; private set; }
 
         //game config
         public GameConfig gameConfig { get; private set; }
@@ -117,12 +120,17 @@ namespace CommonLevelEditor
 
             LevelNumOrigin = node.GetInt(FIELD_LEVELS_NUM_ORIGIN);
 
+            Layers = new List<string>();
 
 
 
 
-        }
-        void CheckWhichGame()
+
+
+
+
+    }
+    void CheckWhichGame()
         {
             var gametype = EditorPrefs.GetString(GAME_TYPE,"Sumikko");
             if (GameTypes.Contains(gametype))

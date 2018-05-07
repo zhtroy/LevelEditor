@@ -17,7 +17,7 @@ namespace CommonLevelEditor
 
         public Button saveBtn;
         public EnhancedScroller myScroller;
-        public LevelCellView levelCellViewPrefab;
+        public LevelEntryView levelCellViewPrefab;
         public InputField levelIDText;
         public Text statusText;
         public float cellHeight= 100f;
@@ -82,7 +82,7 @@ namespace CommonLevelEditor
 
         public EnhancedScrollerCellView GetCellView(EnhancedScroller scroller, int dataIndex, int cellIndex)
         {
-            LevelCellView cellView = scroller.GetCellView(levelCellViewPrefab) as LevelCellView;
+            LevelEntryView cellView = scroller.GetCellView(levelCellViewPrefab) as LevelEntryView;
             cellView.name = _levelList[dataIndex].name;
             cellView.onSelected += CellViewSelected;
             cellView.SetData( _levelList[dataIndex]);
@@ -121,7 +121,7 @@ namespace CommonLevelEditor
             else
             {
                 // get the selected data index of the cell view
-                var selectedData = (cellView as LevelCellView).Data;
+                var selectedData = (cellView as LevelEntryView).Data;
 
                 _levelList.SelectSingleLevel(selectedData);
             }

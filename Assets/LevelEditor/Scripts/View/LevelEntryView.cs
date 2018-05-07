@@ -6,7 +6,7 @@ using EnhancedUI.EnhancedScroller;
 
 namespace CommonLevelEditor
 {
-    public class LevelCellView : EnhancedScrollerCellView
+    public class LevelEntryView : EnhancedScrollerCellView
     {
         #region public
         public Text levelNameText;
