@@ -61,7 +61,7 @@ namespace CommonLevelEditor
                 foreach (var filename in files)
                 {
 
-                    var node = LevelEditorUtils.JSONNodeFromFile(filename);
+                    var node = LevelEditorUtils.JSONNodeFromFileFullPath(filename);
 
                     _levelList.Update(node);
 
@@ -129,10 +129,12 @@ namespace CommonLevelEditor
         void OnListDirty()
         {
             statusText.text = "*";
+            //saveBtn.gameObject.SetActive(true);
         }
         void OnListClean()
         {
             statusText.text = "";
+         //   saveBtn.gameObject.SetActive(false);
         }
 
         #region called by button
@@ -197,6 +199,8 @@ namespace CommonLevelEditor
         public void OnSave()
         {
             _comList.Save();
+            _levelList.SaveLevelsToPath(LevelEditorInfo.Instance.FullConfigurationFolderPath);
+            
         }
         #endregion
     }

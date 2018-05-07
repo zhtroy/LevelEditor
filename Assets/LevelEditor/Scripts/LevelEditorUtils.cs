@@ -5,6 +5,8 @@ using System.Text;
 using UnityEngine;
 using UnityEditor;
 using Wooga.Foundation.Json;
+using LitJson;
+using System.IO;
 
 
 namespace CommonLevelEditor
@@ -61,23 +63,17 @@ namespace CommonLevelEditor
         #region json
         //first load from Resources/ folder then load from absolute path
         //path is either short form under Resources/ folder or full system path
-        public static JSONNode JSONNodeFromFile(string path)
+        public static JSONNode JSONNodeFromFileResourcesPath(string path)
         {
             UnityEngine.Object obj = UnityEngine.Resources.Load(path, typeof(UnityEngine.Object));
             if(obj == null)
             {
-                path = path.Substring(path.IndexOf("Assets"));
-          
-                if (!path.EndsWith(".json"))
-                {
-                    path += ".json";
-                }
-                obj = AssetDatabase.LoadAssetAtPath(path, typeof(UnityEngine.Object));
                 if(obj == null){
-                    Debug.LogError("fail to load file, check if folder and file name are correct " + path);
+                    Debug.LogError("fail to load Resources file, check if folder and file name are correct " + path);
                     return null;
                 }       
             }
+            
 
             var readString = assetToString(obj);
 
@@ -86,6 +82,25 @@ namespace CommonLevelEditor
             return jsonNode;
         }
 
+        public static JSONNode JSONNodeFromFileFullPath(string path)
+        {
+            
+
+            if (!path.EndsWith(".json"))
+            {
+                path += ".json";
+            }
+            if (!File.Exists(path))
+            {
+                Debug.LogError("file don't exists, check if folder and file name are correct: " + path);
+                return null;
+            }
+
+
+            JSONNode jsonNode = JSON.Deserialize(File.ReadAllText(path));
+
+            return jsonNode;
+        }
         #endregion
 
         #region assets

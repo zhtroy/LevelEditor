@@ -22,11 +22,13 @@ namespace CommonLevelEditor
         public const string FIELD_GAMES = "games";
         public const string FIELD_BOARD_WIDTH = "boardwidth";
         public const string FIELD_BOARD_HEIGHT = "boardheight";
-        public const string FIELD_LEVELNUM_TO_TYPE = "num_to_leveltype";
+        public const string FIELD_LEVELNUM_TO_TYPE = "num_to_level_filename";
         public const string FIELD_SORTLEVELNUM_BEFORE = "sort_levels_before_this_num";
+        public const string FIELD_LEVELS_PER_FILE = "levels_per_file";
+        public const string FIELD_LEVELS_NUM_ORIGIN = "level_num_origin";
 
 
-        
+
         private static LevelEditorInfo _instance = null;
         public static LevelEditorInfo Instance
         {
@@ -47,12 +49,17 @@ namespace CommonLevelEditor
         public List<string> GameTypes{get; private set;}
         public string ConfigurationFolderPath{get; private set;} 
         public string FullConfigurationFolderPath { get;  private set;}
-        public SortedDictionary<int, string> LevelNumToLevelType{get;private set;}
-        public int SortLevelBeforeThisNum { get; private set; }
+       
 
-        //different between games
+        //GameUnique
         public  int BoardWidth { get; private set; }
         public  int BoardHeight { get; private set; }
+        public SortedDictionary<int, string> LevelNumToLevelType { get; private set; }
+        public int SortLevelBeforeThisNum { get; private set; }
+        public int LevelsPerFile { get; private set; }
+        public int LevelNumOrigin { get; private set; }
+
+        //game config
         public GameConfig gameConfig { get; private set; }
 
         //default
@@ -83,7 +90,7 @@ namespace CommonLevelEditor
 
             //other game unique data
             gameConfig = new GameConfig();
-            var gameConfigNode = LevelEditorUtils.JSONNodeFromFile(ConfigurationFolderPath + FILE_GAME_CONFIG);
+            var gameConfigNode = LevelEditorUtils.JSONNodeFromFileFullPath(FullConfigurationFolderPath + FILE_GAME_CONFIG);
             gameConfig.Update(gameConfigNode);
             
             UpdateDefault();
@@ -91,7 +98,7 @@ namespace CommonLevelEditor
 
         void UpdateGameUniqueData(string gameSpecificPath)
         {
-            var node = LevelEditorUtils.JSONNodeFromFile(gameSpecificPath);
+            var node = LevelEditorUtils.JSONNodeFromFileResourcesPath(gameSpecificPath);
         
             BoardWidth = node.GetInt(FIELD_BOARD_WIDTH);
             BoardHeight = node.GetInt(FIELD_BOARD_HEIGHT);
@@ -105,6 +112,10 @@ namespace CommonLevelEditor
             }
 
             SortLevelBeforeThisNum = node.GetInt(FIELD_SORTLEVELNUM_BEFORE);
+
+            LevelsPerFile = node.GetInt(FIELD_LEVELS_PER_FILE);
+
+            LevelNumOrigin = node.GetInt(FIELD_LEVELS_NUM_ORIGIN);
 
 
 
@@ -159,7 +170,7 @@ namespace CommonLevelEditor
         public static List<string> GetGameTypes()
         {
             List<string> gameTypes = new List<string>();
-            var node = LevelEditorUtils.JSONNodeFromFile(EDITOR_CONFIG_ROOT + FILE_META);
+            var node = LevelEditorUtils.JSONNodeFromFileResourcesPath(EDITOR_CONFIG_ROOT + FILE_META);
             var games = node.GetCollection(FIELD_GAMES);
             foreach(var item in games)
             {

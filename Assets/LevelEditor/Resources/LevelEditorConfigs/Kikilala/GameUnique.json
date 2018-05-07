@@ -2,14 +2,18 @@
   "boardwidth" : 9,
   "boardheight": 12,
 
-  "num_to_leveltype": 
+  "num_to_level_filename": 
   {
 
-    "normal_level": 1000,
-    "event_level": 2000,
-    "test_level": 3000
+    "normal_level": 5000,
+    "event_level": 50000,
+    "test_level": 100000
 
   },
   
-  sort_levels_before_this_num: 5000
+  "sort_levels_before_this_num": 5000,
+
+  "levels_per_file": 240,
+
+  "level_num_origin":  1
 }
