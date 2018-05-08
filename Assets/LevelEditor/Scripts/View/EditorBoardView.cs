@@ -115,7 +115,7 @@ namespace CommonLevelEditor
 
                 listener.BoardIndex = i;
 
-                listener.onMouseClick += OnClickedIndex;
+                listener.onLeftMousePress += OnClickedIndex;
 
                 _listListeners.Add(listener);
             }
@@ -131,7 +131,7 @@ namespace CommonLevelEditor
         {
             foreach (var item in _listListeners)
             {
-                item.onMouseClick -= OnClickedIndex;
+                item.onLeftMousePress -= OnClickedIndex;
 
             }
         }
