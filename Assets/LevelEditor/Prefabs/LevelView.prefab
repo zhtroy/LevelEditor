@@ -369,6 +369,7 @@ GameObject:
   m_Component:
   - 224: {fileID: 22432816}
   - 222: {fileID: 22244948}
+  - 114: {fileID: 11476686}
   m_Layer: 5
   m_Name: LevelView
   m_TagString: Untagged
@@ -1164,13 +1165,24 @@ MonoBehaviour:
   m_HandleRect: {fileID: 22476456}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.99999994
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Scrollbar+ScrollEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &11476686
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 188746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6ff810b68fa96040ba84dc889d29e42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11479634
 MonoBehaviour:
   m_ObjectHideFlags: 1

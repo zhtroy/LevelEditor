@@ -21,9 +21,15 @@ namespace CommonLevelEditor
         public InputField levelIDText;
         public Text statusText;
         public float cellHeight= 100f;
-        
+
+        public static LevelListScrollerController instance = null;
+        private void Awake()
+        {
+            instance = this;
+        }
         void Start()
         {
+            
             LoadLevelList();
 
             _comList = new UndoRedoList();
@@ -123,8 +129,24 @@ namespace CommonLevelEditor
                 // get the selected data index of the cell view
                 var selectedData = (cellView as LevelEntryView).Data;
 
+                //double click to edit level
+                if (selectedData.Selected)
+                {
+                    GotoEditingMode();
+                }
                 _levelList.SelectSingleLevel(selectedData);
             }
+        }
+
+        void GotoEditingMode()
+        {
+            Show(false);
+            EditingView.instance.Show(true);
+
+        }
+        public void Show(bool show)
+        {
+            gameObject.SetActive(show);
         }
         void OnListDirty()
         {
