@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 namespace CommonLevelEditor
 {
@@ -25,12 +26,12 @@ namespace CommonLevelEditor
         public BoardTouchListener prefabHexCollider;
         public BoardCellView prefabCellView;
         public GameObject prefabLayerContainer;
-   
+        public Image brushIcon;
 
         private void OnDestroy()
         {
             CleanCellCollidersCallBacks();
-            _board.onDataChanged -= _board_onDataChanged;
+            _board.onDataChanged -= RefreshSingleCell;
         }
         // Use this for initialization
         void Start()
@@ -48,18 +49,18 @@ namespace CommonLevelEditor
             }
            
             _board = new EditorBoard(width, height);
-            _board.onDataChanged += _board_onDataChanged;
-            InitBoardCellColliders();
-            InitCellViews(_board);
-           
-        }
-
-        private void _board_onDataChanged(string arg1, int arg2)
-        {
+            _board.onDataChanged += RefreshSingleCell;
             
+            InitCellViews(_board);
+            InitBoardCellColliders();
+
         }
 
 
+        private void RefreshSingleCell(string layername, int idx, string data)
+        {
+
+        }
 
         void InitCellViews(EditorBoard board)
         {
@@ -138,8 +139,30 @@ namespace CommonLevelEditor
         void OnClickedIndex (int idx)
         {
             Debug.Log("I'm clicked " + idx);
+
         }
 
+        #region button calls
+        public void OnSave()
+        {
+
+        }
+        public void OnBrush()
+        {
+
+        }
+        public void OnLastBrush()
+        {
+
+        }
+
+        public void OnNextBrush()
+        {
+
+        }
+
+       
+        #endregion
 
 
     }

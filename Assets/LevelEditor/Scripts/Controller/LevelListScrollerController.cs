@@ -33,7 +33,7 @@ namespace CommonLevelEditor
 
 
             myScroller.Delegate = this;
-            _levelList.OnDataChange += () => { myScroller.ReloadData(); };
+            _levelList.onDataChange += () => { myScroller.ReloadData(); };
         }
 
         private void Update()

@@ -13,12 +13,15 @@ namespace CommonLevelEditor
         public const string GAME_TYPE = "Level Editor Type";
         public const string KEY_CONFIGURATION = "Configuration Path";
         //file path  use camel naming
+        public const string EDITOR_SPRITE = "Sprites/";
         public const string EDITOR_CONFIG_ROOT = "LevelEditorConfigs/";
         public const string PATH_DEFAULT_CONFIG = "Assets/Resources/Configuration/";
         public const string FILE_META = "LevelEditorMeta";
         public const string FILE_GAME_UNIQUE = "GameUnique";
+        public const string FILE_BRUSH = "Brush";
         public const string FILE_GAME_CONFIG = "game";
         //field names 
+        public const string FIELD_COLLECTION = "collection";
         public const string FIELD_GAMES = "games";
         public const string FIELD_BOARD_WIDTH = "boardwidth";
         public const string FIELD_BOARD_HEIGHT = "boardheight";
@@ -87,7 +90,7 @@ namespace CommonLevelEditor
 
             CheckWhichGame();
             
-            string gameSpecificPath = EDITOR_CONFIG_ROOT + WhichGame + "/"+FILE_GAME_UNIQUE;
+            string gameSpecificPath = GameSpecificPath + FILE_GAME_UNIQUE;
 
             UpdateGameUniqueData(gameSpecificPath);
 
@@ -97,6 +100,14 @@ namespace CommonLevelEditor
             gameConfig.Update(gameConfigNode);
             
             UpdateDefault();
+        }
+
+        public string GameSpecificPath
+        {
+            get
+            {
+                return EDITOR_CONFIG_ROOT + WhichGame + "/";
+            }
         }
 
         void UpdateGameUniqueData(string gameSpecificPath)

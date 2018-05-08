@@ -12,7 +12,8 @@ namespace CommonLevelEditor
         int _height;
 
         #region public events
-        public event Action<string, int> onDataChanged;
+        //params: layername,  index, data
+        public event Action<string, int,string> onDataChanged;
         #endregion
         #region property
         public int CellNum { get; private set; }
@@ -33,7 +34,7 @@ namespace CommonLevelEditor
                 if (onDataChanged!=null)
                 {
 
-                    onDataChanged(layername, index);
+                    onDataChanged(layername, index,item);
                 }
             }
         }

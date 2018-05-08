@@ -11,7 +11,7 @@ namespace CommonLevelEditor
 
         private List<LevelData> _list = new List<LevelData>();
 
-        public event Action OnDataChange;
+        public event Action onDataChange;
         #region property
         public int Count 
         {
@@ -161,9 +161,9 @@ namespace CommonLevelEditor
             {
                 CurrentSelectedLevel = null;
             }
-            if (OnDataChange != null)
+            if (onDataChange != null)
             {
-                OnDataChange();
+                onDataChange();
             }
         }
 
@@ -171,9 +171,9 @@ namespace CommonLevelEditor
         {
             _list.Add(level);
             SortLevelList();
-            if (OnDataChange != null)
+            if (onDataChange != null)
             {
-                OnDataChange();
+                onDataChange();
             }
         }
 
