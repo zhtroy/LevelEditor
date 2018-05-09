@@ -18,6 +18,7 @@ namespace CommonLevelEditor
         public const string PATH_DEFAULT_CONFIG = "Assets/Resources/Configuration/";
         public const string FILE_META = "LevelEditorMeta";
         public const string FILE_GAME_UNIQUE = "GameUnique";
+        public const string FILE_GAME_ITEMS = "Items";
         public const string FILE_BRUSH = "Brush";
         public const string FILE_GAME_CONFIG = "game";
         //field names 
@@ -65,6 +66,9 @@ namespace CommonLevelEditor
 
         public List<string> Layers { get; private set; }
 
+        public Dictionary<string,BoardItem> DicBoardItem { get; private set; }
+        private Dictionary<string, Sprite> _itemSprites;
+
         //game config
         public GameConfig gameConfig { get; private set; }
 
@@ -90,9 +94,10 @@ namespace CommonLevelEditor
 
             CheckWhichGame();
             
-            string gameSpecificPath = GameSpecificPath + FILE_GAME_UNIQUE;
 
-            UpdateGameUniqueData(gameSpecificPath);
+            UpdateGameUniqueData(EditorConfigPath + FILE_GAME_UNIQUE);
+
+            UpdateGameItems(EditorConfigPath + FILE_GAME_ITEMS);
 
             //other game unique data
             gameConfig = new GameConfig();
@@ -102,14 +107,42 @@ namespace CommonLevelEditor
             UpdateDefault();
         }
 
-        public string GameSpecificPath
+        public string EditorConfigPath
         {
             get
             {
-                return EDITOR_CONFIG_ROOT + WhichGame + "/";
+                return  WhichGame+ "/" + EDITOR_CONFIG_ROOT ;
             }
         }
 
+        public Sprite GetItemSpriteByName(string name)
+        {
+            if (string.IsNullOrEmpty(name))
+            {
+                return null;
+            }
+            if (_itemSprites.ContainsKey(name))
+            {
+                return _itemSprites[name];
+            }
+            return null;
+        }
+        void UpdateGameItems(string itemsPath)
+        {
+            var node = LevelEditorUtils.JSONNodeFromFileResourcesPath(itemsPath);
+            DicBoardItem = new Dictionary<string, BoardItem>();
+            _itemSprites = new Dictionary<string, Sprite>();
+            var collection = node.GetCollection("items");
+            foreach (var data in collection)
+            {
+                BoardItem t = new BoardItem();
+                t.Update(data);
+                Sprite s = Resources.Load<Sprite>(WhichGame +"/Sprites/" + t.SpriteId);
+                _itemSprites.Add(t.Name, s);
+                DicBoardItem.Add(t.Name, t);
+            }
+
+        }
         void UpdateGameUniqueData(string gameSpecificPath)
         {
             var node = LevelEditorUtils.JSONNodeFromFileResourcesPath(gameSpecificPath);
@@ -189,7 +222,7 @@ namespace CommonLevelEditor
         public static List<string> GetGameTypes()
         {
             List<string> gameTypes = new List<string>();
-            var node = LevelEditorUtils.JSONNodeFromFileResourcesPath(EDITOR_CONFIG_ROOT + FILE_META);
+            var node = LevelEditorUtils.JSONNodeFromFileResourcesPath(FILE_META);
             var games = node.GetCollection(FIELD_GAMES);
             foreach(var item in games)
             {

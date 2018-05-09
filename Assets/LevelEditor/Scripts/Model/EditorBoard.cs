@@ -5,26 +5,40 @@ using System.Text;
 
 namespace CommonLevelEditor
 { 
+    //弃用
     public class EditorBoard
     {
         Dictionary<string, List<string>> _layers = new Dictionary<string, List<string>>();
         int _width;
         int _height;
+        LevelData _levelData;
 
         #region public events
-        //params: layername,  index, data
+        //params: layername,  index, item name
         public event Action<string, int,string> onDataChanged;
         #endregion
         #region property
         public int CellNum { get; private set; }
+        public Dictionary<string,List<string>> Layers
+        {
+            get
+            {
+                return _layers;
+            }
+        }
         #endregion
         #region public function
-        public EditorBoard(int w, int h)
+
+        
+        public EditorBoard(int w, int h,LevelData leveldata)
         {
             _width = w;
             _height = h;
             CellNum = _width * _height;
-            
+            _levelData = leveldata;
+            UpdateFromLevelData(_levelData);
+
+
         }
         public void SetItemAt(string layername, int index, string item)
         {
@@ -35,6 +49,63 @@ namespace CommonLevelEditor
                 {
 
                     onDataChanged(layername, index,item);
+                }
+            }
+        }
+
+        //从LevelData中解析识别出BoardItem
+        void UpdateFromLevelData(LevelData leveldata)
+        {
+            //use fixed for now
+            List<string> layerList = new List<string> { ConfigLayerId.FIELDS, ConfigLayerId.ITEMS, ConfigLayerId.COVERS };
+           
+            foreach (var name in layerList)
+            {
+                _layers.Add(name, new List<string>());
+            }
+            foreach (string  layername in layerList)
+            {
+                for (int y = 0; y < _height; y++)
+                    for (int x = 0; x < _width; x++)
+                    {
+                    
+                        {
+                        bool match = false;
+                        foreach (var item in LevelEditorInfo.Instance.DicBoardItem.Values)
+                        {
+                            if (item.LayerId !=layername)
+                            {
+                                continue;
+                            }
+                            int count = item.SubLayerChars.Count;
+                            foreach (var pair in item.SubLayerChars)
+                            {
+
+                                string word = leveldata.GetFromLayer(layername, pair.Key, x, y);
+                                if (pair.Value == word)
+                                {
+                                    count--;
+                                }
+                                else
+                                {
+                                    break;
+                                }
+                            }
+
+                            if (count <=0) //match
+                            {
+                                match = true;
+                                _layers[layername].Add(item.Name);
+                                break;
+                            }
+
+                        }
+                        if (!match)
+                        {
+                            _layers[layername].Add(null);
+                        }
+                       
+                    }
                 }
             }
         }

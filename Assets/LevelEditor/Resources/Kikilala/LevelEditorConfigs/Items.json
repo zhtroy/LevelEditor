@@ -1,0 +1,247 @@
+{
+  "items": [
+    {
+      "name": "randomColor",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "*",
+        "colors": "?"
+      },
+      "sprite_id": "random_color"
+    },
+
+    {
+      "name": "normalField",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "O",
+        "hitpoints": "-"
+      },
+      "sprite_id": "hex_0"
+    },
+
+
+
+
+    {
+      "name": "blocker",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "+",
+        "hitpoints": "-"
+      },
+      "sprite_id": "blocker"
+    },
+
+    {
+      "name": "window",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "-",
+        "hitpoints": "-"
+      },
+      "sprite_id": "window"
+    },
+    {
+      "name": "spawner",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "A",
+        "hitpoints": "-"
+      },
+      "sprite_id": "spawner"
+    },
+    {
+      "name": "glue",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "G",
+        "hitpoints": "-"
+      },
+      "sprite_id": "glue"
+    },
+
+    {
+      "name": "empty",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "o",
+        "hitpoints": "-"
+      },
+      "sprite_id": "empty"
+    },
+
+    {
+      "name": "jelly1",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "X",
+        "hitpoints": "1"
+      },
+      "sprite_id": "jelly_1"
+    },
+
+    {
+      "name": "jelly2",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "X",
+        "hitpoints": "2"
+      },
+      "sprite_id": "jelly_2"
+    },
+
+    {
+      "name": "jelly3",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "X",
+        "hitpoints": "3"
+      },
+      "sprite_id": "jelly_3"
+    },
+
+    {
+      "name": "jelly4",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "X",
+        "hitpoints": "4"
+      },
+      "sprite_id": "jelly_4"
+    },
+
+    {
+      "name": "jelly5",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "X",
+        "hitpoints": "5"
+      },
+      "sprite_id": "jelly_5"
+    },
+
+    {
+      "name": "creator1",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "C",
+        "hitpoints": "1"
+      },
+      "sprite_id": "creator_1"
+    },
+    {
+      "name": "creator2",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "C",
+        "hitpoints": "2"
+      },
+      "sprite_id": "creator_2"
+    },
+    {
+      "name": "creator3",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "C",
+        "hitpoints": "3"
+      },
+      "sprite_id": "creator_3"
+    },
+
+    {
+      "name": "exit",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "E",
+        "hitpoints": "-"
+      },
+      "sprite_id": "exit"
+    },
+
+    {
+      "name": "enter",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "N",
+        "hitpoints": "-"
+      },
+      "sprite_id": "hex_entrance"
+    },
+
+    {
+      "name": "treasure_enter",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "Q",
+        "hitpoints": "c"
+      },
+      "sprite_id": "treasure_box_1"
+    },
+
+    {
+      "name": "gem_purple",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "*",
+        "colors": "0"
+      },
+      "sprite_id": "purple"
+    },
+
+    {
+      "name": "gem_pink",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "*",
+        "colors": "1"
+      },
+      "sprite_id": "pink"
+    },
+
+    {
+      "name": "gem_yellow",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "*",
+        "colors": "2"
+      },
+      "sprite_id": "yellow"
+    },
+
+    {
+      "name": "gem_red",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "*",
+        "colors": "3"
+      },
+      "sprite_id": "red"
+    },
+
+    {
+      "name": "gem_blue",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "*",
+        "colors": "3"
+      },
+      "sprite_id": "blue"
+    },
+
+
+    {
+      "name": "gem_green",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "*",
+        "colors": "5"
+      },
+      "sprite_id": "green"
+    },
+
+
+
+    
+  ]
+}

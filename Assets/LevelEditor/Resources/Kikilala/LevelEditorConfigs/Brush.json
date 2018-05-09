@@ -1,0 +1,30 @@
+{
+  "category": [
+    {
+      "category_name": "cat1",
+      "sprite_id": "Sprites/Kikilala/bomb",
+      "brushes": [
+        {
+          "brush_name": "cat1_brush1",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "randomColor"
+
+              ]
+            }
+
+          ],
+          
+          "sprite_id": ""
+        }
+
+      ]
+    },
+
+
+
+  ]
+}

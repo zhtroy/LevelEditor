@@ -28,9 +28,9 @@ namespace CommonLevelEditor
 
             return new Vector2(screenX, screenY);
         }
-        #endregion
+        
 
-        int GetGridX(int idx)
+        public int GetGridX(int idx)
         {
             int x = idx % _width;
 
@@ -41,12 +41,13 @@ namespace CommonLevelEditor
 
             return Mathf.Abs(x);
         }
-        int GetGridY(int index)
+       public int GetGridY(int index)
         {
             float y = (float)index / _width;
 
             return Mathf.FloorToInt(y);
         }
+        #endregion
 
         public float GetScreenX(float x)
         {

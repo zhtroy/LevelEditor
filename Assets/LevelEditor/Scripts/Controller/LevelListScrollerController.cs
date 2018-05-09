@@ -22,10 +22,13 @@ namespace CommonLevelEditor
         public Text statusText;
         public float cellHeight= 100f;
 
+        public LevelData CurrentLevel { get; private set; }
+
         public static LevelListScrollerController instance = null;
         private void Awake()
         {
             instance = this;
+           
         }
         void Start()
         {
@@ -40,6 +43,8 @@ namespace CommonLevelEditor
 
             myScroller.Delegate = this;
             _levelList.onDataChange += () => { myScroller.ReloadData(); };
+
+            
         }
 
         private void Update()
@@ -135,12 +140,15 @@ namespace CommonLevelEditor
                     GotoEditingMode();
                 }
                 _levelList.SelectSingleLevel(selectedData);
+
+                
             }
         }
 
         void GotoEditingMode()
         {
             Show(false);
+            CurrentLevel = _levelList.CurrentSelectedLevel;
             EditingView.instance.Show(true);
 
         }

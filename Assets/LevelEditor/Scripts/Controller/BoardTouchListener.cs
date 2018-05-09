@@ -10,8 +10,7 @@ namespace CommonLevelEditor
         public int BoardIndex { get; set; }
         public event Action<int> onLeftMousePress;
         public event Action<int> onRightMousePress;
-        private bool _mouseDown;
-        private PointerEventData.InputButton _btnType;
+
 
         public void OnPointerClick(PointerEventData eventData)
         {

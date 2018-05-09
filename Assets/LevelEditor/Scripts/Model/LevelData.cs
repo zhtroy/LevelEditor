@@ -9,6 +9,22 @@ namespace CommonLevelEditor
     //纯关卡数据部分
 	public partial class LevelData
 	{
+
+        #region public events
+        //params: layername,  index, data
+        public event Action<string, int, string> onDataChanged;
+        #endregion
+        #region property
+        public int CellNum
+        {
+            get
+            {
+                return width* height;
+            }
+        }
+
+        #endregion
+
         readonly static string[] TOTAL_ITEM_TYPES =
             {
             ItemTypeId.Key.ToString(),

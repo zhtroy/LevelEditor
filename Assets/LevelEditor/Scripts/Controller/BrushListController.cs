@@ -20,7 +20,7 @@ namespace CommonLevelEditor
         private void Start()
         {
             JSONNode node = LevelEditorUtils.JSONNodeFromFileResourcesPath(
-                LevelEditorInfo.Instance.GameSpecificPath + LevelEditorInfo.FILE_BRUSH);
+                LevelEditorInfo.Instance.EditorConfigPath + LevelEditorInfo.FILE_BRUSH);
             UpdateData(node);
 
 
