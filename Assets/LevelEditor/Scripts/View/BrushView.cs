@@ -13,7 +13,7 @@ namespace CommonLevelEditor
         public void SetData(BrushData data)
         {
             _data = data;
-            image.sprite = Resources.Load<Sprite>(data.SpriteId);
+            image.sprite = Resources.Load<Sprite>(LevelEditorInfo.Instance.WhichGame + "/Sprites/" + data.SpriteId);
         }
 
 

@@ -53,7 +53,7 @@ namespace CommonLevelEditor
         void OnCurrentBrush(BrushData data)
         {
             CurrentBrush = data;
-            currentBrushImage.sprite = Resources.Load<Sprite>(CurrentBrush.SpriteId);
+            currentBrushImage.sprite = Resources.Load<Sprite>(LevelEditorInfo.Instance.WhichGame + "/Sprites/" + CurrentBrush.SpriteId);
 
         }
 

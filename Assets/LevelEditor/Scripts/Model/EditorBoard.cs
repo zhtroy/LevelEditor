@@ -5,7 +5,6 @@ using System.Text;
 
 namespace CommonLevelEditor
 { 
-    //弃用
     public class EditorBoard
     {
         Dictionary<string, List<string>> _layers = new Dictionary<string, List<string>>();
@@ -19,6 +18,21 @@ namespace CommonLevelEditor
         #endregion
         #region property
         public int CellNum { get; private set; }
+
+        public int Width
+        {
+            get
+            {
+                return _width;
+            }
+        }
+        public int Height
+        {
+            get
+            {
+                return _height;
+            }
+        }
         public Dictionary<string,List<string>> Layers
         {
             get
@@ -40,17 +54,32 @@ namespace CommonLevelEditor
 
 
         }
-        public void SetItemAt(string layername, int index, string item)
+        
+
+        public string SetItemAt(string layername, int gridX, int gridY, string item )
+        {
+            int idx = gridX + gridY * _width;
+            return SetItemAt(layername, idx, item);
+        }
+        //if success ,return old item
+        //if fail, return null
+        public string SetItemAt(string layername, int index, string item)
         {
             if (_layers.ContainsKey(layername))
             {
-                _layers[layername][index] = item;
-                if (onDataChanged!=null)
+                string oldItem = _layers[layername][index];
+                if (_layers[layername][index]  != item)
                 {
+                    _layers[layername][index] = item;
+                    if (onDataChanged != null)
+                    {
 
-                    onDataChanged(layername, index,item);
+                        onDataChanged(layername, index, item);
+                    }
                 }
+                return oldItem;
             }
+            return null;
         }
 
         //从LevelData中解析识别出BoardItem

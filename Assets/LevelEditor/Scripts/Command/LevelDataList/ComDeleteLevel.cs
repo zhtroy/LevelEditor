@@ -14,11 +14,11 @@ namespace CommonLevelEditor
             _list = list;
             _deletedLevel = level;
         }
-        public void Execute()
+        public bool Execute()
         {
        
             _list.DeleteLevel(_deletedLevel);
-        
+            return true;
 
         }
 

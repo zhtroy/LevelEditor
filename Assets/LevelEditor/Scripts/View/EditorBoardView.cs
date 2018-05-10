@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace CommonLevelEditor
 {
-
+    //view and controller
     public class EditorBoardView : MonoBehaviour
     {
         //为保持写出json格式一致，使用一个EditorBoard做为model，是LevelData的一个中间层
@@ -55,17 +55,31 @@ namespace CommonLevelEditor
             _board = new EditorBoard(width, height, LevelListScrollerController.instance.CurrentLevel);
             _board.onDataChanged += RefreshSingleCell;
 
-            
 
+            
             InitCellViews(_board);
             InitBoardCellColliders();
+
 
         }
 
 
-        private void RefreshSingleCell(string layername, int idx, string data)
+        private void RefreshSingleCell(string layername, int idx, string itemname)
         {
+            if (_layers.ContainsKey(layername))
+            {
+                if (string.IsNullOrEmpty(itemname))
+                {
+                    _layers[layername][idx].ClearImage();
 
+                }
+                else
+                {
+                    var sprite = LevelEditorInfo.Instance.GetItemSpriteByName(itemname);
+                    _layers[layername][idx].SetImage(sprite);
+                }
+               
+            } 
         }
 
         void InitCellViews(EditorBoard board)
@@ -85,7 +99,7 @@ namespace CommonLevelEditor
                 for (int i = 0; i < board.CellNum; i++)
                 {
                     BoardCellView cell = Instantiate(prefabCellView);
-                    cell.name += i;
+                    cell.name = item +"CellView"+ i;
                     cell.transform.SetParent(layer.transform);
                     cell.transform.localPosition = _coord.PosFromIndex(i) * cellCoordScale;
                     cell.transform.localScale = new Vector3(1, 1, 1);
@@ -142,7 +156,7 @@ namespace CommonLevelEditor
 
                 listener.BoardIndex = i;
 
-                listener.onLeftMousePress += OnClickedIndex;
+                listener.onLeftMouseBrushAction += OnBrushIndex;
 
                 _listListeners.Add(listener);
             }
@@ -158,21 +172,29 @@ namespace CommonLevelEditor
         {
             foreach (var item in _listListeners)
             {
-                item.onLeftMousePress -= OnClickedIndex;
+                item.onLeftMouseBrushAction -= OnBrushIndex;
 
             }
         }
 
-        void OnClickedIndex (int idx)
+        void OnBrushIndex (int idx)
         {
-            Debug.Log("I'm clicked " + idx);
+            Debug.Log("I'm brushed " + idx);
             BrushData brushData = brushList.CurrentBrush;
+
             int gridX = _coord.GetGridX(idx);
             int gridY = _coord.GetGridY(idx);
-
-            //ICommand brushCom = new ComBrushAt(_board, this, brushData, gridX, gridY);
-            //brushCom.Execute();
-            //_comList.Add(brushCom);
+            ICommand brushCom = new ComBrushAt(_board, brushData, gridX,gridY);
+            if (brushCom.Execute())
+            {
+                _comList.Add(brushCom);
+            }
+            else
+            {
+                Debug.LogWarning("can't place brush at this position: (" + gridX + "," + gridY + ")");
+            }
+            
+            
 
         }
 

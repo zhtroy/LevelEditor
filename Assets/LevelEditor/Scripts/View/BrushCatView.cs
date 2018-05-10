@@ -21,7 +21,7 @@ namespace CommonLevelEditor
         {
 
             _listBrush = new List<BrushView>();
-            header.sprite = Resources.Load<Sprite>(data.spriteId);
+            header.sprite = Resources.Load<Sprite>(LevelEditorInfo.Instance.WhichGame + "/Sprites/" + data.spriteId);
             foreach (var brushData in data.brushes)
             {  
                 BrushView brushView = Instantiate(prefabBrushView);

@@ -14,9 +14,10 @@ namespace CommonLevelEditor
             _list = list;
             _addedLevel = level;
         }
-        public void Execute()
+        public bool Execute()
         {
             _list.AddLevel(_addedLevel);
+            return true;
         }
 
         public void Undo()

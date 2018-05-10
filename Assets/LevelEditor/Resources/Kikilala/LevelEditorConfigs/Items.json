@@ -240,8 +240,76 @@
       "sprite_id": "green"
     },
 
+    {
+      "name": "roundBomb",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "b"
+      },
+      "sprite_id": "bomb/round_bomb"
+    },
 
+    {
+      "name": "lineBomb",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "s"
+      },
+      "sprite_id": "bomb/round_bomb"
+    },
 
+    {
+      "name": "rainbow",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "r"
+      },
+      "sprite_id": "bomb/rainbow_bomb"
+    },
+
+    {
+      "name": "doubleRoundBomb",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "B"
+      },
+      "sprite_id": "bomb/double_round_bomb"
+    },
+
+    {
+      "name": "starBomb",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "S"
+      },
+      "sprite_id": "bomb/star_bomb"
+    },
+
+    {
+      "name": "doubleRainbowBomb",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "R"
+      },
+      "sprite_id": "bomb/double_rainbow_bomb"
+    },
+
+    {
+      "name": "triLineBomb",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "Z"
+      },
+      "sprite_id": "bomb/tri_line_bomb"
+    },
     
+    {
+      "name": "triRoundBomb",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "h"
+      },
+      "sprite_id": "bomb/tri_round_bomb"
+    },
   ]
 }

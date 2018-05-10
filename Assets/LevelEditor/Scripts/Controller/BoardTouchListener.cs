@@ -8,7 +8,7 @@ namespace CommonLevelEditor
     {
 
         public int BoardIndex { get; set; }
-        public event Action<int> onLeftMousePress;
+        public event Action<int> onLeftMouseBrushAction;
         public event Action<int> onRightMousePress;
 
 
@@ -17,9 +17,9 @@ namespace CommonLevelEditor
             if (eventData.button == PointerEventData.InputButton.Left)
 
             {
-                if (onLeftMousePress != null)
+                if (onLeftMouseBrushAction != null)
                 {
-                    onLeftMousePress(BoardIndex);
+                    onLeftMouseBrushAction(BoardIndex);
 
                 }
 
@@ -40,9 +40,9 @@ namespace CommonLevelEditor
             if (Input.GetMouseButton(0))
  
             {
-                if (onLeftMousePress != null)
+                if (onLeftMouseBrushAction != null)
                 {
-                    onLeftMousePress(BoardIndex);
+                    onLeftMouseBrushAction(BoardIndex);
 
                 }
 

@@ -14,6 +14,7 @@ namespace CommonLevelEditor
         {
             if (s == null)
             {
+                Debug.Log("Setting null sprite: " + gameObject.name);
                 return;
             }
             image.sprite = s;
