@@ -77,7 +77,7 @@ namespace CommonLevelEditor
                             string oldItem= _board.SetItemAt(boardItem.LayerId, tileX, tileY, boardItem.Name);
                             if (oldItem!= boardItem.Name)
                             {
-                                _changedDatas.Add(new ChangedData {x=tileX,y=tileY,layer=boardItem.LayerId,itemName = boardItem.Name });
+                                _changedDatas.Add(new ChangedData {x=tileX,y=tileY,layer=boardItem.LayerId,itemName = oldItem});
                             }
                         }
                     }

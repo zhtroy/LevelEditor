@@ -47,6 +47,12 @@ namespace CommonLevelEditor
             
         }
 
+        private void OnDestroy()
+        {
+            _comList.OnClean -= OnListClean;
+            _comList.OnDirty -= OnListDirty;
+        } 
+
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.Z) )

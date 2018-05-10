@@ -28,13 +28,16 @@ namespace CommonLevelEditor
         public BoardTouchListener prefabHexCollider;
         public BoardCellView prefabCellView;
         public GameObject prefabLayerContainer;
-
+        public Text statusText;
         public BrushListController brushList;
 
         private void OnDestroy()
         {
             CleanCellCollidersCallBacks();
             _board.onDataChanged -= RefreshSingleCell;
+
+            _comList.OnClean -= _comList_OnClean;
+            _comList.OnDirty -= _comList_OnDirty;
         }
         // Use this for initialization
         public void Init()
@@ -61,8 +64,20 @@ namespace CommonLevelEditor
             InitBoardCellColliders();
 
 
+            _comList = new UndoRedoList();
+            _comList.OnClean += _comList_OnClean;
+            _comList.OnDirty += _comList_OnDirty;
         }
 
+        private void _comList_OnDirty()
+        {
+            statusText.text = "*";
+        }
+
+        private void _comList_OnClean()
+        {
+            statusText.text = "";
+        }
 
         private void RefreshSingleCell(string layername, int idx, string itemname)
         {
@@ -198,21 +213,35 @@ namespace CommonLevelEditor
 
         }
 
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Z))
+            {
+                OnUndo();
+            }
+            if (Input.GetKeyUp(KeyCode.Y))
+            {
+                OnRedo();
+            }
+        }
         #region button calls
         public void OnSave()
         {
 
         }
-        public void OnBrush()
+        public void OnUndo()
         {
-
-        }
-        public void OnLastBrush()
-        {
-
+            _comList.Undo();
         }
 
-        public void OnNextBrush()
+        public void OnRedo()
+        {
+            _comList.Redo();
+        }
+
+
+        public void OnExitToLevelList()
         {
 
         }
