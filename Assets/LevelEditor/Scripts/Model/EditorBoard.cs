@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEngine;
 
 namespace CommonLevelEditor
 { 
@@ -55,6 +56,7 @@ namespace CommonLevelEditor
 
         }
         
+ 
 
         public string SetItemAt(string layername, int gridX, int gridY, string item )
         {
@@ -80,6 +82,56 @@ namespace CommonLevelEditor
                 return oldItem;
             }
             return null;
+        }
+
+        int GridXFromIndex(int idx)
+        {
+            int x = idx % _width;
+
+            if (x < 0)
+            {
+                x += _width;
+            }
+
+            return Mathf.Abs(x);
+        }
+
+
+        int GridYFromIndex(int idx)
+        {
+            float y = (float)idx / _width;
+
+            return Mathf.FloorToInt(y);
+        }
+
+
+        //将数据写回LevelData
+        public void UpdateRelatedLevelData()
+        {
+            foreach (var layerPair in _layers)
+            {
+                string layerid = layerPair.Key;
+                for (int i = 0; i < layerPair.Value.Count; i++)
+                {
+                    string itemname = layerPair.Value[i];
+                    if (String.IsNullOrEmpty(itemname))
+                    {
+                        continue;
+                    }
+                    int gridX = GridXFromIndex(i);
+                    int gridY = GridYFromIndex(i);
+                    BoardItem boarditem = LevelEditorInfo.Instance.DicBoardItem[itemname];
+                    if (boarditem.LayerId != layerid)
+                    {
+                        Debug.LogError("unmatching layerid: " + boarditem.LayerId);
+                        continue;
+                    }
+                    foreach (var sublayerPair in boarditem.SubLayerChars)
+                    {
+                        _levelData.SetToLayer(layerid, sublayerPair.Key, gridX, gridY, sublayerPair.Value);
+                    }
+                }
+            }
         }
 
         //从LevelData中解析识别出BoardItem

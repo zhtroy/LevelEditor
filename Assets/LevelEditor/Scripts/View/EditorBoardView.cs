@@ -228,7 +228,9 @@ namespace CommonLevelEditor
         #region button calls
         public void OnSave()
         {
-
+            _comList.Save();
+            _board.UpdateRelatedLevelData();
+            LevelListScrollerController.instance.OnSave();
         }
         public void OnUndo()
         {
@@ -243,6 +245,8 @@ namespace CommonLevelEditor
 
         public void OnExitToLevelList()
         {
+            LevelListScrollerController.instance.Show(true);
+            EditingView.instance.Show(false);
 
         }
 
