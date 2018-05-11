@@ -1,30 +1,261 @@
 {
   "category": [
     {
-      "category_name": "bomb",
-      "sprite_id": "bomb/round_bomb",
+      "category_name": "blocker&&window",
+      "sprite_id": "blocker",
       "brushes": [
         {
-          "brush_name": "roundBomb",
+          "brush_name": "blocker",
           "brush_tiles": [
             {
               "offsetx": 0,
               "offsety": 0,
               "items": [
-                "roundBomb"
-
+                "blocker",
+                "emptyField"
               ]
             }
-
           ],
-          
-          "sprite_id": "bomb/round_bomb"
+
+          "sprite_id": "blocker"
+        },
+
+        {
+          "brush_name": "window",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "window",
+                "emptyField"
+              ]
+            }
+          ],
+
+          "sprite_id": "window"
+        },
+
+        {
+          "brush_name": "spawner",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "spawner",
+                "emptyItem"
+              ]
+            }
+          ],
+
+          "sprite_id": "spawner"
+        },
+
+        {
+          "brush_name": "glue",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "glue",
+                "emptyField"
+              ]
+            }
+          ],
+
+          "sprite_id": "glue"
         }
 
       ]
     },
 
+    {
+      "category_name": "jellys",
+      "sprite_id": "jelly_2",
+      "brushes": [
+        {
+          "brush_name": "jelly1",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "jelly1"
+              ]
+            }
+          ],
 
+          "sprite_id": "jelly_1"
+        },
+
+        {
+          "brush_name": "jelly2",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "jelly2"
+              ]
+            }
+          ],
+
+          "sprite_id": "jelly_2"
+        },
+
+        {
+          "brush_name": "jelly3",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "jelly3"
+              ]
+            }
+          ],
+
+          "sprite_id": "jelly_3"
+        },
+
+        {
+          "brush_name": "jelly4",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "jelly4"
+              ]
+            }
+          ],
+
+          "sprite_id": "jelly_4"
+        },
+
+        {
+          "brush_name": "jelly5",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "jelly5"
+              ]
+            }
+          ],
+
+          "sprite_id": "jelly_5"
+        }
+      ]
+    },
+
+    {
+      "category_name": "creators",
+      "sprite_id": "creator_1",
+      "brushes": [
+        {
+          "brush_name": "creator1",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "creator1",
+                "window"
+              ]
+            }
+          ],
+
+          "sprite_id": "creator_1"
+        },
+
+        {
+          "brush_name": "creator2",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "creator2",
+                "window"
+              ]
+            }
+          ],
+
+          "sprite_id": "creator_2"
+        },
+
+        {
+          "brush_name": "creator3",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "creator3",
+                "window"
+              ]
+            }
+          ],
+
+          "sprite_id": "creator_3"
+        }
+      ]
+    },
+
+     {
+      "category_name": "enter_exit",
+      "sprite_id": "exit",
+      "brushes": [
+        {
+          "brush_name": "exit",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "exit"
+              ]
+            }
+          ],
+
+          "sprite_id": "exit"
+        },
+
+        {
+          "brush_name": "enter",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "enter"
+              ]
+            }
+          ],
+
+          "sprite_id": "enter"
+        },
+
+        {
+          "brush_name": "treasure_enter",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "treasure_enter"
+              ]
+            }
+          ],
+
+          "sprite_id": "treasure_box_1"
+        }
+      ]
+    }
 
   ]
 }

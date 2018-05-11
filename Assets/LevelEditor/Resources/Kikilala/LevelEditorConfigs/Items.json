@@ -1,5 +1,24 @@
 {
   "items": [
+
+    {
+      "name": "emptyField",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "-"
+      },
+      "sprite_id": "empty"
+    },
+
+    {
+      "name": "emptyItem",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "o"
+      },
+      "sprite_id": "empty"
+    },
+
     {
       "name": "randomColor",
       "layer_id": "items",
@@ -19,6 +38,7 @@
       },
       "sprite_id": "hex_0"
     },
+
 
 
 
@@ -166,7 +186,7 @@
         "types": "N",
         "hitpoints": "-"
       },
-      "sprite_id": "hex_entrance"
+      "sprite_id": "enter"
     },
 
     {
@@ -544,7 +564,7 @@
       "sprite_id": "portal_exit_a"
     },
 
-     {
+    {
       "name": "portal_entrance_b",
       "layer_id": "covers",
       "sublayers": {
@@ -564,7 +584,7 @@
       "sprite_id": "portal_exit_b"
     },
 
-     {
+    {
       "name": "portal_entrance_c",
       "layer_id": "covers",
       "sublayers": {
@@ -584,7 +604,7 @@
       "sprite_id": "portal_exit_c"
     },
 
-     {
+    {
       "name": "portal_entrance_d",
       "layer_id": "covers",
       "sublayers": {
@@ -604,7 +624,7 @@
       "sprite_id": "portal_exit_d"
     },
 
-     {
+    {
       "name": "portal_entrance_e",
       "layer_id": "covers",
       "sublayers": {
@@ -624,7 +644,7 @@
       "sprite_id": "portal_exit_e"
     },
 
-     {
+    {
       "name": "portal_entrance_f",
       "layer_id": "covers",
       "sublayers": {
@@ -644,7 +664,7 @@
       "sprite_id": "portal_exit_f"
     },
 
-     {
+    {
       "name": "portal_entrance_g",
       "layer_id": "covers",
       "sublayers": {
@@ -664,7 +684,7 @@
       "sprite_id": "portal_exit_g"
     },
 
-     {
+    {
       "name": "portal_entrance_h",
       "layer_id": "covers",
       "sublayers": {
