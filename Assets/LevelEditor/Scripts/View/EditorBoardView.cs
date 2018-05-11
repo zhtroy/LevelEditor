@@ -30,6 +30,8 @@ namespace CommonLevelEditor
         public GameObject prefabLayerContainer;
         public Text statusText;
         public BrushListController brushList;
+        List<GameObject> _viewLayers = new List<GameObject>();
+        List<GameObject> _colliderLayers = new List<GameObject>();
 
         private void OnDestroy()
         {
@@ -99,10 +101,18 @@ namespace CommonLevelEditor
 
         void InitCellViews(EditorBoard board)
         {
-           
+            //destroy old layers
+            foreach (var layer in _viewLayers)
+            {
+                DestroyImmediate(layer.gameObject);
+            }
+            _viewLayers.Clear();
+
             foreach (var item in board.Layers.Keys)
             {
                 GameObject layer = Instantiate(prefabLayerContainer);
+                _viewLayers.Add(layer);
+
                 layer.name = item;
                 layer.transform.SetParent(transform);
 
@@ -149,7 +159,18 @@ namespace CommonLevelEditor
         }
         void InitBoardCellColliders()
         {
+
+            //destroy old layers
+            foreach (var layer in _colliderLayers)
+            {
+                DestroyImmediate(layer.gameObject);
+            }
+            _colliderLayers.Clear();
+
+
             GameObject colliderRoot = Instantiate(prefabLayerContainer);
+            _colliderLayers.Add(colliderRoot);
+
             colliderRoot.name = "CollierRoot";
             colliderRoot.transform.SetParent(transform);
             RectTransform trans = colliderRoot.transform as RectTransform;
