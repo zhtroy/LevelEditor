@@ -10,12 +10,12 @@
       "sprite_id": "random_color"
     },
 
+
     {
       "name": "normalField",
       "layer_id": "fields",
       "sublayers": {
-        "types": "O",
-        "hitpoints": "-"
+        "types": "O"
       },
       "sprite_id": "hex_0"
     },
@@ -302,7 +302,7 @@
       },
       "sprite_id": "bomb/tri_line_bomb"
     },
-    
+
     {
       "name": "triRoundBomb",
       "layer_id": "items",
@@ -311,5 +311,953 @@
       },
       "sprite_id": "bomb/tri_round_bomb"
     },
+
+    {
+      "name": "layered1",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "=",
+        "hitpoints": "1"
+      },
+      "sprite_id": "layer_1"
+    },
+
+    {
+      "name": "layered2",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "=",
+        "hitpoints": "2"
+      },
+      "sprite_id": "layer_2"
+    },
+
+    {
+      "name": "layered3",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "=",
+        "hitpoints": "3"
+      },
+      "sprite_id": "layer_3"
+    },
+
+    {
+      "name": "layered4",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "=",
+        "hitpoints": "4"
+      },
+      "sprite_id": "layer_4"
+    },
+
+    {
+      "name": "layered5",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "=",
+        "hitpoints": "5"
+      },
+      "sprite_id": "layer_5"
+    },
+
+    {
+      "name": "dirt1",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "d",
+        "hitpoints": "1"
+      },
+      "sprite_id": "dirt_1"
+    },
+
+    {
+      "name": "dirt2",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "d",
+        "hitpoints": "2"
+      },
+      "sprite_id": "dirt_2"
+    },
+
+    {
+      "name": "dirt3",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "d",
+        "hitpoints": "3"
+      },
+      "sprite_id": "dirt_3"
+    },
+
+
+    {
+      "name": "dirt4",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "d",
+        "hitpoints": "4"
+      },
+      "sprite_id": "dirt_4"
+    },
+
+    {
+      "name": "dirt5",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "d",
+        "hitpoints": "5"
+      },
+      "sprite_id": "dirt_5"
+    },
+
+    {
+      "name": "dropping1",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "!",
+        "hitpoints": "-"
+      },
+      "sprite_id": "drop1"
+    },
+
+    {
+      "name": "dropping2",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "|",
+        "hitpoints": "-"
+      },
+      "sprite_id": "drop2"
+    },
+
+    {
+      "name": "dropping3",
+      "layer_id": "items",
+      "sublayers": {
+        "types": ":",
+        "hitpoints": "-"
+      },
+      "sprite_id": "drop3"
+    },
+
+
+    {
+      "name": "cream",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "V",
+        "hitpoints": "1"
+      },
+      "sprite_id": "cream"
+    },
+
+    {
+      "name": "cream_factory",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "W",
+        "hitpoints": "-"
+      },
+      "sprite_id": "cream_machine"
+    },
+
+    {
+      "name": "caged1",
+      "layer_id": "covers",
+      "sublayers": {
+        "types": "#",
+        "hitpoints": "1"
+      },
+      "sprite_id": "cage_1"
+    },
+
+    {
+      "name": "caged2",
+      "layer_id": "covers",
+      "sublayers": {
+        "types": "#",
+        "hitpoints": "2"
+      },
+      "sprite_id": "cage_2"
+    },
+
+    {
+      "name": "caged3",
+      "layer_id": "covers",
+      "sublayers": {
+        "types": "#",
+        "hitpoints": "3"
+      },
+      "sprite_id": "cage_3"
+    },
+
+    {
+      "name": "caged4",
+      "layer_id": "covers",
+      "sublayers": {
+        "types": "#",
+        "hitpoints": "4"
+      },
+      "sprite_id": "cage_4"
+    },
+
+    {
+      "name": "caged5",
+      "layer_id": "covers",
+      "sublayers": {
+        "types": "#",
+        "hitpoints": "5"
+      },
+      "sprite_id": "cage_5"
+    },
+
+    {
+      "name": "magnet",
+      "layer_id": "covers",
+      "sublayers": {
+        "types": "M",
+        "hitpoints": "1"
+      },
+      "sprite_id": "magnet"
+    },
+
+    {
+      "name": "portal_entrance_a",
+      "layer_id": "covers",
+      "sublayers": {
+        "types": "p",
+        "options": "a"
+      },
+      "sprite_id": "portal_entrance_a"
+    },
+
+    {
+      "name": "portal_exit_a",
+      "layer_id": "covers",
+      "sublayers": {
+        "types": "P",
+        "options": "a"
+      },
+      "sprite_id": "portal_exit_a"
+    },
+
+     {
+      "name": "portal_entrance_b",
+      "layer_id": "covers",
+      "sublayers": {
+        "types": "p",
+        "options": "b"
+      },
+      "sprite_id": "portal_entrance_b"
+    },
+
+    {
+      "name": "portal_exit_b",
+      "layer_id": "covers",
+      "sublayers": {
+        "types": "P",
+        "options": "b"
+      },
+      "sprite_id": "portal_exit_b"
+    },
+
+     {
+      "name": "portal_entrance_c",
+      "layer_id": "covers",
+      "sublayers": {
+        "types": "p",
+        "options": "c"
+      },
+      "sprite_id": "portal_entrance_c"
+    },
+
+    {
+      "name": "portal_exit_c",
+      "layer_id": "covers",
+      "sublayers": {
+        "types": "P",
+        "options": "c"
+      },
+      "sprite_id": "portal_exit_c"
+    },
+
+     {
+      "name": "portal_entrance_d",
+      "layer_id": "covers",
+      "sublayers": {
+        "types": "p",
+        "options": "d"
+      },
+      "sprite_id": "portal_entrance_d"
+    },
+
+    {
+      "name": "portal_exit_d",
+      "layer_id": "covers",
+      "sublayers": {
+        "types": "P",
+        "options": "d"
+      },
+      "sprite_id": "portal_exit_d"
+    },
+
+     {
+      "name": "portal_entrance_e",
+      "layer_id": "covers",
+      "sublayers": {
+        "types": "p",
+        "options": "e"
+      },
+      "sprite_id": "portal_entrance_e"
+    },
+
+    {
+      "name": "portal_exit_e",
+      "layer_id": "covers",
+      "sublayers": {
+        "types": "P",
+        "options": "e"
+      },
+      "sprite_id": "portal_exit_e"
+    },
+
+     {
+      "name": "portal_entrance_f",
+      "layer_id": "covers",
+      "sublayers": {
+        "types": "p",
+        "options": "f"
+      },
+      "sprite_id": "portal_entrance_f"
+    },
+
+    {
+      "name": "portal_exit_f",
+      "layer_id": "covers",
+      "sublayers": {
+        "types": "P",
+        "options": "f"
+      },
+      "sprite_id": "portal_exit_f"
+    },
+
+     {
+      "name": "portal_entrance_g",
+      "layer_id": "covers",
+      "sublayers": {
+        "types": "p",
+        "options": "g"
+      },
+      "sprite_id": "portal_entrance_g"
+    },
+
+    {
+      "name": "portal_exit_g",
+      "layer_id": "covers",
+      "sublayers": {
+        "types": "P",
+        "options": "g"
+      },
+      "sprite_id": "portal_exit_g"
+    },
+
+     {
+      "name": "portal_entrance_h",
+      "layer_id": "covers",
+      "sublayers": {
+        "types": "p",
+        "options": "h"
+      },
+      "sprite_id": "portal_entrance_h"
+    },
+
+    {
+      "name": "portal_exit_h",
+      "layer_id": "covers",
+      "sublayers": {
+        "types": "P",
+        "options": "h"
+      },
+      "sprite_id": "portal_exit_h"
+    },
+
+    {
+      "name": "wheel4",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "w",
+        "hitpoints": "4"
+      },
+      "sprite_id": "wheel4"
+    },
+
+    {
+      "name": "wheel5",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "w",
+        "hitpoints": "5"
+      },
+      "sprite_id": "wheel5"
+    },
+
+    {
+      "name": "wheel6",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "w",
+        "hitpoints": "6"
+      },
+      "sprite_id": "wheel6"
+    },
+
+    {
+      "name": "brick",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "U",
+        "options": "2"
+      },
+      "sprite_id": "brick"
+    },
+
+    {
+      "name": "pipe_start_0_1",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "0",
+        "colors": "1"
+
+      },
+      "sprite_id": "pipe/pipe_start_0_1"
+    },
+
+    {
+      "name": "pipe_start_0_2",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "0",
+        "colors": "2"
+
+      },
+      "sprite_id": "pipe/pipe_start_0_2"
+    },
+
+    {
+      "name": "pipe_start_0_3",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "0",
+        "colors": "3"
+
+      },
+      "sprite_id": "pipe/pipe_start_0_3"
+    },
+
+    {
+      "name": "pipe_start_0_4",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "0",
+        "colors": "4"
+
+      },
+      "sprite_id": "pipe/pipe_start_0_4"
+    },
+
+    {
+      "name": "pipe_start_0_5",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "0",
+        "colors": "5"
+
+      },
+      "sprite_id": "pipe/pipe_start_0_5"
+    },
+
+    {
+      "name": "pipe_start_1_0",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "1",
+        "colors": "0"
+
+      },
+      "sprite_id": "pipe/pipe_start_1_0"
+    },
+    {
+      "name": "pipe_start_1_2",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "1",
+        "colors": "2"
+
+      },
+      "sprite_id": "pipe/pipe_start_1_2"
+    },
+
+    {
+      "name": "pipe_start_1_3",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "1",
+        "colors": "3"
+
+      },
+      "sprite_id": "pipe/pipe_start_1_3"
+    },
+
+    {
+      "name": "pipe_start_1_4",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "1",
+        "colors": "4"
+
+      },
+      "sprite_id": "pipe/pipe_start_1_4"
+    },
+
+    {
+      "name": "pipe_start_1_5",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "1",
+        "colors": "5"
+
+      },
+      "sprite_id": "pipe/pipe_start_1_5"
+    },
+
+    {
+      "name": "pipe_start_2_3",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "2",
+        "colors": "3"
+
+      },
+      "sprite_id": "pipe/pipe_start_2_3"
+    },
+
+    {
+      "name": "pipe_start_2_4",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "2",
+        "colors": "4"
+
+      },
+      "sprite_id": "pipe/pipe_start_2_4"
+    },
+
+    {
+      "name": "pipe_start_2_5",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "2",
+        "colors": "5"
+
+      },
+      "sprite_id": "pipe/pipe_start_2_5"
+    },
+
+    {
+      "name": "pipe_start_2_0",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "2",
+        "colors": "0"
+
+      },
+      "sprite_id": "pipe/pipe_start_2_0"
+    },
+
+    {
+      "name": "pipe_start_2_1",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "2",
+        "colors": "1"
+
+      },
+      "sprite_id": "pipe/pipe_start_2_1"
+    },
+
+    {
+      "name": "pipe_start_3_4",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "3",
+        "colors": "4"
+
+      },
+      "sprite_id": "pipe/pipe_start_3_4"
+    },
+
+    {
+      "name": "pipe_start_3_5",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "3",
+        "colors": "5"
+
+      },
+      "sprite_id": "pipe/pipe_start_3_5"
+    },
+
+    {
+      "name": "pipe_start_3_1",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "3",
+        "colors": "1"
+
+      },
+      "sprite_id": "pipe/pipe_start_3_1"
+    },
+
+    {
+      "name": "pipe_start_3_0",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "3",
+        "colors": "0"
+
+      },
+      "sprite_id": "pipe/pipe_start_3_0"
+    },
+
+    {
+      "name": "pipe_start_3_2",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "3",
+        "colors": "2"
+
+      },
+      "sprite_id": "pipe/pipe_start_3_2"
+    },
+
+    {
+      "name": "pipe_start_4_5",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "4",
+        "colors": "5"
+
+      },
+      "sprite_id": "pipe/pipe_start_4_5"
+    },
+
+    {
+      "name": "pipe_start_4_0",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "4",
+        "colors": "0"
+
+      },
+      "sprite_id": "pipe/pipe_start_4_0"
+    },
+
+    {
+      "name": "pipe_start_4_1",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "4",
+        "colors": "1"
+
+      },
+      "sprite_id": "pipe/pipe_start_4_1"
+    },
+
+
+    {
+      "name": "pipe_start_4_2",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "4",
+        "colors": "2"
+
+      },
+      "sprite_id": "pipe/pipe_start_4_2"
+    },
+
+    {
+      "name": "pipe_start_4_3",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "4",
+        "colors": "3"
+
+      },
+      "sprite_id": "pipe/pipe_start_4_3"
+    },
+
+    {
+      "name": "pipe_start_5_0",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "5",
+        "colors": "0"
+
+      },
+      "sprite_id": "pipe/pipe_start_5_0"
+    },
+
+    {
+      "name": "pipe_start_5_1",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "5",
+        "colors": "1"
+
+      },
+      "sprite_id": "pipe/pipe_start_5_1"
+    },
+
+    {
+      "name": "pipe_start_5_2",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "5",
+        "colors": "2"
+
+      },
+      "sprite_id": "pipe/pipe_start_5_2"
+    },
+
+    {
+      "name": "pipe_start_5_3",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "5",
+        "colors": "3"
+
+      },
+      "sprite_id": "pipe/pipe_start_5_3"
+    },
+
+    {
+      "name": "pipe_start_5_4",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "1",
+        "options": "5",
+        "colors": "4"
+
+      },
+      "sprite_id": "pipe/pipe_start_5_4"
+    },
+
+    {
+      "name": "pipe_part_0",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "2",
+        "options": "0"
+
+      },
+      "sprite_id": "pipe/pipe_part_0"
+    },
+
+    {
+      "name": "pipe_part_1",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "2",
+        "options": "1"
+
+      },
+      "sprite_id": "pipe/pipe_part_1"
+    },
+
+    {
+      "name": "pipe_part_2",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "2",
+        "options": "2"
+
+      },
+      "sprite_id": "pipe/pipe_part_2"
+    },
+
+    {
+      "name": "pipe_part_3",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "2",
+        "options": "3"
+
+      },
+      "sprite_id": "pipe/pipe_part_3"
+    },
+
+    {
+      "name": "pipe_part_4",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "2",
+        "options": "4"
+
+      },
+      "sprite_id": "pipe/pipe_part_4"
+    },
+
+    {
+      "name": "pipe_part_5",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "2",
+        "options": "5"
+
+      },
+      "sprite_id": "pipe/pipe_part_5"
+    },
+
+    {
+      "name": "pipe_end_0",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "3",
+        "options": "0"
+
+      },
+      "sprite_id": "pipe/pipe_end_0"
+    },
+
+    {
+      "name": "pipe_end_1",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "3",
+        "options": "1"
+
+      },
+      "sprite_id": "pipe/pipe_end_1"
+    },
+
+    {
+      "name": "pipe_end_2",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "3",
+        "options": "2"
+
+      },
+      "sprite_id": "pipe/pipe_end_2"
+    },
+
+    {
+      "name": "pipe_end_3",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "3",
+        "options": "3"
+
+      },
+      "sprite_id": "pipe/pipe_end_3"
+    },
+
+    {
+      "name": "pipe_end_4",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "3",
+        "options": "4"
+
+      },
+      "sprite_id": "pipe/pipe_end_4"
+    },
+
+    {
+      "name": "pipe_end_5",
+      "layer_id": "fields",
+      "sublayers": {
+        "types": "P",
+        "hitpoints": "3",
+        "options": "5"
+
+      },
+      "sprite_id": "pipe/pipe_end_5"
+    },
+
+
   ]
 }
