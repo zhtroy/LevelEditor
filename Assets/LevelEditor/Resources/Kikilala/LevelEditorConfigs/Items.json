@@ -275,7 +275,7 @@
       "sublayers": {
         "types": "s"
       },
-      "sprite_id": "bomb/round_bomb"
+      "sprite_id": "bomb/line_bomb"
     },
 
     {
@@ -735,14 +735,106 @@
     },
 
     {
-      "name": "brick",
+      "name": "bricks_1",
       "layer_id": "items",
       "sublayers": {
         "types": "U",
-        "options": "2"
+        "hitpoints": "1"
       },
-      "sprite_id": "brick"
+      "sprite_id": "bricks_1"
     },
+
+    {
+      "name": "bricks_2",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "U",
+        "hitpoints": "2"
+      },
+      "sprite_id": "bricks_2"
+    },
+
+    {
+      "name": "bricks_3",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "U",
+        "hitpoints": "3"
+      },
+      "sprite_id": "bricks_3"
+    },
+
+    {
+      "name": "bricks_4",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "U",
+        "hitpoints": "4"
+      },
+      "sprite_id": "bricks_4"
+    },
+
+    {
+      "name": "question_purple",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "Q",
+        "colors": "0"
+      },
+      "sprite_id": "purple_box"
+    },
+
+    {
+      "name": "question_pink",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "Q",
+        "colors": "1"
+      },
+      "sprite_id": "pink_box"
+    },
+
+    {
+      "name": "question_yellow",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "Q",
+        "colors": "2"
+      },
+      "sprite_id": "yellow_box"
+    },
+
+    {
+      "name": "question_orange",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "Q",
+        "colors": "3"
+      },
+      "sprite_id": "orange_box"
+    },
+
+    {
+      "name": "question_blue",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "Q",
+        "colors": "4"
+      },
+      "sprite_id": "white_box"
+    },
+
+    {
+      "name": "question_green",
+      "layer_id": "items",
+      "sublayers": {
+        "types": "Q",
+        "colors": "5"
+      },
+      "sprite_id": "green_box"
+    },
+
+
 
     {
       "name": "pipe_start_0_1",

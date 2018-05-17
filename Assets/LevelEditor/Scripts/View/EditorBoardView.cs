@@ -36,7 +36,11 @@ namespace CommonLevelEditor
         private void OnDestroy()
         {
             CleanCellCollidersCallBacks();
-            _board.onDataChanged -= RefreshSingleCell;
+            if (_board!=null)
+            {
+                _board.onDataChanged -= RefreshSingleCell;
+            }
+            
 
             _comList.OnClean -= _comList_OnClean;
             _comList.OnDirty -= _comList_OnDirty;

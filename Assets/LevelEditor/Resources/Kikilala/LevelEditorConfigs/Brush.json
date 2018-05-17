@@ -4,6 +4,9 @@
       "category_name": "blocker&&window",
       "sprite_id": "blocker",
       "brushes": [
+
+
+
         {
           "brush_name": "blocker",
           "brush_tiles": [
@@ -206,7 +209,7 @@
       ]
     },
 
-     {
+    {
       "category_name": "enter_exit",
       "sprite_id": "exit",
       "brushes": [
@@ -255,7 +258,1724 @@
           "sprite_id": "treasure_box_1"
         }
       ]
-    }
+    },
 
+
+    {
+      "category_name": "gems",
+      "sprite_id": "purple",
+      "brushes": [
+
+        {
+          "brush_name": "randomColor",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "randomColor",
+                "normalField"
+              ]
+            }
+          ],
+
+          "sprite_id": "random_color"
+        },
+        {
+          "brush_name": "gem_purple",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "gem_purple",
+                "normalField"
+
+              ]
+            }
+          ],
+
+          "sprite_id": "purple"
+        },
+
+        {
+          "brush_name": "gem_pink",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "gem_pink",
+                "normalField"
+              ]
+            }
+          ],
+
+          "sprite_id": "pink"
+        },
+
+        {
+          "brush_name": "gem_yellow",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "gem_yellow",
+                "normalField"
+              ]
+            }
+          ],
+
+          "sprite_id": "yellow"
+        },
+
+        {
+          "brush_name": "gem_red",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "gem_red",
+                "normalField"
+              ]
+            }
+          ],
+
+          "sprite_id": "red"
+        },
+
+        {
+          "brush_name": "gem_blue",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "gem_blue",
+                "normalField"
+              ]
+            }
+          ],
+
+          "sprite_id": "blue"
+        },
+
+        {
+          "brush_name": "gem_green",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "gem_green",
+                "normalField"
+              ]
+            }
+          ],
+
+          "sprite_id": "green"
+        },
+      ]
+    },
+
+    {
+      "category_name": "bombs",
+      "sprite_id": "bomb/round_bomb",
+      "brushes": [
+
+        {
+          "brush_name": "roundBomb",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "roundBomb",
+                "normalField"
+              ]
+            }
+          ],
+
+          "sprite_id": "bomb/round_bomb"
+        },
+        {
+          "brush_name": "lineBomb",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "lineBomb",
+                "normalField"
+
+              ]
+            }
+          ],
+
+          "sprite_id": "bomb/line_bomb"
+        },
+
+        {
+          "brush_name": "rainbow",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "rainbow",
+                "normalField"
+              ]
+            }
+          ],
+
+          "sprite_id": "bomb/rainbow_bomb"
+        },
+
+        {
+          "brush_name": "doubleRoundBomb",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "doubleRoundBomb",
+                "normalField"
+              ]
+            }
+          ],
+
+          "sprite_id": "bomb/double_round_bomb"
+        },
+
+        {
+          "brush_name": "starBomb",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "starBomb",
+                "normalField"
+              ]
+            }
+          ],
+
+          "sprite_id": "bomb/star_bomb"
+        },
+
+        {
+          "brush_name": "doubleRainbowBomb",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "doubleRainbowBomb",
+                "normalField"
+              ]
+            }
+          ],
+
+          "sprite_id": "bomb/double_rainbow_bomb"
+        },
+
+        {
+          "brush_name": "triLineBomb",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "triLineBomb",
+                "normalField"
+              ]
+            }
+          ],
+
+          "sprite_id": "bomb/tri_line_bomb"
+        },
+
+        {
+          "brush_name": "triRoundBomb",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "triRoundBomb",
+                "normalField"
+              ]
+            }
+          ],
+
+          "sprite_id": "bomb/tri_round_bomb"
+        },
+      ]
+    },
+
+    {
+      "category_name": "layered",
+      "sprite_id": "layer_1",
+      "brushes": [
+
+        {
+          "brush_name": "layered1",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "layered1",
+                "normalField"
+              ]
+            }
+          ],
+
+          "sprite_id": "layer_1"
+        },
+        {
+          "brush_name": "layered2",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "layered2",
+                "normalField"
+
+              ]
+            }
+          ],
+
+          "sprite_id": "layer_2"
+        },
+
+        {
+          "brush_name": "layered3",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "layered3",
+                "normalField"
+              ]
+            }
+          ],
+
+          "sprite_id": "layer_3"
+        },
+
+        {
+          "brush_name": "layered4",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "layered4",
+                "normalField"
+              ]
+            }
+          ],
+
+          "sprite_id": "layer_4"
+        },
+
+        {
+          "brush_name": "layered5",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "layered5",
+                "normalField"
+              ]
+            }
+          ],
+
+          "sprite_id": "layer_5"
+        },
+
+      ]
+    },
+
+    {
+      "category_name": "dirt",
+      "sprite_id": "dirt_2",
+      "brushes": [
+
+        {
+          "brush_name": "dirt1",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "dirt1",
+                "normalField"
+              ]
+            }
+          ],
+
+          "sprite_id": "dirt_1"
+        },
+        {
+          "brush_name": "dirt2",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "dirt2",
+                "normalField"
+
+              ]
+            }
+          ],
+
+          "sprite_id": "dirt_2"
+        },
+
+        {
+          "brush_name": "dirt3",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "dirt3",
+                "normalField"
+              ]
+            }
+          ],
+
+          "sprite_id": "dirt_3"
+        },
+
+        {
+          "brush_name": "dirt4",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "dirt4",
+                "normalField"
+              ]
+            }
+          ],
+
+          "sprite_id": "dirt_4"
+        },
+
+        {
+          "brush_name": "dirt5",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "dirt5",
+                "normalField"
+              ]
+            }
+          ],
+
+          "sprite_id": "dirt_5"
+        },
+
+      ]
+    },
+
+    {
+      "category_name": "droppings",
+      "sprite_id": "drop1",
+      "brushes": [
+
+        {
+          "brush_name": "dropping1",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "dropping1",
+                "normalField"
+              ]
+            }
+          ],
+
+          "sprite_id": "drop1"
+        },
+        {
+          "brush_name": "dropping2",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "dropping2",
+                "normalField"
+
+              ]
+            }
+          ],
+
+          "sprite_id": "drop2"
+        },
+
+        {
+          "brush_name": "dropping3",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "dropping3",
+                "normalField"
+              ]
+            }
+          ],
+
+          "sprite_id": "drop3"
+        }
+
+      ]
+    },
+
+    {
+      "category_name": "creams",
+      "sprite_id": "cream",
+      "brushes": [
+
+        {
+          "brush_name": "cream",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "cream",
+                "normalField"
+              ]
+            }
+          ],
+
+          "sprite_id": "cream"
+        },
+        {
+          "brush_name": "cream_factory",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "cream_factory",
+                "normalField"
+
+              ]
+            }
+          ],
+
+          "sprite_id": "cream_machine"
+        }
+      ]
+    },
+
+    {
+      "category_name": "caged",
+      "sprite_id": "cage_3",
+      "brushes": [
+
+        {
+          "brush_name": "caged1",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "caged1",
+              ]
+            }
+          ],
+
+          "sprite_id": "cage_1"
+        },
+
+        {
+          "brush_name": "caged2",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "caged2",
+              ]
+            }
+          ],
+
+          "sprite_id": "cage_2"
+        },
+        {
+          "brush_name": "caged3",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "caged3",
+              ]
+            }
+          ],
+
+          "sprite_id": "cage_3"
+        },
+        {
+          "brush_name": "caged4",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "caged4",
+              ]
+            }
+          ],
+
+          "sprite_id": "cage_4"
+        },
+        {
+          "brush_name": "caged5",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "caged5",
+              ]
+            }
+          ],
+
+          "sprite_id": "cage_5"
+        }
+      ]
+    },
+
+    {
+      "category_name": "magnets",
+      "sprite_id": "magnet",
+      "brushes": [
+
+        {
+          "brush_name": "magnet",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "magnet",
+              ]
+            }
+          ],
+
+          "sprite_id": "magnet"
+        }
+      ]
+    },
+
+    {
+      "category_name": "portals",
+      "sprite_id": "portal_entrance_a",
+      "brushes": [
+
+        {
+          "brush_name": "portal_entrance_a",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "portal_entrance_a",
+                "emptyField",
+                "window"
+              ]
+            }
+          ],
+
+          "sprite_id": "portal_entrance_a"
+        },
+
+        {
+          "brush_name": "portal_exit_a",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "portal_exit_a",
+                "emptyField",
+                "window"
+              ]
+            }
+          ],
+
+          "sprite_id": "portal_exit_a"
+        },
+
+        {
+          "brush_name": "portal_entrance_b",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "portal_entrance_b",
+                "emptyField",
+                "window"
+              ]
+            }
+          ],
+
+          "sprite_id": "portal_entrance_b"
+        },
+
+        {
+          "brush_name": "portal_exit_b",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "portal_exit_b",
+                "emptyField",
+                "window"
+              ]
+            }
+          ],
+
+          "sprite_id": "portal_exit_b"
+        },
+
+        {
+          "brush_name": "portal_entrance_c",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "portal_entrance_c",
+                "emptyField",
+                "window"
+              ]
+            }
+          ],
+
+          "sprite_id": "portal_entrance_c"
+        },
+
+        {
+          "brush_name": "portal_exit_c",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "portal_exit_c",
+                "emptyField",
+                "window"
+              ]
+            }
+          ],
+
+          "sprite_id": "portal_exit_c"
+        },
+
+        {
+          "brush_name": "portal_entrance_d",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "portal_entrance_d",
+                "emptyField",
+                "window"
+              ]
+            }
+          ],
+
+          "sprite_id": "portal_entrance_d"
+        },
+
+        {
+          "brush_name": "portal_exit_d",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "portal_exit_d",
+                "emptyField",
+                "window"
+              ]
+            }
+          ],
+
+          "sprite_id": "portal_exit_d"
+        },
+
+        {
+          "brush_name": "portal_entrance_e",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "portal_entrance_e",
+                "emptyField",
+                "window"
+              ]
+            }
+          ],
+
+          "sprite_id": "portal_entrance_e"
+        },
+
+        {
+          "brush_name": "portal_exit_e",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "portal_exit_e",
+                "emptyField",
+                "window"
+              ]
+            }
+          ],
+
+          "sprite_id": "portal_exit_e"
+        },
+
+        {
+          "brush_name": "portal_entrance_f",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "portal_entrance_f",
+                "emptyField",
+                "window"
+              ]
+            }
+          ],
+
+          "sprite_id": "portal_entrance_f"
+        },
+
+        {
+          "brush_name": "portal_exit_f",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "portal_exit_f",
+                "emptyField",
+                "window"
+              ]
+            }
+          ],
+
+          "sprite_id": "portal_exit_f"
+        },
+
+        {
+          "brush_name": "portal_entrance_g",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "portal_entrance_g",
+                "emptyField",
+                "window"
+              ]
+            }
+          ],
+
+          "sprite_id": "portal_entrance_g"
+        },
+
+        {
+          "brush_name": "portal_exit_g",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "portal_exit_g",
+                "emptyField",
+                "window"
+              ]
+            }
+          ],
+
+          "sprite_id": "portal_exit_g"
+        }
+      ]
+    },
+
+    {
+      "category_name": "wheels",
+      "sprite_id": "wheel5",
+      "brushes": [
+
+        {
+          "brush_name": "wheel4",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "wheel4"
+              ]
+            }
+          ],
+
+          "sprite_id": "wheel4"
+        },
+
+        {
+          "brush_name": "wheel5",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "wheel5"
+              ]
+            }
+          ],
+
+          "sprite_id": "wheel5"
+        },
+
+        {
+          "brush_name": "wheel6",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "wheel6"
+              ]
+            }
+          ],
+
+          "sprite_id": "wheel6"
+        }
+      ]
+    },
+
+    {
+      "category_name": "bricks",
+      "sprite_id": "bricks_1",
+      "brushes": [
+
+        {
+          "brush_name": "bricks_1",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "bricks_1"
+              ]
+            }
+          ],
+
+          "sprite_id": "bricks_1"
+        },
+
+        {
+          "brush_name": "bricks_2",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "bricks_2"
+              ]
+            }
+          ],
+
+          "sprite_id": "bricks_2"
+        },
+
+        {
+          "brush_name": "bricks_3",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "bricks_3"
+              ]
+            }
+          ],
+
+          "sprite_id": "bricks_3"
+        },
+
+        {
+          "brush_name": "bricks_4",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "bricks_4"
+              ]
+            }
+          ],
+
+          "sprite_id": "bricks_4"
+        }
+      ]
+    },
+
+    {
+      "category_name": "question_box",
+      "sprite_id": "purple_box",
+
+      "brushes": [
+
+        {
+          "brush_name": "question_purple",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "question_purple"
+              ]
+            }
+          ],
+          "sprite_id": "purple_box"
+        },
+
+        {
+          "brush_name": "question_pink",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "question_pink"
+              ]
+            }
+          ],
+          "sprite_id": "pink_box"
+        },
+
+        {
+          "brush_name": "question_yellow",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "question_yellow"
+              ]
+            }
+          ],
+          "sprite_id": "yellow_box"
+        },
+        {
+          "brush_name": "question_orange",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "question_orange"
+              ]
+            }
+          ],
+          "sprite_id": "orange_box"
+        },
+        {
+          "brush_name": "question_blue",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "question_blue"
+              ]
+            }
+          ],
+          "sprite_id": "white_box"
+        },
+
+        {
+          "brush_name": "question_green",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "question_green"
+              ]
+            }
+          ],
+          "sprite_id": "green_box"
+        }
+      ]
+    },
+
+    {
+      "category_name": "line_start_0",
+      "sprite_id": "pipe/pipe_start_0",
+
+      "brushes": [
+
+        {
+          "brush_name": "pipe_start_0_1",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_0_1"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_0_1"
+        },
+
+        {
+          "brush_name": "pipe_start_0_2",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_0_2"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_0_2"
+        },
+
+        {
+          "brush_name": "pipe_start_0_3",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_0_3"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_0_3"
+        },
+
+        {
+          "brush_name": "pipe_start_0_4",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_0_4"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_0_4"
+        },
+
+        {
+          "brush_name": "pipe_start_0_5",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_0_5"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_0_5"
+        }
+      ]
+    },
+
+    {
+      "category_name": "line_start_1",
+      "sprite_id": "pipe/pipe_start_1",
+
+      "brushes": [
+
+        {
+          "brush_name": "pipe_start_1_2",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_1_2"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_1_2"
+        },
+
+        {
+          "brush_name": "pipe_start_1_3",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_1_3"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_1_3"
+        },
+
+        {
+          "brush_name": "pipe_start_1_4",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_1_4"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_1_4"
+        },
+
+        {
+          "brush_name": "pipe_start_1_5",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_1_5"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_1_5"
+        },
+        {
+          "brush_name": "pipe_start_1_0",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_1_0"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_1_0"
+        },
+      ]
+    },
+
+    {
+      "category_name": "line_start_2",
+      "sprite_id": "pipe/pipe_start_2",
+
+      "brushes": [
+
+        {
+          "brush_name": "pipe_start_2_3",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_2_3"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_2_3"
+        },
+
+        {
+          "brush_name": "pipe_start_2_4",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_2_4"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_2_4"
+        },
+
+        {
+          "brush_name": "pipe_start_2_5",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_2_5"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_2_5"
+        },
+
+        {
+          "brush_name": "pipe_start_2_0",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_2_0"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_2_0"
+        },
+
+        {
+          "brush_name": "pipe_start_2_1",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_2_1"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_2_1"
+        },
+      ]
+    },
+
+    {
+      "category_name": "line_start_3",
+      "sprite_id": "pipe/pipe_start_3",
+
+      "brushes": [
+
+        {
+          "brush_name": "pipe_start_3_4",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_3_4"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_3_4"
+        },
+
+        {
+          "brush_name": "pipe_start_3_5",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_3_5"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_3_5"
+        },
+
+        {
+          "brush_name": "pipe_start_3_0",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_3_0"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_3_0"
+        },
+
+        {
+          "brush_name": "pipe_start_3_1",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_3_1"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_3_1"
+        },
+
+        {
+          "brush_name": "pipe_start_3_2",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_3_2"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_3_2"
+        }
+      ]
+    },
+
+    {
+      "category_name": "line_start_4",
+      "sprite_id": "pipe/pipe_start_4",
+
+      "brushes": [
+
+        {
+          "brush_name": "pipe_start_4_5",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_4_5"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_4_5"
+        },
+
+        {
+          "brush_name": "pipe_start_4_0",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_4_0"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_4_0"
+        },
+        {
+          "brush_name": "pipe_start_4_1",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_4_1"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_4_1"
+        },
+        {
+          "brush_name": "pipe_start_4_2",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_4_2"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_4_2"
+        },
+        {
+          "brush_name": "pipe_start_4_3",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_4_3"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_4_3"
+        }
+      ]
+    },
+
+    {
+      "category_name": "line_start_5",
+      "sprite_id": "pipe/pipe_start_5",
+
+      "brushes": [
+
+        {
+          "brush_name": "pipe_start_5_0",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_5_0"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_5_0"
+        },
+
+        {
+          "brush_name": "pipe_start_5_1",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_5_1"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_5_1"
+        },
+        {
+          "brush_name": "pipe_start_5_2",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_5_2"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_5_2"
+        },
+        {
+          "brush_name": "pipe_start_5_3",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_5_3"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_5_3"
+        },
+        {
+          "brush_name": "pipe_start_5_4",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_start_5_4"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_start_5_4"
+        }
+      ]
+    },
+
+    {
+      "category_name": "pipe_part",
+      "sprite_id": "pipe/pipe_part_0",
+
+      "brushes": [
+
+        {
+          "brush_name": "pipe_part_0",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_part_0"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_part_0"
+        },
+
+        {
+          "brush_name": "pipe_part_1",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_part_1"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_part_1"
+        },
+        {
+          "brush_name": "pipe_part_2",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_part_2"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_part_2"
+        },
+        {
+          "brush_name": "pipe_part_3",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_part_3"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_part_3"
+        },
+        {
+          "brush_name": "pipe_part_4",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_part_4"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_part_4"
+        },
+        {
+          "brush_name": "pipe_part_5",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_part_5"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_part_5"
+        }
+      ]
+    },
+
+    {
+      "category_name": "pipe_end",
+      "sprite_id": "pipe/pipe_end_0",
+
+      "brushes": [
+
+        {
+          "brush_name": "pipe_end_0",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_end_0"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_end_0"
+        },
+
+        {
+          "brush_name": "pipe_end_1",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_end_1"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_end_1"
+        },
+        {
+          "brush_name": "pipe_end_2",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_end_2"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_end_2"
+        },
+        {
+          "brush_name": "pipe_end_3",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_end_3"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_end_3"
+        },
+        {
+          "brush_name": "pipe_end_4",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_end_4"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_end_4"
+        },
+        {
+          "brush_name": "pipe_end_5",
+          "brush_tiles": [
+            {
+              "offsetx": 0,
+              "offsety": 0,
+              "items": [
+                "pipe_end_5"
+              ]
+            }
+          ],
+          "sprite_id": "pipe/pipe_end_5"
+        }
+      ]
+    }
   ]
 }
