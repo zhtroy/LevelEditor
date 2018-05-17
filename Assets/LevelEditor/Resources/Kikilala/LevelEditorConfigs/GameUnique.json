@@ -2,7 +2,7 @@
   "boardwidth" : 9,
   "boardheight": 12,
   "invisible_board_index": [
-    1,2
+    107,105,103,101,99
   ], 
 
 

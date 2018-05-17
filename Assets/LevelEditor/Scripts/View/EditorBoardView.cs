@@ -127,6 +127,11 @@ namespace CommonLevelEditor
                 _layers[item] = new List<BoardCellView>();
                 for (int i = 0; i < board.CellNum; i++)
                 {
+                    if (LevelEditorInfo.Instance.InvisibleBoardIndex.Contains(i))
+                    {
+                        _layers[item].Add(null);
+                        continue;
+                    }
                     BoardCellView cell = Instantiate(prefabCellView);
                     cell.name = item +"CellView"+ i;
                     cell.transform.SetParent(layer.transform);
@@ -146,16 +151,20 @@ namespace CommonLevelEditor
                 for(int i=0;i<layer.Value.Count;i++)
                 {
                     string itemname = layer.Value[i];
-
+                    var cellView = _layers[layer.Key][i];
+                    if (cellView==null)
+                    {
+                        continue;
+                    }
                     if (string.IsNullOrEmpty(itemname))
                     {
-                        _layers[layer.Key][i].ClearImage();
+                        cellView.ClearImage();
                        
                     }
                     else
                     {
                         var sprite = LevelEditorInfo.Instance.GetItemSpriteByName(itemname);
-                        _layers[layer.Key][i].SetImage(sprite);
+                        cellView.SetImage(sprite);
                     }
 
                 }
@@ -184,6 +193,13 @@ namespace CommonLevelEditor
           
             for (int i = 0; i < _board.CellNum; i++)
             {
+
+                if (LevelEditorInfo.Instance.InvisibleBoardIndex.Contains(i))
+                {
+                    _listListeners.Add(null);
+                    continue;
+                }
+
                 BoardTouchListener listener = Instantiate(prefabHexCollider);
 
                 listener.transform.SetParent(colliderRoot.transform);
@@ -212,7 +228,12 @@ namespace CommonLevelEditor
         {
             foreach (var item in _listListeners)
             {
-                item.onLeftMouseBrushAction -= OnBrushIndex;
+                if (item!=null)
+                {
+                    item.onLeftMouseBrushAction -= OnBrushIndex;
+
+                }
+                
 
             }
         }
