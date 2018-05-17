@@ -74,7 +74,7 @@ namespace CommonLevelEditor
 
             foreach (var typename in LevelEditorInfo.Instance.LevelNumToLevelType.Values)
             {
-                var files = Directory.GetFiles(LevelEditorInfo.Instance.FullConfigurationFolderPath, typename + "*.json");
+                var files = Directory.GetFiles(LevelEditorInfo.Instance.FullConfigurationFolderPath, typename + ".json");
                 foreach (var filename in files)
                 {
 

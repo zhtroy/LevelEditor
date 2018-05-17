@@ -59,6 +59,7 @@ namespace CommonLevelEditor
         //GameUnique
         public  int BoardWidth { get; private set; }
         public  int BoardHeight { get; private set; }
+        public  List<int> InvisibleBoardIndex { get; private set; }
         public SortedDictionary<int, string> LevelNumToLevelType { get; private set; }
         public int SortLevelBeforeThisNum { get; private set; }
         public int LevelsPerFile { get; private set; }
@@ -149,7 +150,15 @@ namespace CommonLevelEditor
         
             BoardWidth = node.GetInt(FIELD_BOARD_WIDTH);
             BoardHeight = node.GetInt(FIELD_BOARD_HEIGHT);
-            
+
+            InvisibleBoardIndex = new List<int>();
+            var invisible_board_index = node.GetCollection("invisible_board_index");
+
+            foreach (var item in invisible_board_index)
+            {
+                InvisibleBoardIndex.Add(item.AsInt());
+            }
+
             //关卡类型与数字段的对应关系
             LevelNumToLevelType = new SortedDictionary<int,string>();
             var dic = node.GetDictionary(FIELD_LEVELNUM_TO_TYPE);

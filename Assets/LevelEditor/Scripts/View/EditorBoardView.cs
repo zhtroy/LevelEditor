@@ -221,6 +221,11 @@ namespace CommonLevelEditor
         {
             Debug.Log("I'm brushed " + idx);
             BrushData brushData = brushList.CurrentBrush;
+            if (brushData == null)
+            {
+                Debug.LogWarning("没有选择画刷");
+                return;
+            }
 
             int gridX = _coord.GetGridX(idx);
             int gridY = _coord.GetGridY(idx);

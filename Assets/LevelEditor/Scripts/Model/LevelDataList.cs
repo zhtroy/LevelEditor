@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using Wooga.Foundation.Json;
 using System;
 using LitJson;
+using System.IO;
 
 namespace CommonLevelEditor
 {
@@ -117,10 +118,14 @@ namespace CommonLevelEditor
                         
                         if (tempList.Count>= LevelEditorInfo.Instance.LevelsPerFile)
                         {
-                            SaveLevels(path + levelTypeNames[i] + "_" + levelFileNum.ToString(), tempList);
-                            levelFileNum++;
-                         
-                            tempList.Clear();
+                            if (levelTypeNames[i].EndsWith("*"))
+                            {
+                                SaveLevels(path + levelTypeNames[i].TrimEnd(new char[]{'*'}) + "_" + levelFileNum.ToString(), tempList);
+                                levelFileNum++;
+
+                                tempList.Clear();
+                            }
+                            
                         }
                         idx++;
                     }
@@ -131,8 +136,29 @@ namespace CommonLevelEditor
                 }
                 if (tempList.Count > 0)
                 {
-                    SaveLevels(path + levelTypeNames[i] + "_" + levelFileNum.ToString(), tempList);
+                    if (levelTypeNames[i].EndsWith("*"))
+                    {
+                        SaveLevels(path + levelTypeNames[i].TrimEnd(new char[] { '*' }) + "_" + levelFileNum.ToString(), tempList);
+                    }
+                    else
+                    {
+                        SaveLevels(path + levelTypeNames[i], tempList);
+                    }
                     
+                    
+                }
+                if (tempList.Count==0)
+                {
+                    //删除不用的文件
+                    if (!levelTypeNames[i].EndsWith("*"))
+                    {
+                        var files = Directory.GetFiles(LevelEditorInfo.Instance.FullConfigurationFolderPath, levelTypeNames[i] + ".json");
+                        foreach (var filename in files)
+                        {
+                            File.Delete(filename);
+                                
+                        }
+                    }
                 }
                 
             }
@@ -148,6 +174,13 @@ namespace CommonLevelEditor
                 JSONNode levelNode = content[key];
                 LevelData levelData = new LevelData();
                 levelData.Update(levelNode);
+
+                //有相同levelNum的就不加了
+                if (_list.Find(x=>x.levelNum == levelData.levelNum)!=null)
+                {
+                    continue;
+                }
+
                 _list.Add(levelData);
             }
             SortLevelList();

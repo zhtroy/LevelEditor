@@ -244,7 +244,7 @@
       "layer_id": "items",
       "sublayers": {
         "types": "*",
-        "colors": "3"
+        "colors": "4"
       },
       "sprite_id": "blue"
     },

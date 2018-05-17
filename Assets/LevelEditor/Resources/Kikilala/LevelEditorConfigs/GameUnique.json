@@ -1,13 +1,26 @@
 {
   "boardwidth" : 9,
   "boardheight": 12,
+  "invisible_board_index": [
+    1,2
+  ], 
+
 
   "num_to_level_filename": 
   {
 
-    "normal_level": 5000,
-    "event_level": 50000,
-    "test_level": 100000
+    "normal_level*": 5000,
+    "event_level*": 50000,
+    "test_level_1": 55000,
+    "test_level_2": 60000,
+    "test_level_3": 65000,
+    "test_level_4": 70000,
+    "test_level_5": 75000,
+    "test_level_6": 80000,
+    "test_level_7": 85000,
+    "test_level_8": 90000,
+    "test_level_9": 95000,
+    "test_level_10": 100000
 
   },
   
