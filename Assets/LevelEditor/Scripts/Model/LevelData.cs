@@ -144,11 +144,11 @@ namespace CommonLevelEditor
 
 		public bool superMergingEnabled { get; set; }
 
-		public IList<ItemTypeId> preventItems { get; set; }
+		public List<string> preventItems { get; set; }
 
 		public IDictionary<ItemTypeId, int> ensureItems { get; set; }
 
-		public IList<int> starThresholds { get; set; }
+		public List<int> starThresholds { get; set; }
 
 		public string bossName { get; set; }
 
@@ -248,7 +248,7 @@ namespace CommonLevelEditor
                 { ItemTypeId.Key.ToString(), base_min }
             };
 
-            preventItems = new List<ItemTypeId>();
+            preventItems = new List<string>();
 			ensureItems = new Dictionary<ItemTypeId, int>();
 			minScoreWinningCondition = 0;
 			movesOver = false;
@@ -438,7 +438,7 @@ namespace CommonLevelEditor
 
 			foreach (var preventItem in preventItems)
 			{
-				prevents.Add(preventItem.ToString());
+				prevents.Add(preventItem);
 			}
 
 			return prevents;
@@ -833,8 +833,8 @@ namespace CommonLevelEditor
 				{
 					foreach (var item in items)
 					{
-						ItemTypeId typeId = LevelEditorUtils.ParseEnum<ItemTypeId>(item.AsString().UppercaseFirst());
-						preventItems.Add(typeId);
+						
+						preventItems.Add(item.AsString());
 					}
 				}
 				catch (Exception ex)

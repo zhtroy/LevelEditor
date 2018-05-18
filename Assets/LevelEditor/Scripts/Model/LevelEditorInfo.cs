@@ -18,6 +18,7 @@ namespace CommonLevelEditor
         public const string PATH_DEFAULT_CONFIG = "Assets/Resources/Configuration/";
         public const string FILE_META = "LevelEditorMeta";
         public const string FILE_GAME_UNIQUE = "GameUnique";
+        public const string FILE_LEVEL_SETTINGS = "LevelSettings";
         public const string FILE_GAME_ITEMS = "Items";
         public const string FILE_BRUSH = "Brush";
         public const string FILE_GAME_CONFIG = "game";
@@ -70,6 +71,8 @@ namespace CommonLevelEditor
         public Dictionary<string,BoardItem> DicBoardItem { get; private set; }
         private Dictionary<string, Sprite> _itemSprites;
 
+        public LevelSettingConfig levelSettingConfig { get; private set; }
+
         //game config
         public GameConfig gameConfig { get; private set; }
 
@@ -97,6 +100,8 @@ namespace CommonLevelEditor
             
 
             UpdateGameUniqueData(EditorConfigPath + FILE_GAME_UNIQUE);
+
+            UpdateLevelSettingsData(EditorConfigPath + FILE_LEVEL_SETTINGS);
 
             UpdateGameItems(EditorConfigPath + FILE_GAME_ITEMS);
 
@@ -143,6 +148,17 @@ namespace CommonLevelEditor
                 DicBoardItem.Add(t.Name, t);
             }
 
+        }
+
+        void UpdateLevelSettingsData(string path)
+        {
+            var node = LevelEditorUtils.JSONNodeFromFileResourcesPath(path);
+            if (node != null)
+            {
+                levelSettingConfig = new LevelSettingConfig();
+                levelSettingConfig.Update(node);
+            }
+            
         }
         void UpdateGameUniqueData(string gameSpecificPath)
         {

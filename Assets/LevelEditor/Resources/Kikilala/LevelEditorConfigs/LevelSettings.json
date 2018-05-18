@@ -1,0 +1,9 @@
+{
+	"prevent_item_collection":[
+		"LineBomb",
+		"RoundBomb",
+		"DoubleRoundBomb",
+		"TriRoundBomb"
+	]
+	
+}
