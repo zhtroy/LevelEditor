@@ -1,9 +1,41 @@
 {
-	"prevent_item_collection":[
-		"LineBomb",
-		"RoundBomb",
-		"DoubleRoundBomb",
-		"TriRoundBomb"
-	]
+  "prevent_item_collection": [
+    "LineBomb",
+    "RoundBomb",
+    "DoubleRoundBomb",
+    "TriRoundBomb"
+  ],
+
+  "chance_item_collection": [
+    "Dirt_1",
+    "Dirt_2",
+    "Dirt_3",
+    "Dirt_4",
+    "Dirt_5",
+    "Question"
+  ],
+
+  "total_item_collection": [
+
+  ],
+
+  "ensure_item_collection": [
+    
+  ],
+
+  "objective_collection": [
+    "backgroundfield",
+    "layered",
+    "drop1",
+    "drop2",
+    "drop3",
+    "caged",
+    "dirt",
+    "cream",
+    "wheel",
+    "creator"
+
+  ]
+
 	
 }

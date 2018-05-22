@@ -92,6 +92,15 @@
     },
 
     {
+      "name": "backgroundfield",
+      "layer_id": "±à¼­Æ÷ÓÃ",
+      "sublayers": {
+        
+      },
+      "sprite_id": "jelly_2"
+    },
+
+    {
       "name": "jelly1",
       "layer_id": "fields",
       "sublayers": {
@@ -139,6 +148,15 @@
         "hitpoints": "5"
       },
       "sprite_id": "jelly_5"
+    },
+
+    {
+      "name": "creator",
+      "layer_id": "editor",
+      "sublayers": {
+
+      },
+      "sprite_id": "creator_2"
     },
 
     {
@@ -200,7 +218,7 @@
     },
 
     {
-      "name": "gem_purple",
+      "name": "Color0",
       "layer_id": "items",
       "sublayers": {
         "types": "*",
@@ -210,7 +228,7 @@
     },
 
     {
-      "name": "gem_pink",
+      "name": "Color1",
       "layer_id": "items",
       "sublayers": {
         "types": "*",
@@ -220,7 +238,7 @@
     },
 
     {
-      "name": "gem_yellow",
+      "name": "Color2",
       "layer_id": "items",
       "sublayers": {
         "types": "*",
@@ -230,7 +248,7 @@
     },
 
     {
-      "name": "gem_red",
+      "name": "Color3",
       "layer_id": "items",
       "sublayers": {
         "types": "*",
@@ -240,7 +258,7 @@
     },
 
     {
-      "name": "gem_blue",
+      "name": "Color4",
       "layer_id": "items",
       "sublayers": {
         "types": "*",
@@ -251,7 +269,7 @@
 
 
     {
-      "name": "gem_green",
+      "name": "Color5",
       "layer_id": "items",
       "sublayers": {
         "types": "*",
@@ -331,7 +349,14 @@
       },
       "sprite_id": "bomb/tri_round_bomb"
     },
-
+    {
+      "name": "layered",
+      "layer_id": "±à¼­Æ÷",
+      "sublayers": {
+      
+      },
+      "sprite_id": "layer_2"
+    },
     {
       "name": "layered1",
       "layer_id": "items",
@@ -383,7 +408,17 @@
     },
 
     {
-      "name": "dirt1",
+      "name": "dirt",
+      "layer_id": "±à¼­Æ÷",
+      "sublayers": {
+
+      },
+      "sprite_id": "dirt_2"
+    },
+
+
+    {
+      "name": "Dirt_1",
       "layer_id": "items",
       "sublayers": {
         "types": "d",
@@ -393,7 +428,7 @@
     },
 
     {
-      "name": "dirt2",
+      "name": "Dirt_2",
       "layer_id": "items",
       "sublayers": {
         "types": "d",
@@ -403,7 +438,7 @@
     },
 
     {
-      "name": "dirt3",
+      "name": "Dirt_3",
       "layer_id": "items",
       "sublayers": {
         "types": "d",
@@ -414,7 +449,7 @@
 
 
     {
-      "name": "dirt4",
+      "name": "Dirt_4",
       "layer_id": "items",
       "sublayers": {
         "types": "d",
@@ -424,7 +459,7 @@
     },
 
     {
-      "name": "dirt5",
+      "name": "Dirt_5",
       "layer_id": "items",
       "sublayers": {
         "types": "d",
@@ -434,7 +469,7 @@
     },
 
     {
-      "name": "dropping1",
+      "name": "drop1",
       "layer_id": "items",
       "sublayers": {
         "types": "!",
@@ -444,7 +479,7 @@
     },
 
     {
-      "name": "dropping2",
+      "name": "drop2",
       "layer_id": "items",
       "sublayers": {
         "types": "|",
@@ -454,7 +489,7 @@
     },
 
     {
-      "name": "dropping3",
+      "name": "drop3",
       "layer_id": "items",
       "sublayers": {
         "types": ":",
@@ -484,6 +519,14 @@
       "sprite_id": "cream_machine"
     },
 
+     {
+      "name": "caged",
+      "layer_id": "±à¼­Æ÷",
+      "sublayers": {
+        
+      },
+      "sprite_id": "cage_2"
+    },
     {
       "name": "caged1",
       "layer_id": "covers",
@@ -705,6 +748,15 @@
     },
 
     {
+      "name": "wheel",
+      "layer_id": "±à¼­Æ÷",
+      "sublayers": {
+
+      },
+      "sprite_id": "wheel4"
+    },
+
+    {
       "name": "wheel4",
       "layer_id": "items",
       "sublayers": {
@@ -772,6 +824,15 @@
         "hitpoints": "4"
       },
       "sprite_id": "bricks_4"
+    },
+
+    {
+      "name": "Question",
+      "layer_id": "editor",
+      "sublayers": {
+
+      },
+      "sprite_id": "purple_box"
     },
 
     {

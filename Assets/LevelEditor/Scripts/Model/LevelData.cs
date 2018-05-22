@@ -19,7 +19,7 @@ namespace CommonLevelEditor
         {
             get
             {
-                return width* height;
+                return width * height;
             }
         }
 
@@ -31,95 +31,95 @@ namespace CommonLevelEditor
         };
 
 
-		readonly static string[] ITEM_TYPES =
-			{
-				ItemTypeId.Dirt + "_1",
-				ItemTypeId.Dirt + "_2",
-				ItemTypeId.Dirt + "_3",
-				ItemTypeId.Dirt + "_4",
-				ItemTypeId.Dirt + "_5",
+        readonly static string[] ITEM_TYPES =
+            {
+                ItemTypeId.Dirt + "_1",
+                ItemTypeId.Dirt + "_2",
+                ItemTypeId.Dirt + "_3",
+                ItemTypeId.Dirt + "_4",
+                ItemTypeId.Dirt + "_5",
                 ItemTypeId.CannonGem.ToString(),
-				ItemTypeId.Question.ToString(),
+                ItemTypeId.Question.ToString(),
                 ItemTypeId.Key + "_0",
                 ItemTypeId.Key + "_1" ,
                 ItemTypeId.Key + "_2" ,
                 ItemTypeId.Key + "_3" ,
                 ItemTypeId.Key + "_4" ,
-                ItemTypeId.Key + "_5" 
+                ItemTypeId.Key + "_5"
             };
 
-       /*public readonly static Dictionary<string, int> ItemType_CID_Map = new Dictionary<string, int>()
-        {
-            { ItemTypeId.Dirt + "_1",CId.Dirt },
-            { ItemTypeId.Dirt + "_2",CId.Dirt},
-            {  ItemTypeId.Dirt + "_3",CId.Dirt},
-            {  ItemTypeId.Dirt + "_4",CId.Dirt},
-            {  ItemTypeId.Dirt + "_5",CId.Dirt},
-            {  ItemTypeId.CannonGem.ToString(),CId.CannonShooting},
-            {  ItemTypeId.Question.ToString(),CId.Question},
-            { ItemTypeId.Key + "_0",CId.Key},
-            { ItemTypeId.Key + "_1" ,CId.Key},
-            {  ItemTypeId.Key + "_2" ,CId.Key},
-            { ItemTypeId.Key + "_3" ,CId.Key},
-            { ItemTypeId.Key + "_4" ,CId.Key},
-            {  ItemTypeId.Key + "_5",CId.Key},
-        };
-        */
+        /*public readonly static Dictionary<string, int> ItemType_CID_Map = new Dictionary<string, int>()
+         {
+             { ItemTypeId.Dirt + "_1",CId.Dirt },
+             { ItemTypeId.Dirt + "_2",CId.Dirt},
+             {  ItemTypeId.Dirt + "_3",CId.Dirt},
+             {  ItemTypeId.Dirt + "_4",CId.Dirt},
+             {  ItemTypeId.Dirt + "_5",CId.Dirt},
+             {  ItemTypeId.CannonGem.ToString(),CId.CannonShooting},
+             {  ItemTypeId.Question.ToString(),CId.Question},
+             { ItemTypeId.Key + "_0",CId.Key},
+             { ItemTypeId.Key + "_1" ,CId.Key},
+             {  ItemTypeId.Key + "_2" ,CId.Key},
+             { ItemTypeId.Key + "_3" ,CId.Key},
+             { ItemTypeId.Key + "_4" ,CId.Key},
+             {  ItemTypeId.Key + "_5",CId.Key},
+         };
+         */
 
-		public const int COLOR_CHANCE = 16;
-		public const string ID = "id";
-		public const string NAME = "name";
-		public const string LEVEL_NUM = "level";
-		public const string TYPE = "type";
-		public const string WIDTH = "width";
-		public const string HEIGHT = "height";
-		public const string MAX_MOVES = "maxMoves";
-		public const string SUPER_MERGING_ENABLED = "superMergingEnabled";
-		public const string LAYERS = "layers";
-		public const string CONDITIONS = "conditions";
-		public const string COMPANION = "companion";
-		public const string REQUIRED_CHARGE = "requiredCharge";
-		public const string COLOR_SPAWN_PERCENTAGES = "colorSpawnPercentages";
-		public const string ITEM_SPAWN_PERCENTAGES = "itemSpawnPercentages";
+        public const int COLOR_CHANCE = 16;
+        public const string ID = "id";
+        public const string NAME = "name";
+        public const string LEVEL_NUM = "level";
+        public const string TYPE = "type";
+        public const string WIDTH = "width";
+        public const string HEIGHT = "height";
+        public const string MAX_MOVES = "maxMoves";
+        public const string SUPER_MERGING_ENABLED = "superMergingEnabled";
+        public const string LAYERS = "layers";
+        public const string CONDITIONS = "conditions";
+        public const string COMPANION = "companion";
+        public const string REQUIRED_CHARGE = "requiredCharge";
+        public const string COLOR_SPAWN_PERCENTAGES = "colorSpawnPercentages";
+        public const string ITEM_SPAWN_PERCENTAGES = "itemSpawnPercentages";
         public const string ITEM_SPAWN_MIN = "itemSpawnMin";
         public const string ITEM_SPAWN_MAX = "itemSpawnMax";
         public const string ITEM_TOTAL_SPAWN_MIN = "itemTotalSpawnMin";
         public const string ITEM_TOTAL_SPAWN_MAX = "itemTotalSpawnMax";
-		public const string PREVENT_ITEMS = "preventItems";
-		public const string ENSURE_ITEMS = "ensureItems";
-		public const string SCORE = "score";
-		public const string MOVESOVER = "movesover";
-		public const string STARS = "stars";
-		public const string ADAPTIVE_COLOR_SPAWNING_OFFSET = "adaptiveColorSpawningOffset";
-		public const string ACS_MIN = "acsMin";
-		public const string ACS_MAX = "acsMax";
-		public const string COLOR_SPAWNING_ORDER = "colorSpawningOrder";
-		public const string SPAWNING_SET_NAME = "spawingSetName";
-		public const string BOSS_NAME = "bossName";
-		public const string BOSS_HITPOINTS = "bossHitpoints";
-		public const string BOSS_AMMO_TYPE = "bossAmmoType";
-		public const string BOSS_AMMO_LAYERID = "bossAmmoLayerId";
-		public const string BOSS_AMMO_INTERVAL = "bossAmmoInterval";
-		public const string BOSS_AMMO_AMOUNT = "bossAmmoAmount";
-		public const string BOSS_AMMO_HITPOINTS = "bossAmmoHitpoints";
+        public const string PREVENT_ITEMS = "preventItems";
+        public const string ENSURE_ITEMS = "ensureItems";
+        public const string SCORE = "score";
+        public const string MOVESOVER = "movesover";
+        public const string STARS = "stars";
+        public const string ADAPTIVE_COLOR_SPAWNING_OFFSET = "adaptiveColorSpawningOffset";
+        public const string ACS_MIN = "acsMin";
+        public const string ACS_MAX = "acsMax";
+        public const string COLOR_SPAWNING_ORDER = "colorSpawningOrder";
+        public const string SPAWNING_SET_NAME = "spawingSetName";
+        public const string BOSS_NAME = "bossName";
+        public const string BOSS_HITPOINTS = "bossHitpoints";
+        public const string BOSS_AMMO_TYPE = "bossAmmoType";
+        public const string BOSS_AMMO_LAYERID = "bossAmmoLayerId";
+        public const string BOSS_AMMO_INTERVAL = "bossAmmoInterval";
+        public const string BOSS_AMMO_AMOUNT = "bossAmmoAmount";
+        public const string BOSS_AMMO_HITPOINTS = "bossAmmoHitpoints";
 
-		public string id { get; set; }
+        public string id { get; set; }
 
-		public string name { get; set; }
+        public string name { get; set; }
 
-		public int levelNum { get; set; }
+        public int levelNum { get; set; }
 
-		public int width { get; set; }
+        public int width { get; set; }
 
-		public int height { get; set; }
+        public int height { get; set; }
 
-		public int maxMoves { get; set; }
+        public int maxMoves { get; set; }
 
-		public IDictionary<ItemTypeId, int> typeWinningConditions { get; set; }
+        public IDictionary<string, int> typeWinningConditions { get; set; }
 
-		public IList<ColorWinningCondition> colorWinningConditions { get; set; }
+        public IList<ColorWinningCondition> colorWinningConditions { get; set; }
 
-		public Dictionary<CompanionTypeId,int> skillWinningConditions { get; set; }
+        public Dictionary<CompanionTypeId, int> skillWinningConditions { get; set; }
 
 		public int minScoreWinningCondition { get; set; }
 
@@ -146,7 +146,7 @@ namespace CommonLevelEditor
 
 		public List<string> preventItems { get; set; }
 
-		public IDictionary<ItemTypeId, int> ensureItems { get; set; }
+		public IDictionary<string, int> ensureItems { get; set; }
 
 		public List<int> starThresholds { get; set; }
 
@@ -177,7 +177,7 @@ namespace CommonLevelEditor
 
 			id = "anyId";
 			name = "new";
-			typeWinningConditions = new Dictionary<ItemTypeId, int>();
+			typeWinningConditions = new Dictionary<string, int>();
 			colorWinningConditions = new List<ColorWinningCondition>();
 			skillWinningConditions = new Dictionary<CompanionTypeId, int> ();
 			colorSpawnPercentages = new Dictionary<ColorId, int>
@@ -249,7 +249,7 @@ namespace CommonLevelEditor
             };
 
             preventItems = new List<string>();
-			ensureItems = new Dictionary<ItemTypeId, int>();
+			ensureItems = new Dictionary<string, int>();
 			minScoreWinningCondition = 0;
 			movesOver = false;
 			width = LevelEditorInfo.Instance.BoardWidth;
@@ -414,7 +414,7 @@ namespace CommonLevelEditor
 		Dictionary<string, object> SerializeCompanion()
 		{
 			var comp = new Dictionary<string, object>();
-			comp[TYPE] = _companionType.ToString();
+			comp[TYPE] = companionType.ToString();
 			comp[REQUIRED_CHARGE] = companionRequiredCharge;
 
 			return comp;
@@ -450,7 +450,7 @@ namespace CommonLevelEditor
 
 			foreach (var pair in ensureItems)
 			{
-				var key = pair.Key.ToString().LowercaseFirst();
+				var key = pair.Key;
 				ensures[key] = pair.Value;
 			}
 
@@ -534,7 +534,7 @@ namespace CommonLevelEditor
 
 			foreach (var pair in typeWinningConditions)
 			{
-				var key = pair.Key.ToString().ToLower();
+				var key = pair.Key;
 				conditions[key] = pair.Value;
 			}
 
@@ -641,13 +641,13 @@ namespace CommonLevelEditor
 				}
 				else
 				{
-					try
-					{
-						ItemTypeId typeId = LevelEditorUtils.ParseEnum<ItemTypeId>(key.UppercaseFirst());
-						int amount = (int) conditions[key];
-						typeWinningConditions.Add(typeId, amount);
-					}
-					catch
+
+                    if (LevelEditorInfo.Instance.levelSettingConfig.ObjectiveCollection.Contains(key))
+                    {
+                        int amount = (int)conditions[key];
+                        typeWinningConditions.Add(key, amount);
+                    }
+                    else
 					{
 						try
 						{
@@ -679,7 +679,7 @@ namespace CommonLevelEditor
 							}
 							catch
 							{
-								Debug.LogError("Could not parse winning condition for key = " + key + ", name = " + name);
+								Debug.LogWarning("Could not parse winning condition for key = " + key + ", levelNum = " + levelNum);
 							}
 						}
 					}
@@ -700,7 +700,7 @@ namespace CommonLevelEditor
 				companionType = LevelEditorUtils.ParseEnum<CompanionTypeId>(companion[TYPE].AsString());
 				companionRequiredCharge = (int) companion[REQUIRED_CHARGE];
 			}
-            _companionType = companionType;
+           
 		}
 
 		void ParseEnsureItems(JSONNode data)
@@ -719,7 +719,7 @@ namespace CommonLevelEditor
 						foreach (var key in dict.Keys)
 						{
 							int amount = (int) dict[key];
-							var itemType = LevelEditorUtils.ParseEnum<ItemTypeId>(key.UppercaseFirst());
+							string itemType = key;
 							ensureItems[itemType] = amount;
 						}
 					}
@@ -875,7 +875,7 @@ namespace CommonLevelEditor
 			}
 		}
 
-		public bool IsObjectiveType(ItemTypeId itemType)
+		public bool IsObjectiveType(string itemType)
 		{
 			return typeWinningConditions.ContainsKey(itemType);
 		}

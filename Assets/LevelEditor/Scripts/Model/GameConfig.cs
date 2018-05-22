@@ -12,6 +12,8 @@ namespace CommonLevelEditor
             get; private set;
         }
 
+        public List<string> bossNames { get; private set; }
+
         public void Update(JSONNode data)
         {
             var spawningsetnode = data.GetCollection("spawingSets");
@@ -27,6 +29,15 @@ namespace CommonLevelEditor
             foreach (var item in spawningsetnode)
             {
                 availableSpawningSets.Add(item.GetString("name"));
+            }
+
+            //boss
+            var bossCol = data.GetCollection("bosses");
+
+            bossNames = new List<string>();
+            foreach (var item in bossCol)
+            {
+                bossNames.Add( item.GetString("name"));
             }
 
         }

@@ -9,9 +9,24 @@ using System.Collections.Generic;
 namespace CommonLevelEditor
 {
     //要做的非常通用需要很多时间，没必要，做一个SMK和KIKI通用的就行
+
+    class LevelSettingsIcon
+    {
+        public string itemType;
+
+        public int amount;
+
+        public LevelSettingsIcon(string type, int amount)
+        {
+            itemType = type;
+            this.amount = amount;
+        }
+    }
     public class LevelEditorConfigWindow : EditorWindow
     {
         public static LevelEditorConfigWindow instance;
+
+        const string NO_BOSS_STRING = "No boss";
 
         [MenuItem("LevelEditor/Configurations")]
         public static void ShowWindow()
@@ -62,6 +77,7 @@ namespace CommonLevelEditor
 
         bool _levelLoaded = false;
 
+        Vector2 scrollPos;
         bool _foldoutGeneral;
         bool _foldoutSupergems;
         bool _foldoutItems;
@@ -90,7 +106,170 @@ namespace CommonLevelEditor
         bool _superMergingEnabled;
         List<string> _preventItems;
 
+        //Items
+        List<LevelSettingsIcon> _colorOrder;
+        List<LevelSettingsIcon> _itemSpawnChance;
+        List<LevelSettingsIcon> _itemSpawnMin;
+        List<LevelSettingsIcon> _itemSpawnMax;
+        List<LevelSettingsIcon> _totalMin;
+        List<LevelSettingsIcon> _totalMax;
+        List<LevelSettingsIcon> _ensureItems;
 
+        //Objectives
+        List<LevelSettingsIcon> _objectives;
+        bool _moveOver;
+        List<LevelSettingsIcon> _objectiveColor;
+        bool _combineObjective;
+        int _combineTotal;
+
+        //boss
+        int _bossIndex;
+        string[] _bossNames;
+        int _spawningSetIndex;
+        string[] _spawningSets;
+
+
+        public void SaveSettingsToLevelData()
+        {
+            //单个数据
+
+            _level.name = _levelName;
+            _level.levelNum = _levelNum;
+            _level.maxMoves = _moves;
+            _level.companionType = _companionType;
+            _level.companionRequiredCharge = _companionCharge;
+            _level.acsMax = _acsMax;
+            _level.acsMin = _acsMin;
+            _level.starThresholds = new List<int>(_mastery);
+
+            //supergem
+
+            _level.superMergingEnabled = _superMergingEnabled;
+            _level.preventItems = new List<string>(_preventItems);
+            //Items
+
+            List<ColorId> colorOrderList = new List<ColorId>();
+            for (int i = 0; i < 6; i++)
+            {
+                
+                var item = _colorOrder.Find(x => x.amount == i);
+                if (item !=null)
+                {
+                    colorOrderList.Add(LevelEditorUtils.ParseEnum<ColorId>(item.itemType)); 
+                }
+            }
+            _level.colorSpawningOrder = colorOrderList;
+
+
+            foreach (var item in _itemSpawnChance)
+            {
+                _level.itemSpawnPercentages[item.itemType] = item.amount;
+            }
+            
+
+            foreach (var item in _itemSpawnMin)
+            {
+                _level.itemSpawnMin[item.itemType] = item.amount;
+            }
+
+
+            foreach (var item in _itemSpawnMax)
+            {
+                _level.itemSpawnMax[item.itemType] = item.amount;
+            }
+
+
+            foreach (var item in _totalMin)
+            {
+                _level.itemTotalSpawnMin[item.itemType] = item.amount;
+            }
+
+
+            foreach (var item in _totalMax)
+            {
+                _level.itemTotalSpawnMax[item.itemType] = item.amount;
+            }
+
+
+            foreach (var item in _ensureItems)
+            {
+                _level.ensureItems[item.itemType] = item.amount;
+            }
+
+
+            List<ColorWinningCondition> colorWinningCondition = new List<ColorWinningCondition>();
+            if (_combineObjective)
+            {
+                ColorWinningCondition condition = new ColorWinningCondition();
+                condition.colors = new List<ColorId>();
+                foreach (var item in _objectiveColor)
+                {
+                    if (item.amount!=0)
+                    {
+                        condition.colors.Add(LevelEditorUtils.ParseEnum<ColorId>(item.itemType));
+                    }
+                }
+                if (condition.colors.Count!=0)
+                {
+                    condition.amount = _combineTotal;
+                    colorWinningCondition.Add(condition);
+                }
+            }
+            else
+            {
+                foreach (var item in _objectiveColor)
+                {
+                    if (item.amount!=0)
+                    {
+                        ColorWinningCondition condition = new ColorWinningCondition();
+                        condition.colors = new List<ColorId>();
+                        condition.colors.Add(LevelEditorUtils.ParseEnum<ColorId>(item.itemType));
+                        condition.amount = item.amount;
+                        colorWinningCondition.Add(condition);
+                    }
+                }
+            }
+            _level.colorWinningConditions = colorWinningCondition;
+
+            foreach (var item in _objectives)
+            {
+                if (item.amount!=0)
+                {
+                    _level.typeWinningConditions[item.itemType] = item.amount;
+                }
+               
+            }
+
+            _level.movesOver = _moveOver;
+
+            //boss
+
+            _level.bossName = _bossNames[_bossIndex] == NO_BOSS_STRING ? "0" : _bossNames[_bossIndex];
+
+
+            if (_spawningSetIndex<0)
+            {
+                _level.spawningSetName = "";
+            }
+            else
+            {
+                _level.spawningSetName = _spawningSets[_spawningSetIndex];
+            }
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
         //从levelData 中读取settings 数据
         public void LoadFromLevelData(LevelData levelData)
         {
@@ -107,15 +286,169 @@ namespace CommonLevelEditor
 
            _mastery = _level.starThresholds.ToArray();
            
+            //supergem
             _superMergingEnabled = _level.superMergingEnabled;
             _preventItems = new List<string>(_level.preventItems.ToArray());
 
+            //Items
+            _colorOrder = new List<LevelSettingsIcon>();
+            for (int i = 0; i < 6; i++)
+            {
+                ColorId color = (ColorId)i;
 
+                _colorOrder.Add(new LevelSettingsIcon(color.ToString(),-1));
+            }
+            int sequence = 0;
+            foreach (var color in _level.colorSpawningOrder)
+            {
+                _colorOrder[(int)color].amount = sequence;
+                sequence++;
+            }
+
+            _itemSpawnChance = new List<LevelSettingsIcon>();
+            foreach (var name in LevelEditorInfo.Instance.levelSettingConfig.SpawnChanceCollection)
+            {
+                int value;
+                if (_level.itemSpawnPercentages.TryGetValue(name,out value))
+                {
+                    _itemSpawnChance.Add(new LevelSettingsIcon(name, value));
+                }
+            }
+
+            _itemSpawnMin = new List<LevelSettingsIcon>();
+            foreach (var name in LevelEditorInfo.Instance.levelSettingConfig.SpawnChanceCollection)
+            {
+                int value=0;
+                _level.itemSpawnMin.TryGetValue(name, out value);
+              
+                _itemSpawnMin.Add(new LevelSettingsIcon(name, value));
+            
+            }
+
+            _itemSpawnMax = new List<LevelSettingsIcon>();
+            foreach (var name in LevelEditorInfo.Instance.levelSettingConfig.SpawnChanceCollection)
+            {
+                int value=0;
+                _level.itemSpawnMax.TryGetValue(name, out value);
+                _itemSpawnMax.Add(new LevelSettingsIcon(name, value));
+               
+            }
+
+            _totalMin = new List<LevelSettingsIcon>();
+            foreach (var name in LevelEditorInfo.Instance.levelSettingConfig.TotalChanceCollection)
+            {
+                int value=0;
+                _level.itemTotalSpawnMin.TryGetValue(name, out value);
+               
+                _totalMin.Add(new LevelSettingsIcon(name, value));
+              
+            }
+
+            _totalMax = new List<LevelSettingsIcon>();
+            foreach (var name in LevelEditorInfo.Instance.levelSettingConfig.TotalChanceCollection)
+            {
+                int value=0;
+               _level.itemTotalSpawnMax.TryGetValue(name, out value);
+                
+                _totalMax.Add(new LevelSettingsIcon(name, value));
+               
+            }
+
+            _ensureItems = new List<LevelSettingsIcon>();
+            foreach (var name in LevelEditorInfo.Instance.levelSettingConfig.EnsureItemCollection)
+            {
+                int value = 0;
+                _level.ensureItems.TryGetValue(name, out value);
+                _ensureItems.Add(new LevelSettingsIcon(name, value));
+             
+            }
+
+            _objectiveColor = new List<LevelSettingsIcon>();
+            foreach (var item in ColorUtils.allColors)
+            {
+                _objectiveColor.Add(new LevelSettingsIcon((item).ToString(), 0));
+            }
+
+            foreach (var condition in _level.colorWinningConditions)
+            {
+                var condColors = condition.colors;
+                if (condColors.Count>1)
+                {
+                    _combineObjective = true;
+                    foreach (var color in condColors)
+                    {
+                        int idx = ColorUtils.allColors.IndexOf(color);
+                        _objectiveColor[idx].amount = 1;
+                    }
+                    _combineTotal = condition.amount;
+                    break;
+                }
+                else
+                {
+                    int idx = ColorUtils.allColors.IndexOf(condColors[0]);
+                    _objectiveColor[idx].amount = condition.amount;
+                }
+                   
+            }
+
+            _objectives = new List<LevelSettingsIcon>();
+            foreach (var name in LevelEditorInfo.Instance.levelSettingConfig.ObjectiveCollection)
+            {
+                int value;
+                _level.typeWinningConditions.TryGetValue(name, out value);
+
+                _objectives.Add(new LevelSettingsIcon(name, value));
+           
+            }
+
+            _moveOver = _level.movesOver;
+
+
+            //boss
+            List<string> tempboss = new List<string>() { NO_BOSS_STRING };
+            
+            foreach (var boss in LevelEditorInfo.Instance.gameConfig.bossNames)
+            {
+                tempboss.Add(boss);
+            }
+            
+             if (!String.IsNullOrEmpty( _level.bossName))
+            {
+                _bossIndex = tempboss.IndexOf(_level.bossName);
+                if (_bossIndex==-1)
+                {
+                    _bossIndex = 0;
+                }
+            }
+            else
+            {
+                _bossIndex = 0;
+            }
+
+
+            _bossNames = tempboss.ToArray();
+            _spawningSets = LevelEditorInfo.Instance.gameConfig.availableSpawningSets.ToArray();
+            _spawningSetIndex = -1;
+            if (!String.IsNullOrEmpty( _level.spawningSetName))
+            {
+                _spawningSetIndex = LevelEditorInfo.Instance.gameConfig.availableSpawningSets.IndexOf(_level.spawningSetName);
+                
+            }
             
 
 
 
-            
+
+
+
+
+
+
+
+
+
+
+
 
         }
 
@@ -134,12 +467,15 @@ namespace CommonLevelEditor
 
              if (EditingViewVisible())
              {
+                scrollPos= EditorGUILayout.BeginScrollView(scrollPos);
 
                 _foldoutGeneral = EditorGUILayout.Foldout(_foldoutGeneral, "General", GetFoldOutStyle());
 
                 if (_foldoutGeneral)
                 {
+                    EditorGUILayout.BeginVertical(GUILayout.MaxWidth(300));
                     GeneralSettings();
+                    EditorGUILayout.EndVertical();
                 }
 
                 EditorGUILayout.Space();
@@ -152,7 +488,7 @@ namespace CommonLevelEditor
                 }
 
                 EditorGUILayout.Space();
-                /*
+            
                  _foldoutItems = EditorGUILayout.Foldout(_foldoutItems, "Items", GetFoldOutStyle());
 
                  if (_foldoutItems)
@@ -161,7 +497,7 @@ namespace CommonLevelEditor
                  }
 
                  EditorGUILayout.Space();
-
+           
                  _foldoutObjectives = EditorGUILayout.Foldout(_foldoutObjectives, "Objectives", GetFoldOutStyle());
 
                  if (_foldoutObjectives)
@@ -170,18 +506,21 @@ namespace CommonLevelEditor
                  }
 
                  EditorGUILayout.Space();
+             
+                _foldoutBoss = EditorGUILayout.Foldout(_foldoutBoss, "Options", GetFoldOutStyle());
 
-                 _foldoutBoss = EditorGUILayout.Foldout(_foldoutBoss, "Options", GetFoldOutStyle());
+                if (_foldoutBoss)
+                {
+                    EditorGUILayout.BeginVertical(GUILayout.MaxWidth(300));
+                    BossSettings();
+                    EditorGUILayout.EndVertical();
+                }
 
-                 if (_foldoutBoss)
-                 {
-                     BossSettings();
-                 }
+                EditorGUILayout.Space();
 
-                 EditorGUILayout.Space();
-                 */
+                EditorGUILayout.EndScrollView();
             }
-         }
+        }
 
          void GeneralSettings()
          {
@@ -242,56 +581,126 @@ namespace CommonLevelEditor
                 
             }
          }
-        /*
-         void BoardItemsSettings()
+
+        void AddIcon(string name, int i)
+        {
+            Rect lastRect = GUILayoutUtility.GetLastRect();
+            Material previewMaterial = EditorGUIUtility.Load("preview.mat") as Material;
+
+            Sprite sp = LevelEditorInfo.Instance.GetItemSpriteByName(name);
+
+            Texture texture = null;
+            if (sp!=null)
+            {
+                texture = sp.texture;
+            }
+
+            if (texture != null)
+            {
+                GUI.DrawTexture(new Rect(lastRect.x + (i * 50), lastRect.y + 20, 30, 30), texture);
+            }
+            else
+            {
+                Debug.LogWarning("Level Editor :: Texture not found " + name);
+            }
+        }
+
+        void DrawCounterItems(List<LevelSettingsIcon> items)
+        {
+            var count = 0;
+
+            foreach (var item in items)
+            {
+                AddIcon( item.itemType, count);
+                count++;
+            }
+
+            EditorGUILayout.Space();
+            EditorGUILayout.Space();
+            EditorGUILayout.Space();
+            EditorGUILayout.Space();
+            EditorGUILayout.Space();
+
+
+
+            EditorGUILayout.BeginHorizontal();
+
+            for (var i = 0; i < items.Count; i++)
+            {
+                items[i].amount = EditorGUILayout.IntField(items[i].amount, GUILayout.MaxWidth(45));
+            }
+
+            EditorGUILayout.EndHorizontal();
+        }
+        void BoardItemsSettings()
          {
-             EditorGUILayout.LabelField("Colors");
-             var colors = _settingsView.__colorOrderItems;
-             DrawCounterItems(colors);
+             EditorGUILayout.LabelField("宝石生成顺序");
+                
+             DrawCounterItems(_colorOrder);
 
-             EditorGUILayout.LabelField("Percentage");
-             var dirtRatios = _settingsView.__dirtSpawnRatioItems;
-             DrawCounterItems(dirtRatios);
-             EditorGUILayout.LabelField("Min");
-             var spawItemMin = _settingsView.__minSpawnRationItems;
-             DrawCounterItems(spawItemMin);
-             EditorGUILayout.LabelField("Max");
-             var spawItemMax = _settingsView.__maxSpawnRationItems;
-             DrawCounterItems(spawItemMax);
-             EditorGUILayout.LabelField("Total Min");
-             var totalSpawnItemMin = _settingsView.__totalMinSpawnItems;
-             DrawCounterItems(totalSpawnItemMin);
+             EditorGUILayout.LabelField("Item Spawn Chance");
+             
+             DrawCounterItems(_itemSpawnChance);
+           
+             EditorGUILayout.LabelField("Item Spawn Min");
 
-             EditorGUILayout.LabelField("Total Max");
-             var totalSpawnItemMax = _settingsView.__totalMaxSpawnItems;
-             DrawCounterItems(totalSpawnItemMax);
+             DrawCounterItems(_itemSpawnMin);
+       
+             EditorGUILayout.LabelField("Item Spawn Max");
+             
+             DrawCounterItems(_itemSpawnMax);
 
-             EditorGUILayout.LabelField("Climber");
-             AddIcon("climber", 0);
+            if (_totalMin.Count!=0)
+            {
+                EditorGUILayout.LabelField("Total Min");
 
-             EditorGUILayout.Space();
-             EditorGUILayout.Space();
-             EditorGUILayout.Space();
+                DrawCounterItems(_totalMin);
+            }
 
-             _settingsView.__climberAmount = EditorGUILayout.IntField(_settingsView.__climberAmount, GUILayout.MaxWidth(21));
-         }
+            if (_totalMax.Count != 0)
+            {
+                EditorGUILayout.LabelField("Total Max");
 
+                DrawCounterItems(_totalMax);
+            }
+
+            if (_ensureItems.Count!=0)
+            {
+                EditorGUILayout.LabelField("确保生成物品");
+
+                DrawCounterItems(_ensureItems);
+            }
+
+
+
+        }
+
+      
          void ObjectivesSettings()
          {
 
-             _settingsView.minScore = EditorGUILayout.IntField("Score", _settingsView.minScore);
+             //_settingsView.minScore = EditorGUILayout.IntField("Score", _settingsView.minScore);
 
-             var colors = _settingsView.__objectivesColors;
+             
+            
 
-             DrawCounterItems(colors);
+            DrawCounterItems(_objectiveColor);
 
-             _settingsView.__combineObjectives = EditorGUILayout.Toggle("Combine", _settingsView.__combineObjectives);
+            EditorGUILayout.BeginHorizontal(GUILayout.Width(200));
 
-             var objectives = _settingsView.__objectivesItems;
+            _combineObjective = EditorGUILayout.Toggle("合并颜色", _combineObjective);
 
-             DrawCounterItems(objectives);
+            if (_combineObjective)
+            {
+                _combineTotal = EditorGUILayout.IntField("总数", _combineTotal);
+            }
+            EditorGUILayout.EndHorizontal();
+                      
+             DrawCounterItems(_objectives);
 
-             _settingsView.movesOver = EditorGUILayout.Toggle("MovesOver", _settingsView.movesOver);
+            _moveOver = EditorGUILayout.Toggle("MovesOver", _moveOver);
+
+            
 
              // if(GUILayout.Button("Auto Fill", GUILayout.MaxWidth(150)))
              // {
@@ -300,70 +709,27 @@ namespace CommonLevelEditor
              // 	_settingsView.OnCalculateObjectiveValues();
              // }
 
-             // DrawSkillItems (_settingsView.__objectivesSkills);
-         }
+            // DrawSkillItems (_settingsView.__objectivesSkills);
+        }
 
+        
          void BossSettings()
          {
-             _settingsView.__bossSelectedIndex = EditorGUILayout.Popup("Boss Type", _settingsView.__bossSelectedIndex, _settingsView.__bossSelectionList);
-             _settingsView.__spawningSetIndex = EditorGUILayout.Popup("Spawning Set", _settingsView.__spawningSetIndex, _settingsView.__availableSpawningSetNames);
-         }
+             _bossIndex = EditorGUILayout.Popup("Boss Type", _bossIndex, _bossNames);
+             _spawningSetIndex = EditorGUILayout.Popup("Spawning Set", _spawningSetIndex, _spawningSets);
+        }
 
-         // void DrawSkillItems(List<LevelSettingsIcon> items)
-         // {
-         // 	int i = 0; 
-         // 	for (; i<items.Count; i++) {
-         // 		items[i]._amount = EditorGUILayout.IntField(items[i]._itemType,items[i]._amount);
-         // 	}
-         // }
+        // void DrawSkillItems(List<LevelSettingsIcon> items)
+        // {
+        // 	int i = 0; 
+        // 	for (; i<items.Count; i++) {
+        // 		items[i]._amount = EditorGUILayout.IntField(items[i]._itemType,items[i]._amount);
+        // 	}
+        // }
 
-         void DrawCounterItems(List<LevelSettingsIcon> items)
-         {
-             var count = 0;
 
-             foreach (var item in items)
-             {
-                 AddIcon(item._itemType.ToLower(), count);
-                 count++;
-             }
 
-             EditorGUILayout.Space();
-             EditorGUILayout.Space();
-             EditorGUILayout.Space();
 
-             EditorGUILayout.BeginHorizontal();
-
-             for (var i = 0; i < items.Count; i++)
-             {
-                 items[i]._amount = EditorGUILayout.IntField(items[i]._amount, GUILayout.MaxWidth(45));
-             }
-
-             EditorGUILayout.EndHorizontal();
-         }
-
-         void AddIcon(string name, int i)
-         {
-             Rect lastRect = GUILayoutUtility.GetLastRect();
-             Material previewMaterial = EditorGUIUtility.Load("preview.mat") as Material;
-
-             Texture texture;
-
-             if (!_textures.TryGetValue(name + "_icon.png", out texture))
-             {
-                 texture = EditorGUIUtility.Load(name + "_icon.png") as Texture;
-                 _textures.Add(name + "_icon.png", texture);
-             }
-
-             if (texture != null)
-             {
-                 EditorGUI.DrawPreviewTexture(new Rect(lastRect.x + (i * 50), lastRect.y + 20, 20, 20), texture, previewMaterial);
-             }
-             else
-             {
-                 Log.Warning("Level Editor :: Texture not found " + name);
-             }
-         }
-         */
         GUIStyle GetFoldOutStyle()
          {
              GUIStyle myFoldoutStyle = new GUIStyle(EditorStyles.foldout);

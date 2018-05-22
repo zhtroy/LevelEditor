@@ -282,13 +282,13 @@
           "sprite_id": "random_color"
         },
         {
-          "brush_name": "gem_purple",
+          "brush_name": "Color0",
           "brush_tiles": [
             {
               "offsetx": 0,
               "offsety": 0,
               "items": [
-                "gem_purple",
+                "Color0",
                 "normalField"
 
               ]
@@ -299,13 +299,13 @@
         },
 
         {
-          "brush_name": "gem_pink",
+          "brush_name": "Color1",
           "brush_tiles": [
             {
               "offsetx": 0,
               "offsety": 0,
               "items": [
-                "gem_pink",
+                "Color1",
                 "normalField"
               ]
             }
@@ -315,13 +315,13 @@
         },
 
         {
-          "brush_name": "gem_yellow",
+          "brush_name": "Color2",
           "brush_tiles": [
             {
               "offsetx": 0,
               "offsety": 0,
               "items": [
-                "gem_yellow",
+                "Color2",
                 "normalField"
               ]
             }
@@ -331,13 +331,13 @@
         },
 
         {
-          "brush_name": "gem_red",
+          "brush_name": "Color3",
           "brush_tiles": [
             {
               "offsetx": 0,
               "offsety": 0,
               "items": [
-                "gem_red",
+                "Color3",
                 "normalField"
               ]
             }
@@ -347,13 +347,13 @@
         },
 
         {
-          "brush_name": "gem_blue",
+          "brush_name": "Color4",
           "brush_tiles": [
             {
               "offsetx": 0,
               "offsety": 0,
               "items": [
-                "gem_blue",
+                "Color4",
                 "normalField"
               ]
             }
@@ -363,13 +363,13 @@
         },
 
         {
-          "brush_name": "gem_green",
+          "brush_name": "Color5",
           "brush_tiles": [
             {
               "offsetx": 0,
               "offsety": 0,
               "items": [
-                "gem_green",
+                "Color5",
                 "normalField"
               ]
             }
@@ -609,13 +609,13 @@
       "brushes": [
 
         {
-          "brush_name": "dirt1",
+          "brush_name": "Dirt_1",
           "brush_tiles": [
             {
               "offsetx": 0,
               "offsety": 0,
               "items": [
-                "dirt1",
+                "Dirt_1",
                 "normalField"
               ]
             }
@@ -624,13 +624,13 @@
           "sprite_id": "dirt_1"
         },
         {
-          "brush_name": "dirt2",
+          "brush_name": "Dirt_2",
           "brush_tiles": [
             {
               "offsetx": 0,
               "offsety": 0,
               "items": [
-                "dirt2",
+                "Dirt_2",
                 "normalField"
 
               ]
@@ -641,13 +641,13 @@
         },
 
         {
-          "brush_name": "dirt3",
+          "brush_name": "Dirt_3",
           "brush_tiles": [
             {
               "offsetx": 0,
               "offsety": 0,
               "items": [
-                "dirt3",
+                "Dirt_3",
                 "normalField"
               ]
             }
@@ -657,13 +657,13 @@
         },
 
         {
-          "brush_name": "dirt4",
+          "brush_name": "Dirt_4",
           "brush_tiles": [
             {
               "offsetx": 0,
               "offsety": 0,
               "items": [
-                "dirt4",
+                "Dirt_4",
                 "normalField"
               ]
             }
@@ -673,13 +673,13 @@
         },
 
         {
-          "brush_name": "dirt5",
+          "brush_name": "Dirt_5",
           "brush_tiles": [
             {
               "offsetx": 0,
               "offsety": 0,
               "items": [
-                "dirt5",
+                "Dirt_5",
                 "normalField"
               ]
             }
@@ -697,13 +697,13 @@
       "brushes": [
 
         {
-          "brush_name": "dropping1",
+          "brush_name": "drop1",
           "brush_tiles": [
             {
               "offsetx": 0,
               "offsety": 0,
               "items": [
-                "dropping1",
+                "drop1",
                 "normalField"
               ]
             }
@@ -712,13 +712,13 @@
           "sprite_id": "drop1"
         },
         {
-          "brush_name": "dropping2",
+          "brush_name": "drop2",
           "brush_tiles": [
             {
               "offsetx": 0,
               "offsety": 0,
               "items": [
-                "dropping2",
+                "drop2",
                 "normalField"
 
               ]
@@ -729,13 +729,13 @@
         },
 
         {
-          "brush_name": "dropping3",
+          "brush_name": "drop3",
           "brush_tiles": [
             {
               "offsetx": 0,
               "offsety": 0,
               "items": [
-                "dropping3",
+                "drop3",
                 "normalField"
               ]
             }

@@ -281,7 +281,12 @@ namespace CommonLevelEditor
         {
             _comList.Save();
             _board.UpdateRelatedLevelData();
+            if (LevelEditorConfigWindow.instance!=null)
+            {
+                LevelEditorConfigWindow.instance.SaveSettingsToLevelData();
+            }
             LevelListScrollerController.instance.OnSave();
+
         }
         public void OnUndo()
         {
