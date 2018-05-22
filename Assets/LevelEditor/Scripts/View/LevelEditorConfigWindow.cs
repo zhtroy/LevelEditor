@@ -84,7 +84,7 @@ namespace CommonLevelEditor
         bool _foldoutObjectives;
         bool _foldoutBoss;
 
-        bool _initialized = true;
+        bool _initialized  = false;
 
         
         LevelData _level;
@@ -465,7 +465,7 @@ namespace CommonLevelEditor
          void OnGUI()
          {
 
-             if (EditingViewVisible())
+             if (EditingViewVisible()&& _levelLoaded)
              {
                 scrollPos= EditorGUILayout.BeginScrollView(scrollPos);
 
