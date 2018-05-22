@@ -22,7 +22,13 @@ namespace CommonLevelEditor
         public Text statusText;
         public float cellHeight= 100f;
 
-        public LevelData CurrentLevel { get; private set; }
+        public LevelData CurrentLevel
+        {
+            get
+            {
+                return _levelList.CurrentSelectedLevel;
+            }
+        }
 
         public static LevelListScrollerController instance = null;
         private void Awake()
@@ -154,7 +160,7 @@ namespace CommonLevelEditor
         void GotoEditingMode()
         {
             Show(false);
-            CurrentLevel = _levelList.CurrentSelectedLevel;
+            
             EditingView.instance.Show(true);
 
         }
@@ -220,6 +226,34 @@ namespace CommonLevelEditor
                 JumpToLevelID(levelId);
             }
 
+        }
+
+        public void OnMoveLevelUp()
+        {
+            if (_levelList.CurrentSelectedLevel == null)
+            {
+                return;
+            }
+
+            var upCom = new ComMoveLevelUp(_levelList, _levelList.CurrentSelectedLevel);
+            if (upCom.Execute())
+            {
+                _comList.Add(upCom);
+            }
+        }
+
+        public void OnMoveLevelDown()
+        {
+            if (_levelList.CurrentSelectedLevel == null)
+            {
+                return;
+            }
+
+            var downCom = new ComMoveLevelDown(_levelList, _levelList.CurrentSelectedLevel);
+            if (downCom.Execute())
+            {
+                _comList.Add(downCom);
+            }
         }
 
         public void OnGotoLevel()

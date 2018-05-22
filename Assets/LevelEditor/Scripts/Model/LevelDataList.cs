@@ -45,6 +45,10 @@ namespace CommonLevelEditor
                     break;
                 }
             }
+            if (onDataChange!=null)
+            {
+                onDataChange();
+            }
         }
 
         #region private save level
@@ -209,6 +213,45 @@ namespace CommonLevelEditor
                 onDataChange();
             }
         }
+
+        public bool MoveLevelUp(LevelData level)
+        {
+            int idx = _list.IndexOf(level);
+            if (idx<=0)
+            {
+                return false;
+            }
+
+            SwapLevelNum(level, _list[idx - 1]);
+            SortLevelList();
+
+            return true;
+        }
+
+        public bool MoveLevelDown(LevelData level  )
+        {
+            int idx = _list.IndexOf(level);
+            if (idx<0)
+            {
+                return false;
+            }
+            if (idx >= _list.Count-1)
+            {
+                return false;
+            }
+            SwapLevelNum(level, _list[idx + 1]);
+            SortLevelList();
+            return true;
+
+        }
+
+        void SwapLevelNum(LevelData a, LevelData b)
+        {
+            int tempNum = a.levelNum;
+            a.levelNum = b.levelNum;
+            b.levelNum = tempNum;
+        }
+
 
         public int IndexFromLevelId(int levelId)
         {
