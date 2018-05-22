@@ -13,8 +13,8 @@ namespace CommonLevelEditor
  
         private LevelDataList _levelList;
         private UndoRedoList _comList;
-     
 
+        public ScrollRect _scrollRect;
         public Button saveBtn;
         public EnhancedScroller myScroller;
         public LevelEntryView levelCellViewPrefab;
@@ -48,7 +48,12 @@ namespace CommonLevelEditor
 
 
             myScroller.Delegate = this;
-            _levelList.onDataChange += () => { myScroller.ReloadData(); };
+            _levelList.onDataChange += () => {      
+                myScroller.ReloadData();
+                _scrollRect.onValueChanged.Invoke(_scrollRect.normalizedPosition);
+                
+
+            };
 
             
         }
@@ -107,13 +112,14 @@ namespace CommonLevelEditor
         {
             LevelEntryView cellView = scroller.GetCellView(levelCellViewPrefab) as LevelEntryView;
             cellView.name = _levelList[dataIndex].name;
+            cellView.RemoveAllEvents();
             cellView.onSelected += CellViewSelected;
             cellView.SetData( _levelList[dataIndex]);
 
             return cellView;
         }
 
-        private void JumpToLevelID(int levelId)
+        private void JumpToLevelID(int levelId, float time=0f)
         {
             int idx = _levelList.IndexFromLevelId(levelId);
             if (idx == -1)
@@ -127,7 +133,7 @@ namespace CommonLevelEditor
                    0.5f,
                    true,
                    EnhancedScroller.TweenType.linear,
-                   0.3f,
+                   time,
                    () =>
                    {
                        _levelList.SelectSingleLevel(_levelList[idx]);
@@ -145,7 +151,7 @@ namespace CommonLevelEditor
             {
                 // get the selected data index of the cell view
                 var selectedData = (cellView as LevelEntryView).Data;
-
+                Debug.Log("cell view selected : " + selectedData.levelNum + " Selected: "   + selectedData.Selected);
                 //double click to edit level
                 if (selectedData.Selected)
                 {
@@ -207,7 +213,7 @@ namespace CommonLevelEditor
                 var cloneCom = new ComAddLevel(_levelList, cloneLevel);
                 cloneCom.Execute();
                 _comList.Add(cloneCom);
-                JumpToLevelID(levelId);
+                JumpToLevelID(levelId,0.3f);
             }
         }
 
@@ -223,7 +229,7 @@ namespace CommonLevelEditor
                 newCom.Execute();
                 _comList.Add(newCom);
 
-                JumpToLevelID(levelId);
+                JumpToLevelID(levelId,0.3f);
             }
 
         }
@@ -239,6 +245,7 @@ namespace CommonLevelEditor
             if (upCom.Execute())
             {
                 _comList.Add(upCom);
+                
             }
         }
 
@@ -253,6 +260,7 @@ namespace CommonLevelEditor
             if (downCom.Execute())
             {
                 _comList.Add(downCom);
+                
             }
         }
 
@@ -261,7 +269,7 @@ namespace CommonLevelEditor
             int jumpLevelId;
             if (int.TryParse(levelIDText.text, out jumpLevelId))
             {
-                JumpToLevelID(jumpLevelId);
+                JumpToLevelID(jumpLevelId,0.3f);
 
             }
         }

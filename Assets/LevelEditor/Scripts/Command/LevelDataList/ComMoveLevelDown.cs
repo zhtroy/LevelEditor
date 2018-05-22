@@ -16,14 +16,16 @@ namespace CommonLevelEditor
         }
         public bool Execute()
         {
+            
             return _list.MoveLevelDown(_selectedLevel);
             
         }
 
         public void Undo()
         {
-
+            
             _list.MoveLevelUp(_selectedLevel);
+            
         }
     }
 }

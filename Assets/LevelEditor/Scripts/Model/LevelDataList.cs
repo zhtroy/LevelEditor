@@ -3,6 +3,7 @@ using Wooga.Foundation.Json;
 using System;
 using LitJson;
 using System.IO;
+using UnityEngine;
 
 namespace CommonLevelEditor
 {
@@ -278,6 +279,7 @@ namespace CommonLevelEditor
                 {
                     item.Selected = true;
                     CurrentSelectedLevel = item;
+                 //   Debug.Log("LevelList select single level: " + item.levelNum);
                 }
                 else
                 {

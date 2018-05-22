@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
+using System.Collections.Generic;
 using System;
 using EnhancedUI.EnhancedScroller;
 
@@ -21,7 +21,24 @@ namespace CommonLevelEditor
 
         #endregion
 
-        public event Action<EnhancedScrollerCellView> onSelected;
+        List<Action<EnhancedScrollerCellView>> delegates = new List<Action<EnhancedScrollerCellView>>();
+        private event Action<EnhancedScrollerCellView> _onSelected;
+
+        public event Action<EnhancedScrollerCellView> onSelected
+        {
+            add
+            {
+                _onSelected += value;
+                delegates.Add(value);
+            }
+
+            remove
+            {
+                _onSelected -= value;
+                delegates.Remove(value);
+            }
+        }
+
 
         #region property
         public LevelData Data
@@ -71,10 +88,20 @@ namespace CommonLevelEditor
         //called by button click event
         public void OnSelected()
         {
-            if ( onSelected!= null)
+            if ( _onSelected!= null)
             {
-                onSelected(this);
+               // Debug.LogWarning("selected: " + Data.levelNum + " " +Data.name);
+                _onSelected(this);
             }
+        }
+
+        public void RemoveAllEvents()
+        {
+            foreach (var eh in delegates)
+            {
+                _onSelected -= eh;
+            }
+            delegates.Clear();
         }
     }
 }
